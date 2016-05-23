@@ -1,1 +1,1 @@
-Search.setIndex({envversion:47,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,modul:0,page:0,search:0},titles:["Welcome to AAOS&#8217;s documentation!"],titleterms:{aao:0,document:0,indic:0,tabl:0,welcom:0}})
+Search.setIndex({envversion:47,filenames:["README","index"],objects:{},objnames:{},objtypes:{},terms:{content:1,index:1,modul:1,page:1,search:1},titles:["AAOS","Welcome to AAOS's documentation!"],titleterms:{aao:[0,1],document:1,indic:1,tabl:1,welcom:1}})
