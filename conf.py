@@ -117,21 +117,26 @@ todo_include_todos = True
 
 # -- Options for HTML output ----------------------------------------------
 
-import guzzle_sphinx_theme
+import sphinxtheme
 
+readability_path = os.path.dirname(os.path.abspath(sphinxtheme.__file__))
+relative_path = os.path.relpath(readability_path, os.path.abspath('.'))
+
+html_theme = 'readability'
+html_theme_path = [relative_path]
 # Adds an HTML table visitor to apply Bootstrap table classes
-html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
-html_theme_path = guzzle_sphinx_theme.html_theme_path()
-html_theme = 'guzzle_sphinx_theme'
+#html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
+#html_theme_path = guzzle_sphinx_theme.html_theme_path()
+#html_theme = 'guzzle_sphinx_theme'
 
 # Register the theme as an extension to generate a sitemap.xml
-extensions.append("guzzle_sphinx_theme")
+#extensions.append("guzzle_sphinx_theme")
 
 # Guzzle theme options (see theme.conf for more information)
-html_theme_options = {
-    # Set the name of the project to appear in the sidebar
-    "project_nav_name": "American Academy of Orthopaedic Surgeon's",
-}
+#  html_theme_options = {
+#     # Set the name of the project to appear in the sidebar
+#     "project_nav_name": "American Academy of Orthopaedic Surgeon's",
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
