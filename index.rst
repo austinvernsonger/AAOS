@@ -10,6 +10,8 @@ Welcome to AAOS's Documentation
 
 .. attention:: Documentation Hub
 
+.. include::
+
 |docs|
 
 
@@ -17,10 +19,10 @@ Topics
 ------
 
 .. toctree::
-   :maxdepth: 2
+    :titlesonly:
 
-
-
+    Applications-Software-Totorials/index
+    Contribute/index
 
 
 Indices and tables
