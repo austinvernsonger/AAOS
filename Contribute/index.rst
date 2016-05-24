@@ -2,7 +2,7 @@ Contribute
 ----------
 
 .. toctree::
-   :titlesonly:
+   :glob:
 
 
    Style-Guide

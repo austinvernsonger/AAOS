@@ -2,7 +2,7 @@ Contribute
 ----------
 
 .. toctree::
-   :titlesonly:
+   :glob:
 
-   AAOS-Contributing-Guide
-   Style-guide
+
+   Style-Guide

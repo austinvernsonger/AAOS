@@ -18,9 +18,9 @@ Topics
 ------
 
 .. toctree::
-    :glob:
+    :maxdepth: 2
 
-    Applications-Software-Totorials/index
+    Applications-Software-Tutorials/index
     Contribute/index
     Help/index
 

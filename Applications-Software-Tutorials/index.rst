@@ -2,7 +2,7 @@ Applications / Software Tutorials
 ----------------------------------
 
 .. toctree::
-   :titlesonly:
+   :glob:
 
    Ektron
    Microsoft
