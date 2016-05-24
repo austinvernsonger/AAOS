@@ -5,8 +5,8 @@
 
 .. _index:
 
-Welcome to AAOS's Documentation
-================================
+AAOS Docs
+==========
 
 :Author: `Austin Songer <http://austinvernsonger.com>`_
 :License: This document is licensed under a
@@ -25,6 +25,7 @@ Content
     :maxdepth: 2
 
     Applications-Software-Tutorials/index
+    Departments/index
     Contribute/index
     Help/index
 
