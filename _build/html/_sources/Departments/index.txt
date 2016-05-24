@@ -4,5 +4,5 @@ Departments
 .. toctree::
    :glob:
 
-   TDS
-   
+
+   Technology-and-Data-Services
