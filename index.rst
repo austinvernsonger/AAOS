@@ -8,6 +8,10 @@
 Welcome to AAOS's Documentation
 ================================
 
+:Author: `Austin Songer <http://austinvernsonger.com>`_
+:License: This document is licensed under a
+  `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_.
+
 .. attention:: Documentation Hub
 
 
