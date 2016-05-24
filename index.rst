@@ -3,16 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to AAOS's documentation!
+.. _index:
+
+Welcome to AAOS's Documentation
 ================================
+
+.. attention:: Documentation Hub
 
 |docs|
 
 
-Contents:
+Topics
+------
 
 .. toctree::
    :maxdepth: 2
+
+
 
 
 
