@@ -14,8 +14,8 @@ Welcome to AAOS's Documentation
 |docs|
 
 
-Topics
-------
+Content
+--------
 
 .. toctree::
     :maxdepth: 2
@@ -25,12 +25,11 @@ Topics
     Help/index
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Resources
+==========
+
+
 
 
 .. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
