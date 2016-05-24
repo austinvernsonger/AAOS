@@ -17,6 +17,10 @@ import sys
 import os
 import shlex
 
+import sphinx_rtd_theme
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -117,13 +121,13 @@ todo_include_todos = True
 
 # -- Options for HTML output ----------------------------------------------
 
-import sphinxtheme
 
-readability_path = os.path.dirname(os.path.abspath(sphinxtheme.__file__))
-relative_path = os.path.relpath(readability_path, os.path.abspath('.'))
+#html_theme_path = [relative_path]
 
-html_theme = 'readability'
-html_theme_path = [relative_path]
+
+
+# otherwise, readthedocs.org uses their theme by default, so no need to specify it
+
 # Adds an HTML table visitor to apply Bootstrap table classes
 #html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
 #html_theme_path = guzzle_sphinx_theme.html_theme_path()
