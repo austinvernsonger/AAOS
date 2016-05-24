@@ -19,7 +19,7 @@ Topics
 ------
 
 .. toctree::
-    :titlesonly:
+    :glob:
 
     Applications-Software-Totorials/index
     Contribute/index
