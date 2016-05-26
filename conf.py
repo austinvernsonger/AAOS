@@ -19,7 +19,6 @@ import shlex
 import datetime
 
 
-
 #import sphinx_bootstrap_theme
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"

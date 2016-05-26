@@ -32,8 +32,7 @@ Resources
 
 
 
-Author Info
-=============
+--------------
 
 :Author: `Austin Songer <http://austinvernsonger.com>`_
 :License: This document is licensed under a
