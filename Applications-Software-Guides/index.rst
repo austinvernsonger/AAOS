@@ -14,3 +14,4 @@ Applications / Software Guides
    Ektron/index
    Microsoft/index
    Adobe/index
+   Bugherd/index

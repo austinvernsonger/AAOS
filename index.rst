@@ -6,28 +6,40 @@
 
 .. _index:
 
-AAOS Docs
-==========
+
 
 |docs|
-
-
-
-
-
 
 .. toctree::
     :hidden:
 
     Applications-Software-Guides/index
     Departments/index
+    Project-Management-Office/index
     Contribute/index
     Help/index
 
-
+.. image:: ./_static/AAOS.gif
+   :alt:
+   :scale: 80
 
 Resources
-==========
+=========
+
+
+
++---------------------------------+
+|Applications / Software Guides   | 
++=================================+
+|:ref:`Adobe`                     |
++---------------------------------+
+|Ektron                           |
++---------------------------------+
+|Microsoft                        |
++---------------------------------+
+|Bugherd                          |
++---------------------------------+
+
 
 
 
