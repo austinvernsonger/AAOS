@@ -1,5 +1,5 @@
-Ektron
--------
+Adobe
+----------
 
 .. toctree::
    :titlesonly:

@@ -18,6 +18,8 @@ import os
 import shlex
 import datetime
 
+
+
 #import sphinx_bootstrap_theme
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
@@ -124,7 +126,7 @@ todo_include_todos = True
 # -- Options for HTML output ----------------------------------------------
 
 
-#html_theme_path = [relative_path]
+
 
 
 
@@ -195,6 +197,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
+html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'], }
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
