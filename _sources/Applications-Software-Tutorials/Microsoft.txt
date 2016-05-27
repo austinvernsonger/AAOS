@@ -1,0 +1,5 @@
+Microsoft
+----------
+
+.. toctree::
+   :titlesonly:
