@@ -7,9 +7,9 @@ Departments
     :hidden:
 
    
-    Executive-Department
-    Educational-Programs
-    Operations-and-Finance
-    Technology-and-Data-Services
-    Medical-and-Government-Relations
+    Executive-Department/index
+    Educational-Programs/index
+    Operations-and-Finance/index
+    Technology-and-Data-Services/index
+    Medical-and-Government-Relations/index
    

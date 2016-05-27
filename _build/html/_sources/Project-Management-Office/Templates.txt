@@ -1,6 +1,12 @@
+.. _Templates:
+
 ==========
 Templates
 ==========
+
+
+.. caution::
+   The attached documents on this page is currently just a **"Placeholder"** document for the purposes of rendering.
 
 
 .. toctree::
@@ -15,7 +21,7 @@ Initiating
 :download:`Project Charter Template<Placeholder.docx>`
 
 
----------   
+----------   
 Planning
 ----------
 

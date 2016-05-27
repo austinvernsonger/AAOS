@@ -1,5 +1,0 @@
-Help
-----
-
-.. toctree::
-   :glob:

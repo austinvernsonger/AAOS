@@ -6,6 +6,8 @@
 
 .. _index:
 
+.. caution::
+   There are multiple attached documents throughout the website that are just a **"Placeholder"** document for the purposes of rendering the webpage correctly.
 
 
 |docs|
@@ -16,8 +18,9 @@
     Applications-Software-Guides/index
     Departments/index
     Project-Management-Office/index
+    Committees/index
     Contribute/index
-    Help/index
+    Service-Desk/index
 
 .. image:: ./_static/AAOS.gif
    :alt:
@@ -28,19 +31,17 @@ Resources
 
 
 
-+---------------------------------+
-|Applications / Software Guides   | 
-+=================================+
-|:ref:`Adobe`                     |
-+---------------------------------+
-|Ektron                           |
-+---------------------------------+
-|Microsoft                        |
-+---------------------------------+
-|Bugherd                          |
-+---------------------------------+
-
-
++---------------------------------+---------------------------------+---------------------------------+
+|Applications / Software Guides   |Project Management Office        |Service Desk                     |
++=================================+=================================+=================================+
+|:ref:`Adobe`                     |:ref:`Current-Projects`          |                                 |
++---------------------------------+---------------------------------+---------------------------------+
+|:ref:`Ektron`                    |:ref:`Templates`                 |                                 |
++---------------------------------+---------------------------------+---------------------------------+
+|:ref:`Microsoft`                 |:ref:`Project-Request`           |                                 |
++---------------------------------+---------------------------------+---------------------------------+
+|:ref:`Bugherd <My-Bugherd>`      |                                 |                                 |
++---------------------------------+---------------------------------+---------------------------------+
 
 
 
