@@ -9,3 +9,4 @@ Technology and Data Services
    :glob:
 
    Meeting-Minutes/index
+   Financials/index
