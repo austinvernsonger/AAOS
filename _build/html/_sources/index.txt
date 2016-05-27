@@ -1,4 +1,3 @@
-
 .. AAOS documentation master file, created by
    sphinx-quickstart on Fri May 13 15:37:02 2016.
    You can adapt this file completely to your liking, but it should at least
@@ -6,68 +5,77 @@
 
 .. _index:
 
-.. caution::
-   There are multiple attached documents throughout the website that are just a **"Placeholder"** document for the purposes of rendering the webpage correctly.
-
-
-|docs|
-
 .. toctree::
     :hidden:
 
+    AAOS-Templates/index
     Applications-Software-Guides/index
     Departments/index
-    Project-Management-Office/index
+    Design-and-Style/index
     Committees/index
     Contribute/index
+    Governance/index
+    Project-Management-Office/index
     Service-Desk/index
-    AAOS-Templates/index
-    Design-and-Style/index
+   
 
 
 .. image:: ./_static/AAOS.gif
    :alt:
-   :scale: 80
+   :scale: 50
 
-Resources
-=========
+=================
+KNOWLEDGE CENTER
+=================
+
+|docs|
+
+.. note::
+   This website is currently under construction so some pages you come across may be blank for the time being.
+
+.. caution::
+   There are multiple attached documents throughout the website that are just a **"Placeholder"** document for the purposes of rendering the webpage correctly.
+
+.. note::
+   You may also download this entire document as a PDF
+   
+   `DOWNLOAD AS PDF <https://readthedocs.org/projects/american-academy-of-orthopaedic-surgeons/downloads/pdf/master/>`_
 
 
-
-+---------------------------------+---------------------------------+---------------------------------+
-|Applications / Software Guides   |Project Management Office        |Service Desk                     |
-+=================================+=================================+=================================+
-|:ref:`Adobe`                     |:ref:`Current-Projects`          |                                 |
-+---------------------------------+---------------------------------+---------------------------------+
-|:ref:`Ektron`                    |:ref:`Templates`                 |                                 |
-+---------------------------------+---------------------------------+---------------------------------+
-|:ref:`Microsoft`                 |:ref:`Project-Request`           |                                 |
-+---------------------------------+---------------------------------+---------------------------------+
-|:ref:`Bugherd <My-Bugherd>`      |                                 |                                 |
-+---------------------------------+---------------------------------+---------------------------------+
++---------------------------------+---------------------------------+----------------------------------+
+|Applications / Software Guides   |Project Management Office        |Service Desk                      |
++=================================+=================================+==================================+
+|:ref:`Adobe`                     |:ref:`Current-Projects`          |:ref:`Track-It <Track-it>`        |
++---------------------------------+---------------------------------+----------------------------------+
+|:ref:`Ektron`                    |:ref:`Templates`                 |                                  |
++---------------------------------+---------------------------------+----------------------------------+
+|:ref:`Microsoft`                 |:ref:`Project-Request`           |                                  |
++---------------------------------+---------------------------------+----------------------------------+
+|:ref:`Bugherd <My-Bugherd>`      |                                 |                                  |
++---------------------------------+---------------------------------+----------------------------------+
 
 ------------
 
 
-+--------------------------------------------------------------+
-|AAOS Templates                                                |
-+==============================================================+
-|:ref:`HR Templates <Human-Resources-Templates>`               |
-+--------------------------------------------------------------+
-|:ref:`LetterHead <LetterHead>`                                |
-+--------------------------------------------------------------+
-|:ref:`AAOS Logos <Logos>`                                     |
-+--------------------------------------------------------------+
-|:ref:`Meetings <Meetings>`                                    |
-+--------------------------------------------------------------+
-|:ref:`Other-Branded Templates <Other-Branded-Templates>`      |
-+--------------------------------------------------------------+
-|:ref:`PowerPoint Templates <PowerPoint-Templates>`            |
-+--------------------------------------------------------------+
-|:ref:`Specialty-Societies Templates <Specialty-Societies>`    |
-+--------------------------------------------------------------+
-|:ref:`Washington DC Templates <Washington-DC>`                |
-+--------------------------------------------------------------+
++--------------------------------------------------------------+-------------------------------------+
+|AAOS Templates                                                |Governance                           |
++==============================================================+=====================================+
+|:ref:`HR Templates <Human-Resources-Templates>`               |:ref:`Intranet <Intranet>`           |
++--------------------------------------------------------------+-------------------------------------+
+|:ref:`LetterHead <LetterHead>`                                |:ref:`Website Content <WebContent>`  |
++--------------------------------------------------------------+-------------------------------------+
+|:ref:`AAOS Logos <Logos>`                                     |                                     | 
++--------------------------------------------------------------+                                     +
+|:ref:`Meetings <Meetings>`                                    |                                     | 
++--------------------------------------------------------------+                                     +
+|:ref:`Other-Branded Templates <Other-Branded-Templates>`      |                                     |
++--------------------------------------------------------------+                                     +
+|:ref:`PowerPoint Templates <PowerPoint-Templates>`            |                                     |
++--------------------------------------------------------------+                                     +
+|:ref:`Specialty-Societies Templates <Specialty-Societies>`    |                                     |
++--------------------------------------------------------------+                                     +
+|:ref:`Washington DC Templates <Washington-DC>`                |                                     |
++--------------------------------------------------------------+-------------------------------------+
 
 
 

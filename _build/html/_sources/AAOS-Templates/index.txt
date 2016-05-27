@@ -7,6 +7,7 @@ AAOS Templates
 
 .. toctree::
     :hidden:
+    :glob:
     
     Logos/index
     Letterhead/index

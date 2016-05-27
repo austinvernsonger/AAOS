@@ -1,3 +1,7 @@
+.. _index:
+
+.. _Departments:
+
 =============
 Departments
 =============

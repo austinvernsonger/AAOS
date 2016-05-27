@@ -1,4 +1,7 @@
+.. _index:
+
 .. _ServiceDesk:
+
 =============
 Service Desk
 =============

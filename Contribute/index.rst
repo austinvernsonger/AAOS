@@ -8,9 +8,6 @@ Contribute
 .. toctree::
    :hidden:
    
-.. toctree::   
-   :titlesonly:
-
 
    Style-Guide
    Web-Site-Image-Guidelines

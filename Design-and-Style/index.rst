@@ -1,3 +1,5 @@
+.. _index:
+
 .. _Design-and-Style:
 
 =================
