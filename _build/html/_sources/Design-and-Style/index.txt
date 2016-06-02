@@ -8,10 +8,9 @@ Design and Style
 
 
 .. toctree::
-    :hidden:
-    
-    Print/index
-    Web/Index
-    
+   :hidden:
 
-    
+   Print/index
+   Web/index
+
+

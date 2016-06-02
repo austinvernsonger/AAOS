@@ -7,3 +7,6 @@ TDS Financials
 
 .. toctree::
    :glob:
+
+   Invoices/index
+

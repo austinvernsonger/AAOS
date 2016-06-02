@@ -25,6 +25,7 @@
   
   
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/Sorting_Directions.css" type="text/css" />
   
 
   
@@ -37,6 +38,10 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/tsorter.min.js"></script>
+  <script src="../_static/js/list.js"></script>
+  <script src="../_static/js/jquery-2.2.4.min.js"></script>
+
 
 </head>
 
@@ -89,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Design-and-Style/index.html">Design and Style</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Committees/index.html">Committees</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contribute</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">AAOS Docs Style Guide</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AAOS Docs Style Guide</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#article-structure">Article Structure</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#headings">Headings</a></li>
 </ul>
@@ -136,7 +141,27 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-         
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Contribute</a> &raquo;</li>
+      
+    <li>AAOS Docs Style Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
@@ -162,7 +187,7 @@
 <p>Typically articles will use at most 3 levels of headings. The title of the document is the highest level heading and must appear on lines 1-2 of the document. The title is designated by a row of === characters.</p>
 <p>Section headings should correspond to the bulleted list of topics set out after the article abstract. <cite>Article Structure</cite>, above, is an example of a section heading. A section heading should appear on its own line, followed by a line consisting of &#8212; characters.</p>
 <p>Subsection headings can be used to organize content within a section. <cite>Headings</cite>, above, is an example of a subsection heading. A subsection heading should appear on its own line, followed by a line of ^^^ characters.</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="gh">Title (H1)</span>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">Title (H1)</span>
 <span class="gh">==========</span>
 
 <span class="gh">Section heading (H2)</span>
@@ -230,13 +255,13 @@
 <div class="section" id="links">
 <h3>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h3>
 <p>Inline hyperlinks are formatted like this:</p>
-<div class="highlight-rst"><div class="highlight"><pre>Learn more about <span class="s">`ASP.NET </span><span class="si">&lt;http://www.asp.net&gt;</span><span class="s">`_</span>.
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Learn more about <span class="s">`ASP.NET </span><span class="si">&lt;http://www.asp.net&gt;</span><span class="s">`_</span>.
 </pre></div>
 </div>
 <p>Learn more about <a class="reference external" href="http://www.asp.net">ASP.NET</a>.</p>
 <p>Surround the link text with backticks. Within the backticks, place the target in angle brackets, and ensure there is a space between the end of the link text and the opening angle bracket. Follow the closing backtick with an underscore.</p>
 <p>In addition to URLs, documents and document sections can also be linked by name:</p>
-<div class="highlight-rst"><div class="highlight"><pre>For example, here is a link to the <span class="s">`Inline Markup`_</span> section, above.
+<div class="highlight-rst"><div class="highlight"><pre><span></span>For example, here is a link to the <span class="s">`Inline Markup`_</span> section, above.
 </pre></div>
 </div>
 <p>For example, here is a link to the <a class="reference internal" href="#inline-markup">Inline Markup</a> section, above.</p>
@@ -245,12 +270,12 @@
 <div class="section" id="lists">
 <h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
 <p>Lists can be started with a <code class="docutils literal"><span class="pre">-</span></code> or <code class="docutils literal"><span class="pre">*</span></code> character:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="m">-</span> This is one item
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">-</span> This is one item
 <span class="m">-</span> This is a second item
 </pre></div>
 </div>
 <p>Numbered lists can start with a number, or they can be autonumbered by starting each item with the # character. Please use the # syntax.</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="m">1.</span> Numbered list item one.(don&#39;t use numbers)
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">1.</span> Numbered list item one.(don&#39;t use numbers)
 <span class="m">2.</span> Numbered list item two.(don&#39;t use numbers)
 
 <span class="m">#.</span> Auto-numbered one.
@@ -261,7 +286,7 @@
 <div class="section" id="source-code">
 <h3>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h3>
 <p>Source code is very commonly included in these articles. Images should never be used to display source code - instead use <code class="docutils literal"><span class="pre">code-block</span></code> or <code class="docutils literal"><span class="pre">literalinclude</span></code>. You can refer to it using the <code class="docutils literal"><span class="pre">code-block</span></code> element, which must be declared precisely as shown, including spaces, blank lines, and indentation:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> c#
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> c#
 
 public void Foo()
 {
@@ -270,7 +295,7 @@ public void Foo()
 </pre></div>
 </div>
 <p>This results in:</p>
-<div class="highlight-c#"><div class="highlight"><pre><span class="k">public</span> <span class="k">void</span> <span class="nf">Foo</span><span class="p">()</span>
+<div class="highlight-c#"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">void</span> <span class="nf">Foo</span><span class="p">()</span>
 <span class="p">{</span>
         <span class="c1">// Foo all the things!</span>
 <span class="p">}</span>
@@ -283,7 +308,7 @@ public void Foo()
 <li><code class="docutils literal"><span class="pre">html</span></code></li>
 </ul>
 <p id="captions">Code blocks also support line numbers and emphasizing or highlighting certain lines:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> c#
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> c#
    <span class="nc">:linenos:</span>
    <span class="nc">:emphasize-lines:</span> <span class="nf">3</span>
 
@@ -297,7 +322,7 @@ public void Foo()
 <div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre>     <span class="k">public</span> <span class="k">void</span> <span class="nf">Foo</span><span class="p">()</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="k">public</span> <span class="k">void</span> <span class="nf">Foo</span><span class="p">()</span>
      <span class="p">{</span>
 <span class="hll">             <span class="c1">// Foo all the things!</span>
 </span>     <span class="p">}</span>
@@ -316,7 +341,7 @@ public void Foo()
 <p class="last">Do not use images for code. Use <code class="docutils literal"><span class="pre">code-block</span></code> or <code class="docutils literal"><span class="pre">literalinclude</span></code> instead.</p>
 </div>
 <p>To include an image in an article, use the <code class="docutils literal"><span class="pre">..</span> <span class="pre">image</span></code> directive:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> style-guide/_static/asp-net.png
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> style-guide/_static/asp-net.png
 </pre></div>
 </div>
 <div class="admonition note">
@@ -330,7 +355,7 @@ public void Foo()
 <div class="section" id="notes">
 <h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
 <p>To add a note callout, like the ones shown in this document, use the <code class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span></code> directive.</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">note</span><span class="p">::</span> This is a note.
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span> This is a note.
 </pre></div>
 </div>
 <p>This results in:</p>
@@ -343,14 +368,14 @@ public void Foo()
 <h3>Including External Source Files<a class="headerlink" href="#including-external-source-files" title="Permalink to this headline">¶</a></h3>
 <p>One nice feature of ReStructuredText is its ability to reference external files. This allows actual sample source files to be referenced from documentation articles, reducing the chances of the documentation content getting out of sync with the actual, working code sample (assuming the code sample works, of course). However, if documentation articles are referencing samples by filename and line number, it is important that the documentation articles be reviewed whenever changes are made to the source code, otherwise these references may be broken or point to the wrong line number. For this reason, it is recommended that samples be specific to individual articles, so that updates to the sample will only affect a single article (at most, an article series could reference a common sample). Samples should therefore be placed in a subfolder named the same as the article file, in a <code class="docutils literal"><span class="pre">sample</span></code> folder (e.g. <code class="docutils literal"><span class="pre">/article-name/sample/</span></code>).</p>
 <p>External file references can specify a language, emphasize certain lines, display line numbers (recommended), similar to <a class="reference internal" href="#source-code">Source Code</a>. Remember that these line number references may need to be updated if the source file is changed.</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> style-guide/_static/startup.cs
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> style-guide/_static/startup.cs
         <span class="nc">:language:</span> <span class="nf">c#</span>
         <span class="nc">:emphasize-lines:</span> <span class="nf">19,25-27</span>
         <span class="nc">:linenos:</span>
 </pre></div>
 </div>
 <p>You can also include just a section of a larger file, if desired:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">     ..</span> <span class="ow">literalinclude</span><span class="p">::</span> style-guide/_static/startup.cs
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">     ..</span> <span class="ow">literalinclude</span><span class="p">::</span> style-guide/_static/startup.cs
              <span class="nc">:language:</span> <span class="nf">c#</span>
 <span class="hll">             <span class="nc">:lines:</span> <span class="nf">1,4,20-</span>
 </span>             <span class="nc">:linenos:</span>
@@ -366,7 +391,7 @@ public void Foo()
 <div class="section" id="ui-navigation">
 <h3>UI navigation<a class="headerlink" href="#ui-navigation" title="Permalink to this headline">¶</a></h3>
 <p>When documenting how a user should navigate a series of menus, use the <code class="docutils literal"><span class="pre">:menuselection:</span></code> directive:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="na">:menuselection:</span><span class="nv">`Windows --&gt; Views --&gt; Other...`</span>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:menuselection:</span><span class="nv">`Windows --&gt; Views --&gt; Other...`</span>
 </pre></div>
 </div>
 <p>This will result in <span class="menuselection">Windows ‣ Views ‣ Other...</span>.</p>
@@ -408,14 +433,13 @@ public void Foo()
 
   <div role="contentinfo">
     <p>
-      Last updated on May 27, 2016.
+      Last updated on Jun 02, 2016.
 
     </p>
   </div>
-  Created by <a href="http://austinvernsonger.com/">austinvernsonger</a> and service provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
 
 </footer>
-
         </div>
       </div>
 

@@ -9,7 +9,6 @@ Departments
 
 .. toctree::
     :hidden:
-
    
     Executive-Department/index
     Educational-Programs/index
