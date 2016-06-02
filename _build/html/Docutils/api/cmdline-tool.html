@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Inside A Docutils Command-Line Front-End Tool &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Inside A Docutils Command-Line Front-End Tool</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="inside-a-docutils-command-line-front-end-tool">
+<h1>Inside A Docutils Command-Line Front-End Tool<a class="headerlink" href="#inside-a-docutils-command-line-front-end-tool" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">David Goodger</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="./publisher.html">The Docutils Publisher</a> class was set up to make building
+command-line tools easy.  All that&#8217;s required is to choose components
+and supply settings for variations.  Let&#8217;s take a look at a typical
+command-line front-end tool, <code class="docutils literal"><span class="pre">tools/rst2html.py</span></code>, from top to
+bottom.</p>
+<p>On Unixish systems, it&#8217;s best to make the file executable (<code class="docutils literal"><span class="pre">chmod</span> <span class="pre">+x</span>
+<span class="pre">file</span></code>), and supply an interpreter on the first line, the &#8220;shebang&#8221; or
+&#8220;hash-bang&#8221; line:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+</pre></div>
+</div>
+<p>Windows systems can be set up to associate the Python interpreter with
+the <code class="docutils literal"><span class="pre">.py</span></code> extension.</p>
+<p>Next are some comments providing metadata:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># $Id$</span>
+<span class="c1"># Author: David Goodger &lt;goodger@python.org&gt;</span>
+<span class="c1"># Copyright: This module has been placed in the public domain.</span>
+</pre></div>
+</div>
+<p>The module docstring describes the purpose of the tool:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">A minimal front end to the Docutils Publisher, producing HTML.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>This next block attempts to invoke locale support for
+internationalization services, specifically text encoding.  It&#8217;s not
+supported on all platforms though, so it&#8217;s forgiving:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">locale</span>
+    <span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>The real work will be done by the code that&#8217;s imported here:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">docutils.core</span> <span class="k">import</span> <span class="n">publish_cmdline</span><span class="p">,</span> <span class="n">default_description</span>
+</pre></div>
+</div>
+<p>We construct a description of the tool, for command-line help:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">description</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Generates (X)HTML documents from standalone &#39;</span>
+               <span class="s1">&#39;reStructuredText sources.  &#39;</span> <span class="o">+</span> <span class="n">default_description</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we call the Publisher convenience function, which takes over.
+Most of its defaults are used (&#8220;standalone&#8221; Reader,
+&#8220;reStructuredText&#8221; Parser, etc.).  The HTML Writer is chosen by name,
+and a description for command-line help is passed in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">publish_cmdline</span><span class="p">(</span><span class="n">writer_name</span><span class="o">=</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>That&#8217;s it!  <a class="reference external" href="./publisher.html">The Docutils Publisher</a> takes care of the rest.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

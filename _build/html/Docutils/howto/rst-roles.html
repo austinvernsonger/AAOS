@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating reStructuredText Interpreted Text Roles &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Creating reStructuredText Interpreted Text Roles</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="creating-restructuredtext-interpreted-text-roles">
+<h1><a class="toc-backref" href="#id1">Creating reStructuredText Interpreted Text Roles</a><a class="headerlink" href="#creating-restructuredtext-interpreted-text-roles" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">David Goodger</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<p>Interpreted text roles are an extension mechanism for inline markup in
+reStructuredText.  This document aims to make the creation of new
+roles as easy and understandable as possible.</p>
+<p>Standard roles are described in <a class="reference external" href="../ref/rst/roles.html">reStructuredText Interpreted Text
+Roles</a>.  See the <a class="reference external" href="../ref/rst/restructuredtext.html#interpreted-text">Interpreted Text</a> section in the <a class="reference external" href="../ref/rst/restructuredtext.html">reStructuredText
+Markup Specification</a> for syntax details.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#creating-restructuredtext-interpreted-text-roles" id="id1">Creating reStructuredText Interpreted Text Roles</a><ul>
+<li><a class="reference internal" href="#define-the-role-function" id="id2">Define the Role Function</a></li>
+<li><a class="reference internal" href="#specify-role-function-options-and-content" id="id3">Specify Role Function Options and Content</a></li>
+<li><a class="reference internal" href="#register-the-role" id="id4">Register the Role</a></li>
+<li><a class="reference internal" href="#examples" id="id5">Examples</a><ul>
+<li><a class="reference internal" href="#generic-roles" id="id6">Generic Roles</a></li>
+<li><a class="reference internal" href="#rfc-reference-role" id="id7">RFC Reference Role</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="define-the-role-function">
+<h2><a class="toc-backref" href="#id2">Define the Role Function</a><a class="headerlink" href="#define-the-role-function" title="Permalink to this headline">¶</a></h2>
+<p>The role function creates and returns inline elements (nodes) and does
+any additional processing required.  Its signature is as follows:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">role_fn</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">rawtext</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">inliner</span><span class="p">,</span>
+            <span class="n">options</span><span class="o">=</span><span class="p">{},</span> <span class="n">content</span><span class="o">=</span><span class="p">[]):</span>
+    <span class="n">code</span><span class="o">...</span>
+
+<span class="c1"># Set function attributes for customization:</span>
+<span class="n">role_fn</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">role_fn</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>Function attributes are described below (see <a class="reference internal" href="#specify-role-function-options-and-content">Specify Role Function
+Options and Content</a>).  The role function parameters are as follows:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">name</span></code>: The local name of the interpreted role, the role name
+actually used in the document.</li>
+<li><code class="docutils literal"><span class="pre">rawtext</span></code>: A string containing the enitre interpreted text input,
+including the role and markup.  Return it as a <code class="docutils literal"><span class="pre">problematic</span></code> node
+linked to a system message if a problem is encountered.</li>
+<li><code class="docutils literal"><span class="pre">text</span></code>: The interpreted text content.</li>
+<li><code class="docutils literal"><span class="pre">lineno</span></code>: The line number where the interpreted text begins.</li>
+<li><code class="docutils literal"><span class="pre">inliner</span></code>: The <code class="docutils literal"><span class="pre">docutils.parsers.rst.states.Inliner</span></code> object that
+called role_fn.  It contains the several attributes useful for error
+reporting and document tree access.</li>
+<li><code class="docutils literal"><span class="pre">options</span></code>: A dictionary of directive options for customization
+(from the <a class="reference external" href="../ref/rst/directives.html#role">&#8220;role&#8221; directive</a>), to be interpreted by the role
+function.  Used for additional attributes for the generated elements
+and other functionality.</li>
+<li><code class="docutils literal"><span class="pre">content</span></code>: A list of strings, the directive content for
+customization (from the <a class="reference external" href="../ref/rst/directives.html#role">&#8220;role&#8221; directive</a>).  To be interpreted by
+the role function.</li>
+</ul>
+<p>Role functions return a tuple of two values:</p>
+<ul class="simple">
+<li>A list of nodes which will be inserted into the document tree at the
+point where the interpreted role was encountered (can be an empty
+list).</li>
+<li>A list of system messages, which will be inserted into the document tree
+immediately after the end of the current block (can also be empty).</li>
+</ul>
+</div>
+<div class="section" id="specify-role-function-options-and-content">
+<h2><a class="toc-backref" href="#id3">Specify Role Function Options and Content</a><a class="headerlink" href="#specify-role-function-options-and-content" title="Permalink to this headline">¶</a></h2>
+<p>Function attributes are for customization, and are interpreted by the
+<a class="reference external" href="../ref/rst/directives.html#role">&#8220;role&#8221; directive</a>.  If unspecified, role function attributes are
+assumed to have the value <code class="docutils literal"><span class="pre">None</span></code>.  Two function attributes are
+recognized:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">options</span></code>: The option specification.  All role functions
+implicitly support the &#8220;class&#8221; option, unless disabled with an
+explicit <code class="docutils literal"><span class="pre">{'class':</span> <span class="pre">None}</span></code>.</p>
+<p>An option specification must be defined detailing the options
+available to the &#8220;role&#8221; directive.  An option spec is a mapping of
+option name to conversion function; conversion functions are applied
+to each option value to check validity and convert them to the
+expected type.  Python&#8217;s built-in conversion functions are often
+usable for this, such as <code class="docutils literal"><span class="pre">int</span></code>, <code class="docutils literal"><span class="pre">float</span></code>, and <code class="docutils literal"><span class="pre">bool</span></code> (included
+in Python from version 2.2.1).  Other useful conversion functions
+are included in the <code class="docutils literal"><span class="pre">docutils.parsers.rst.directives</span></code> package.
+For further details, see <a class="reference external" href="rst-directives.html#specify-directive-arguments-options-and-content">Creating reStructuredText Directives</a>.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">content</span></code>: A boolean; true if &#8220;role&#8221; directive content is allowed.
+Role functions must handle the case where content is required but
+not supplied (an empty content list will be supplied).</p>
+<p>As of this writing, no roles accept directive content.</p>
+</li>
+</ul>
+<p>Note that unlike directives, the &#8220;arguments&#8221; function attribute is not
+supported for role customization.  Directive arguments are handled by
+the &#8220;role&#8221; directive itself.</p>
+</div>
+<div class="section" id="register-the-role">
+<h2><a class="toc-backref" href="#id4">Register the Role</a><a class="headerlink" href="#register-the-role" title="Permalink to this headline">¶</a></h2>
+<p>If the role is a general-use addition to the Docutils core, it must be
+registered with the parser and language mappings added:</p>
+<ol class="arabic">
+<li><p class="first">Register the new role using the canonical name:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">docutils.parsers.rst</span> <span class="k">import</span> <span class="n">roles</span>
+<span class="n">roles</span><span class="o">.</span><span class="n">register_canonical_role</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">role_function</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This code is normally placed immediately after the definition of
+the role funtion.</p>
+</li>
+<li><p class="first">Add an entry to the <code class="docutils literal"><span class="pre">roles</span></code> dictionary in
+<code class="docutils literal"><span class="pre">docutils/parsers/rst/languages/en.py</span></code> for the role, mapping the
+English name to the canonical name (both lowercase).  Usually the
+English name and the canonical name are the same.  Abbreviations
+and other aliases may also be added here.</p>
+</li>
+<li><p class="first">Update all the other language modules as well.  For languages in
+which you are proficient, please add translations.  For other
+languages, add the English role name plus &#8220;(translation required)&#8221;.</p>
+</li>
+</ol>
+<p>If the role is application-specific, use the <code class="docutils literal"><span class="pre">register_local_role</span></code>
+function:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">docutils.parsers.rst</span> <span class="k">import</span> <span class="n">roles</span>
+<span class="n">roles</span><span class="o">.</span><span class="n">register_local_role</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">role_function</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>For the most direct and accurate information, &#8220;Use the Source, Luke!&#8221;.
+All standard roles are documented in <a class="reference external" href="../ref/rst/roles.html">reStructuredText Interpreted
+Text Roles</a>, and the source code implementing them is located in the
+<code class="docutils literal"><span class="pre">docutils/parsers/rst/roles.py</span></code> module.  Several representative
+roles are described below.</p>
+<div class="section" id="generic-roles">
+<h3><a class="toc-backref" href="#id6">Generic Roles</a><a class="headerlink" href="#generic-roles" title="Permalink to this headline">¶</a></h3>
+<p>Many roles simply wrap a given element around the text.  There&#8217;s a
+special helper function, <code class="docutils literal"><span class="pre">register_generic_role</span></code>, which generates a
+role function from the canonical role name and node class:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">register_generic_role</span><span class="p">(</span><span class="s1">&#39;emphasis&#39;</span><span class="p">,</span> <span class="n">nodes</span><span class="o">.</span><span class="n">emphasis</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For the implementation of <code class="docutils literal"><span class="pre">register_generic_role</span></code>, see the
+<code class="docutils literal"><span class="pre">docutils.parsers.rst.roles</span></code> module.</p>
+</div>
+<div class="section" id="rfc-reference-role">
+<h3><a class="toc-backref" href="#id7">RFC Reference Role</a><a class="headerlink" href="#rfc-reference-role" title="Permalink to this headline">¶</a></h3>
+<p>This role allows easy references to <a class="reference external" href="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=rfc&amp;action=Search&amp;sourceid=Mozilla-search">RFCs</a> (Request For Comments
+documents) by automatically providing the base URL,
+<a class="reference external" href="http://www.faqs.org/rfcs/">http://www.faqs.org/rfcs/</a>, and appending the RFC document itself
+(rfcXXXX.html, where XXXX is the RFC number).  For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>See :RFC:`2822` for information about email headers.
+</pre></div>
+</div>
+<p>This is equivalent to:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>See `RFC 2822`__ for information about email headers.
+
+__ http://www.faqs.org/rfcs/rfc2822.html
+</pre></div>
+</div>
+<p>Here is the implementation of the role:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rfc_reference_role</span><span class="p">(</span><span class="n">role</span><span class="p">,</span> <span class="n">rawtext</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">inliner</span><span class="p">,</span>
+                       <span class="n">options</span><span class="o">=</span><span class="p">{},</span> <span class="n">content</span><span class="o">=</span><span class="p">[]):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">rfcnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rfcnum</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">inliner</span><span class="o">.</span><span class="n">reporter</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+            <span class="s1">&#39;RFC number must be a number greater than or equal to 1; &#39;</span>
+            <span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; is invalid.&#39;</span> <span class="o">%</span> <span class="n">text</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="n">lineno</span><span class="p">)</span>
+        <span class="n">prb</span> <span class="o">=</span> <span class="n">inliner</span><span class="o">.</span><span class="n">problematic</span><span class="p">(</span><span class="n">rawtext</span><span class="p">,</span> <span class="n">rawtext</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">prb</span><span class="p">],</span> <span class="p">[</span><span class="n">msg</span><span class="p">]</span>
+    <span class="c1"># Base URL mainly used by inliner.rfc_reference, so this is correct:</span>
+    <span class="n">ref</span> <span class="o">=</span> <span class="n">inliner</span><span class="o">.</span><span class="n">document</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">rfc_base_url</span> <span class="o">+</span> <span class="n">inliner</span><span class="o">.</span><span class="n">rfc_url</span> <span class="o">%</span> <span class="n">rfcnum</span>
+    <span class="n">set_classes</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">.</span><span class="n">reference</span><span class="p">(</span><span class="n">rawtext</span><span class="p">,</span> <span class="s1">&#39;RFC &#39;</span> <span class="o">+</span> <span class="n">utils</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">),</span> <span class="n">refuri</span><span class="o">=</span><span class="n">ref</span><span class="p">,</span>
+                           <span class="o">**</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">node</span><span class="p">],</span> <span class="p">[]</span>
+
+<span class="n">register_canonical_role</span><span class="p">(</span><span class="s1">&#39;rfc-reference&#39;</span><span class="p">,</span> <span class="n">rfc_reference_role</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Noteworthy in the code above are:</p>
+<ol class="arabic simple">
+<li>The interpreted text itself should contain the RFC number.  The
+<code class="docutils literal"><span class="pre">try</span></code> clause verifies by converting it to an integer.  If the
+conversion fails, the <code class="docutils literal"><span class="pre">except</span></code> clause is executed: a system
+message is generated, the entire interpreted text construct (in
+<code class="docutils literal"><span class="pre">rawtext</span></code>) is wrapped in a <code class="docutils literal"><span class="pre">problematic</span></code> node (linked to the
+system message), and the two are returned.</li>
+<li>The RFC reference itself is constructed from a stock URI, set as
+the &#8220;refuri&#8221; attribute of a &#8220;reference&#8221; element.</li>
+<li>The <code class="docutils literal"><span class="pre">options</span></code> function parameter, a dictionary, may contain a
+&#8220;class&#8221; customization attribute; it is interpreted and replaced
+with a &#8220;classes&#8221; attribute by the <code class="docutils literal"><span class="pre">set_classes()</span></code> function.  The
+resulting &#8220;classes&#8221; attribute is passed through to the &#8220;reference&#8221;
+element node constructor.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

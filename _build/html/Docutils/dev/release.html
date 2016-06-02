@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docutils Release Procedure &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Docutils Release Procedure</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docutils-release-procedure">
+<h1><a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> Release Procedure<a class="headerlink" href="#docutils-release-procedure" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">David Goodger; Lea Wiemann; open to all Docutils developers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="assumptions-and-their-failure">
+<h2>Assumptions and their failure<a class="headerlink" href="#assumptions-and-their-failure" title="Permalink to this headline">¶</a></h2>
+<p>On the test machine python2.4, 2.5 2.6 2.7 and 3.2 are installed.
+Some in /usr/ some under /usr/local.</p>
+<dl class="docutils">
+<dt>Assumption: If python2.6 is in /usr/bin/ than site-packages is under</dt>
+<dd>/usr/local/lib/python2.6.</dd>
+</dl>
+<p>On new ubuntu 12.10</p>
+<ul>
+<li><p class="first">python2.7 is here /usr/bin/python2.7.</p>
+</li>
+<li><p class="first">in /usr/lib are python2.7, pymodules and pyshared.</p>
+<p>in /usr/lib/python2.7 no site-packages directory even after installation
+of docutils</p>
+<p>in /usr/local/lib/python2.7 are dist-packages  site-packages.</p>
+<p>site-packages is empty.</p>
+<p>docutils is installed under dist-packages.</p>
+<p>pymodules has a python2.7 directory.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="releasing">
+<h2>Releasing<a class="headerlink" href="#releasing" title="Permalink to this headline">¶</a></h2>
+<p>REWORK FOR SOURCEFORGE REPO</p>
+<p>Steps in boldface text are <em>not</em> covered by the release script at
+sandbox/infrastructure/release.sh.  &#8220;Not covered&#8221; means that you aren&#8217;t even
+reminded of them.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document does not cover branching and tagging, but the
+release script does.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may want to use <a class="reference external" href="http://releaseforge.sourceforge.net/">ReleaseForge</a> instead of using
+SourceForge&#8217;s file release system.</p>
+</div>
+<ul>
+<li><p class="first"><strong>On the Docutils-develop mailing list, announce that the release is
+going to be made, update the release notes and ask for additions.</strong></p>
+<p>Consult HISTORY.TXT for changes.</p>
+</li>
+<li><p class="first"><strong>Announce a check-in freeze on Docutils-develop.</strong></p>
+</li>
+</ul>
+<p>Call <code class="docutils literal"><span class="pre">sandbox/infrastructure/release.sh</span> <span class="pre">new_version</span> <span class="pre">svn_version</span></code>.
+For details see the script.</p>
+<p><code class="docutils literal"><span class="pre">new_version</span></code> is the current version, status will change from <code class="docutils literal"><span class="pre">repository</span></code> to
+<code class="docutils literal"><span class="pre">release</span></code>. <code class="docutils literal"><span class="pre">svn_version</span></code> is the version after release.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><em>BUG</em> test tarball requires root password, but it is possible to skip
+this stage interactively, and testing should be done before release.</p>
+</div>
+<ul>
+<li><p class="first">Change <code class="docutils literal"><span class="pre">__version_details__</span></code> in docutils/docutils/__init__.py to
+&#8220;release&#8221; (from &#8220;repository&#8221;).</p>
+</li>
+<li><p class="first">Check the <span class="target" id="version-number">version number</span> in the following files, should be already
+correct:</p>
+<ul class="simple">
+<li>docutils/setup.py</li>
+<li>docutils/docutils/__init__.py</li>
+<li>docutils/test/functional/expected/* (&#8220;Generator: Docutils X.Y.Z&#8221;)</li>
+<li>docutils/README.txt</li>
+<li>web/index.txt</li>
+</ul>
+</li>
+<li><p class="first">Close the &#8220;Changes Since ...&#8221; section in docutils/HISTORY.txt.</p>
+</li>
+<li><p class="first">Clear/unset the PYTHONPATH environment variable.</p>
+</li>
+<li><p class="first">Create the release tarball:</p>
+<ol class="loweralpha">
+<li><p class="first">Create a new empty directory and <code class="docutils literal"><span class="pre">cd</span></code> into it.</p>
+</li>
+<li><p class="first">Get a clean snapshot of the main tree:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">svn</span> <span class="n">export</span> <span class="n">svn</span><span class="p">:</span><span class="o">//</span><span class="n">svn</span><span class="o">.</span><span class="n">berlios</span><span class="o">.</span><span class="n">de</span><span class="o">/</span><span class="n">docutils</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">docutils</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use Distutils to create the release tarball:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docutils</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Expand and <span class="target" id="install">install</span> the release tarball in isolation:</p>
+<ol class="loweralpha">
+<li><p class="first">Expand the tarball in a new location, not over any existing
+files.</p>
+</li>
+<li><p class="first">Remove the old installation from site-packages (including
+roman.py, and optparse.py, textwrap.py).</p>
+<p>&#8220;remove&#8221; might fail, see <span class="target" id="id1">Assumptions and their failure</span></p>
+<p>Install from expanded directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docutils</span><span class="o">-</span><span class="n">X</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span><span class="n">Z</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>The &#8220;install&#8221; command may require root permissions.</p>
+</li>
+<li><p class="first">Repeat step b) for all supported Python versions.</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Run the <span class="target" id="test-suite">test suite</span> from the expanded archive directory with all
+supported Python versions on all available platforms (GNU/Linux, Mac
+OS X, Windows):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">test</span> <span class="p">;</span> <span class="n">python</span> <span class="o">-</span><span class="n">u</span> <span class="n">alltests</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Add a directory X.Y.Z (where X.Y.Z is the current version number
+of Docutils) in the webroot (i.e. the <code class="docutils literal"><span class="pre">htdocs/</span></code> directory).
+Put all documentation files into it:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docutils</span><span class="o">-</span><span class="n">X</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span><span class="n">Z</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">tools</span><span class="o">/</span>
+<span class="o">./</span><span class="n">buildhtml</span><span class="o">.</span><span class="n">py</span> <span class="o">..</span>
+<span class="n">cd</span> <span class="o">..</span>
+<span class="n">find</span> <span class="o">-</span><span class="n">name</span> <span class="n">test</span> <span class="o">-</span><span class="nb">type</span> <span class="n">d</span> <span class="o">-</span><span class="n">prune</span> <span class="o">-</span><span class="n">o</span> <span class="o">-</span><span class="n">name</span> \<span class="o">*.</span><span class="n">css</span> <span class="o">-</span><span class="n">print0</span> \
+    <span class="o">-</span><span class="n">o</span> <span class="o">-</span><span class="n">name</span> \<span class="o">*.</span><span class="n">html</span> <span class="o">-</span><span class="n">print0</span> <span class="o">-</span><span class="n">o</span> <span class="o">-</span><span class="n">name</span> \<span class="o">*.</span><span class="n">txt</span> <span class="o">-</span><span class="n">print0</span> \
+    <span class="o">|</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cjvf</span> <span class="n">docutils</span><span class="o">-</span><span class="n">docs</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span> <span class="o">-</span><span class="n">T</span> <span class="o">-</span> <span class="o">--</span><span class="n">null</span>
+<span class="n">scp</span> <span class="n">docutils</span><span class="o">-</span><span class="n">docs</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span><span class="nd">@shell</span><span class="o">.</span><span class="n">sourceforge</span><span class="o">.</span><span class="n">net</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Now log in to shell.sourceforge.net and:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">groups</span><span class="o">/</span><span class="n">d</span><span class="o">/</span><span class="n">do</span><span class="o">/</span><span class="n">docutils</span><span class="o">/</span><span class="n">htdocs</span><span class="o">/</span>
+<span class="n">mkdir</span> <span class="o">-</span><span class="n">m</span> <span class="n">g</span><span class="o">+</span><span class="n">rwxs</span> <span class="n">X</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span><span class="n">Z</span>
+<span class="n">cd</span> <span class="n">X</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span><span class="n">Z</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xjvf</span> <span class="o">~/</span><span class="n">docutils</span><span class="o">-</span><span class="n">docs</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span>
+<span class="n">rm</span> <span class="o">~/</span><span class="n">docutils</span><span class="o">-</span><span class="n">docs</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Upload the release tarball, release.sh tries with scp.</p>
+</li>
+<li><p class="first">Access the <span class="target" id="file-release-system">file release system</span> on SourceForge (Admin
+interface).</p>
+<p><code class="docutils literal"><span class="pre">https://sourceforge.net/projects/docutils/files/docutils/</span></code></p>
+<ul class="simple">
+<li>change into the released version&#8217;s directory</li>
+<li>click <code class="docutils literal"><span class="pre">(i)</span></code> button of the tar.gz-file</li>
+<li>select as default download for all operating systems.</li>
+</ul>
+</li>
+<li><p class="first">Submit a notification on project news.</p>
+</li>
+<li><p class="first">For verifying the integrity of the release, download the release
+tarball (you may need to wait up to 30 minutes), <a class="reference internal" href="#install">install</a> it, and
+re-run the <a class="reference internal" href="#test-suite">test suite</a>.</p>
+</li>
+<li><p class="first">Register with PyPI (<code class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">register</span></code>).</p>
+<p>Set the download-url so eggs can access older releases.</p>
+</li>
+<li><p class="first">Restore <code class="docutils literal"><span class="pre">__version_details__</span></code> in docutils/docutils/__init__.py to
+&#8220;repository&#8221; (from &#8220;release&#8221;).</p>
+</li>
+<li><p class="first">Bump the <a class="reference internal" href="#version-number">version number</a> again.</p>
+</li>
+<li><p class="first">Add a new empty section &#8220;Changes Since ...&#8221; in HISTORY.txt.</p>
+</li>
+<li><p class="first">Update the web page (web/index.txt).</p>
+</li>
+<li><p class="first">Run docutils-update on the server.</p>
+</li>
+<li><p class="first"><strong>Run alltests.py with svn version</strong></p>
+</li>
+<li><p class="first"><strong>Send announcement email to:</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a> (also announcing the end of
+the check-in freeze)</li>
+<li><a class="reference external" href="mailto:docutils-users&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-users<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></li>
+<li><a class="reference external" href="mailto:doc-sig&#37;&#52;&#48;python&#46;org">doc-sig<span>&#64;</span>python<span>&#46;</span>org</a></li>
+<li><a class="reference external" href="mailto:python-announce&#37;&#52;&#48;python&#46;org">python-announce<span>&#64;</span>python<span>&#46;</span>org</a></li>
+</ul>
+</li>
+<li><p class="first"><strong>Add a SourceForge News item, with title &#8220;Docutils X.Y.Z released&#8221;
+and containing the release tarball&#8217;s download URL.</strong></p>
+<p><strong>Mark as default download for all platforms.</strong></p>
+</li>
+<li><p class="first"><strong>Register with freecode.</strong> Add a new release for the
+<a class="reference external" href="http://freecode.com/projects/docutils/">Docutils project</a>. (freecode is freshmeat.net&#8217;s new name)</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

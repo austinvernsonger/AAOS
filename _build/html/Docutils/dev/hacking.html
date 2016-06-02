@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docutils Hacker’s Guide &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Docutils Hacker&#8217;s Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docutils-hacker-s-guide">
+<h1><a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> Hacker&#8217;s Guide<a class="headerlink" href="#docutils-hacker-s-guide" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Lea Wiemann</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">This is the introduction to Docutils for all persons who
+want to extend Docutils in some way.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Prerequisites:</th><td class="field-body">You have used <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> and played around with
+the <a class="reference external" href="../user/tools.html">Docutils front-end tools</a> before.  Some (basic) Python
+knowledge is certainly helpful (though not necessary, strictly
+speaking).</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#docutils-hacker-s-guide" id="id1">Docutils Hacker&#8217;s Guide</a><ul>
+<li><a class="reference internal" href="#overview-of-the-docutils-architecture" id="id2">Overview of the Docutils Architecture</a><ul>
+<li><a class="reference internal" href="#reading-the-document" id="id3">Reading the Document</a></li>
+<li><a class="reference internal" href="#parsing-the-document" id="id4">Parsing the Document</a></li>
+<li><a class="reference internal" href="#transforming-the-document" id="id5">Transforming the Document</a></li>
+<li><a class="reference internal" href="#writing-the-document" id="id6">Writing the Document</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#extending-docutils" id="id7">Extending Docutils</a><ul>
+<li><a class="reference internal" href="#modifying-the-document-tree-before-it-is-written" id="id8">Modifying the Document Tree Before It Is Written</a></li>
+<li><a class="reference internal" href="#the-node-interface" id="id9">The Node Interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-now" id="id10">What Now?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="overview-of-the-docutils-architecture">
+<h2><a class="toc-backref" href="#id2">Overview of the Docutils Architecture</a><a class="headerlink" href="#overview-of-the-docutils-architecture" title="Permalink to this headline">¶</a></h2>
+<p>To give you an understanding of the Docutils architecture, we&#8217;ll dive
+right into the internals using a practical example.</p>
+<p>Consider the following reStructuredText file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">My</span> <span class="o">*</span><span class="n">favorite</span><span class="o">*</span> <span class="n">language</span> <span class="ow">is</span> <span class="n">Python_</span><span class="o">.</span>
+
+<span class="o">..</span> <span class="n">_Python</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">python</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Using the <code class="docutils literal"><span class="pre">rst2html.py</span></code> front-end tool, you would get an HTML output
+which looks like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">uninteresting</span> <span class="n">HTML</span> <span class="n">code</span> <span class="n">removed</span><span class="p">]</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;document&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">My</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="n">favorite</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">language</span> <span class="ow">is</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;reference&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;http://www.python.org/&quot;</span><span class="o">&gt;</span><span class="n">Python</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>While this looks very simple, it&#8217;s enough to illustrate all internal
+processing stages of Docutils.  Let&#8217;s see how this document is
+processed from the reStructuredText source to the final HTML output:</p>
+<div class="section" id="reading-the-document">
+<h3><a class="toc-backref" href="#id3">Reading the Document</a><a class="headerlink" href="#reading-the-document" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Reader</strong> reads the document from the source file and passes it
+to the parser (see below).  The default reader is the standalone
+reader (<code class="docutils literal"><span class="pre">docutils/readers/standalone.py</span></code>) which just reads the input
+data from a single text file.  Unless you want to do really fancy
+things, there is no need to change that.</p>
+<p>Since you probably won&#8217;t need to touch readers, we will just move on
+to the next stage:</p>
+</div>
+<div class="section" id="parsing-the-document">
+<h3><a class="toc-backref" href="#id4">Parsing the Document</a><a class="headerlink" href="#parsing-the-document" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Parser</strong> analyzes the the input document and creates a <strong>node
+tree</strong> representation.  In this case we are using the
+<strong>reStructuredText parser</strong> (<code class="docutils literal"><span class="pre">docutils/parsers/rst/__init__.py</span></code>).
+To see what that node tree looks like, we call <code class="docutils literal"><span class="pre">quicktest.py</span></code> (which
+can be found in the <code class="docutils literal"><span class="pre">tools/</span></code> directory of the Docutils distribution)
+with our example file (<code class="docutils literal"><span class="pre">test.txt</span></code>) as first parameter (Windows users
+might need to type <code class="docutils literal"><span class="pre">python</span> <span class="pre">quicktest.py</span> <span class="pre">test.txt</span></code>):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ quicktest.py test.txt
+&lt;document source=&quot;test.txt&quot;&gt;
+    &lt;paragraph&gt;
+        My
+        &lt;emphasis&gt;
+            favorite
+         language is
+        &lt;reference name=&quot;Python&quot; refname=&quot;python&quot;&gt;
+            Python
+        .
+    &lt;target ids=&quot;python&quot; names=&quot;python&quot; refuri=&quot;http://www.python.org/&quot;&gt;
+</pre></div>
+</div>
+<p>Let us now examine the node tree:</p>
+<p>The top-level node is <code class="docutils literal"><span class="pre">document</span></code>.  It has a <code class="docutils literal"><span class="pre">source</span></code> attribute
+whose value is <code class="docutils literal"><span class="pre">text.txt</span></code>.  There are two children: A <code class="docutils literal"><span class="pre">paragraph</span></code>
+node and a <code class="docutils literal"><span class="pre">target</span></code> node.  The <code class="docutils literal"><span class="pre">paragraph</span></code> in turn has children: A
+text node (&#8220;My &#8221;), an <code class="docutils literal"><span class="pre">emphasis</span></code> node, a text node (&#8221; language is &#8221;),
+a <code class="docutils literal"><span class="pre">reference</span></code> node, and again a <code class="docutils literal"><span class="pre">Text</span></code> node (&#8221;.&#8221;).</p>
+<p>These node types (<code class="docutils literal"><span class="pre">document</span></code>, <code class="docutils literal"><span class="pre">paragraph</span></code>, <code class="docutils literal"><span class="pre">emphasis</span></code>, etc.) are
+all defined in <code class="docutils literal"><span class="pre">docutils/nodes.py</span></code>.  The node types are internally
+arranged as a class hierarchy (for example, both <code class="docutils literal"><span class="pre">emphasis</span></code> and
+<code class="docutils literal"><span class="pre">reference</span></code> have the common superclass <code class="docutils literal"><span class="pre">Inline</span></code>).  To get an
+overview of the node class hierarchy, use epydoc (type <code class="docutils literal"><span class="pre">epydoc</span>
+<span class="pre">nodes.py</span></code>) and look at the class hierarchy tree.</p>
+</div>
+<div class="section" id="transforming-the-document">
+<h3><a class="toc-backref" href="#id5">Transforming the Document</a><a class="headerlink" href="#transforming-the-document" title="Permalink to this headline">¶</a></h3>
+<p>In the node tree above, the <code class="docutils literal"><span class="pre">reference</span></code> node does not contain the
+target URI (<code class="docutils literal"><span class="pre">http://www.python.org/</span></code>) yet.</p>
+<p>Assigning the target URI (from the <code class="docutils literal"><span class="pre">target</span></code> node) to the
+<code class="docutils literal"><span class="pre">reference</span></code> node is <em>not</em> done by the parser (the parser only
+translates the input document into a node tree).</p>
+<p>Instead, it&#8217;s done by a <strong>Transform</strong>.  In this case (resolving a
+reference), it&#8217;s done by the <code class="docutils literal"><span class="pre">ExternalTargets</span></code> transform in
+<code class="docutils literal"><span class="pre">docutils/transforms/references.py</span></code>.</p>
+<p>In fact, there are quite a lot of Transforms, which do various useful
+things like creating the table of contents, applying substitution
+references or resolving auto-numbered footnotes.</p>
+<p>The Transforms are applied after parsing.  To see how the node tree
+has changed after applying the Transforms, we use the
+<code class="docutils literal"><span class="pre">rst2pseudoxml.py</span></code> tool:</p>
+<pre class="literal-block">
+$ rst2pseudoxml.py test.txt
+&lt;document source=&quot;test.txt&quot;&gt;
+    &lt;paragraph&gt;
+        My
+        &lt;emphasis&gt;
+            favorite
+         language is
+        &lt;reference name=&quot;Python&quot; <strong>refuri=&quot;http://www.python.org/&quot;</strong>&gt;
+            Python
+        .
+    &lt;target ids=&quot;python&quot; names=&quot;python&quot; <code class="docutils literal"><span class="pre">refuri=&quot;http://www.python.org/&quot;</span></code>&gt;
+</pre>
+<p>For our small test document, the only change is that the <code class="docutils literal"><span class="pre">refname</span></code>
+attribute of the reference has been replaced by a <code class="docutils literal"><span class="pre">refuri</span></code>
+attribute—the reference has been resolved.</p>
+<p>While this does not look very exciting, transforms are a powerful tool
+to apply any kind of transformation on the node tree.</p>
+<p>By the way, you can also get a &#8220;real&#8221; XML representation of the node
+tree by using <code class="docutils literal"><span class="pre">rst2xml.py</span></code> instead of <code class="docutils literal"><span class="pre">rst2pseudoxml.py</span></code>.</p>
+</div>
+<div class="section" id="writing-the-document">
+<h3><a class="toc-backref" href="#id6">Writing the Document</a><a class="headerlink" href="#writing-the-document" title="Permalink to this headline">¶</a></h3>
+<p>To get an HTML document out of the node tree, we use a <strong>Writer</strong>, the
+HTML writer in this case (<code class="docutils literal"><span class="pre">docutils/writers/html4css1.py</span></code>).</p>
+<p>The writer receives the node tree and returns the output document.
+For HTML output, we can test this using the <code class="docutils literal"><span class="pre">rst2html.py</span></code> tool:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ rst2html.py --link-stylesheet test.txt
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Docutils 0.3.10: http://docutils.sourceforge.net/&quot; /&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../docutils/writers/html4css1/html4css1.css&quot; type=&quot;text/css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;document&quot;&gt;
+&lt;p&gt;My &lt;em&gt;favorite&lt;/em&gt; language is &lt;a class=&quot;reference&quot; href=&quot;http://www.python.org/&quot;&gt;Python&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+</div>
+<p>So here we finally have our HTML output.  The actual document contents
+are in the fourth-last line.  Note, by the way, that the HTML writer
+did not render the (invisible) <code class="docutils literal"><span class="pre">target</span></code> node—only the
+<code class="docutils literal"><span class="pre">paragraph</span></code> node and its children appear in the HTML output.</p>
+</div>
+</div>
+<div class="section" id="extending-docutils">
+<h2><a class="toc-backref" href="#id7">Extending Docutils</a><a class="headerlink" href="#extending-docutils" title="Permalink to this headline">¶</a></h2>
+<p>Now you&#8217;ll ask, &#8220;how do I actually extend Docutils?&#8221;</p>
+<p>First of all, once you are clear about <em>what</em> you want to achieve, you
+have to decide <em>where</em> to implement it—in the Parser (e.g. by
+adding a directive or role to the reStructuredText parser), as a
+Transform, or in the Writer.  There is often one obvious choice among
+those three (Parser, Transform, Writer).  If you are unsure, ask on
+the <a class="reference external" href="../user/mailing-lists.html#docutils-develop">Docutils-develop</a> mailing list.</p>
+<p>In order to find out how to start, it is often helpful to look at
+similar features which are already implemented.  For example, if you
+want to add a new directive to the reStructuredText parser, look at
+the implementation of a similar directive in
+<code class="docutils literal"><span class="pre">docutils/parsers/rst/directives/</span></code>.</p>
+<div class="section" id="modifying-the-document-tree-before-it-is-written">
+<h3><a class="toc-backref" href="#id8">Modifying the Document Tree Before It Is Written</a><a class="headerlink" href="#modifying-the-document-tree-before-it-is-written" title="Permalink to this headline">¶</a></h3>
+<p>You can modify the document tree right before the writer is called.
+One possibility is to use the <a class="reference external" href="../api/publisher.html#publish_doctree">publish_doctree</a> and
+<a class="reference external" href="../api/publisher.html#publish_from_doctree">publish_from_doctree</a> functions.</p>
+<p>To retrieve the document tree, call:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">document</span> <span class="o">=</span> <span class="n">docutils</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">publish_doctree</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Please see the docstring of publish_doctree for a list of parameters.</p>
+<p><code class="docutils literal"><span class="pre">document</span></code> is the root node of the document tree.  You can now
+change the document by accessing the <code class="docutils literal"><span class="pre">document</span></code> node and its
+children—see <a class="reference internal" href="#the-node-interface">The Node Interface</a> below.</p>
+<p>When you&#8217;re done with modifying the document tree, you can write it
+out by calling:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="n">docutils</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">publish_from_doctree</span><span class="p">(</span><span class="n">document</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-node-interface">
+<h3><a class="toc-backref" href="#id9">The Node Interface</a><a class="headerlink" href="#the-node-interface" title="Permalink to this headline">¶</a></h3>
+<p>As described in the overview above, Docutils&#8217; internal representation
+of a document is a tree of nodes.  We&#8217;ll now have a look at the
+interface of these nodes.</p>
+<p>(To be completed.)</p>
+</div>
+</div>
+<div class="section" id="what-now">
+<h2><a class="toc-backref" href="#id10">What Now?</a><a class="headerlink" href="#what-now" title="Permalink to this headline">¶</a></h2>
+<p>This document is not complete.  Many topics could (and should) be
+covered here.  To find out with which topics we should write about
+first, we are awaiting <em>your</em> feedback.  So please ask your questions
+on the <a class="reference external" href="../user/mailing-lists.html#docutils-develop">Docutils-develop</a> mailing list.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

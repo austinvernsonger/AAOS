@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Docutils Publisher &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>The Docutils Publisher</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-docutils-publisher">
+<h1><a class="toc-backref" href="#id2">The Docutils Publisher</a><a class="headerlink" href="#the-docutils-publisher" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">David Goodger</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#the-docutils-publisher" id="id2">The Docutils Publisher</a><ul>
+<li><a class="reference internal" href="#publisher-convenience-functions" id="id3">Publisher Convenience Functions</a><ul>
+<li><a class="reference internal" href="#configuration" id="id4">Configuration</a></li>
+<li><a class="reference internal" href="#encodings" id="id5">Encodings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#publish-parts-details" id="id6"><code class="docutils literal"><span class="pre">publish_parts</span></code> Details</a><ul>
+<li><a class="reference internal" href="#parts-provided-by-all-writers" id="id7">Parts Provided By All Writers</a></li>
+<li><a class="reference internal" href="#parts-provided-by-the-html-writer" id="id8">Parts Provided By the HTML Writer</a><ul>
+<li><a class="reference internal" href="#parts-provided-by-the-pep-html-writer" id="id9">Parts Provided by the PEP/HTML Writer</a></li>
+<li><a class="reference internal" href="#parts-provided-by-the-s5-html-writer" id="id10">Parts Provided by the S5/HTML Writer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parts-provided-by-the-latex2e-writer" id="id11">Parts Provided by the LaTeX2e Writer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The <code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> class is the core of Docutils,
+managing all the processing and relationships between components.  See
+<a class="reference external" href="../peps/pep-0258.html">PEP 258</a> for an overview of Docutils components.</p>
+<p>The <code class="docutils literal"><span class="pre">docutils.core.publish_*</span></code> convenience functions are the normal
+entry points for using Docutils as a library.</p>
+<p>See <a class="reference external" href="./cmdline-tool.html">Inside A Docutils Command-Line Front-End Tool</a> for an overview
+of a typical Docutils front-end tool, including how the Publisher
+class is used.</p>
+<div class="section" id="publisher-convenience-functions">
+<h2><a class="toc-backref" href="#id3">Publisher Convenience Functions</a><a class="headerlink" href="#publisher-convenience-functions" title="Permalink to this headline">¶</a></h2>
+<p>Each of these functions set up a <code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object,
+then call its <code class="docutils literal"><span class="pre">publish</span></code> method.  <code class="docutils literal"><span class="pre">docutils.core.Publisher.publish</span></code>
+handles everything else.  There are several convenience functions in
+the <code class="docutils literal"><span class="pre">docutils.core</span></code> module:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2"><span class="target" id="publish-cmdline">publish_cmdline</span>:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">for command-line front-end tools, like
+<code class="docutils literal"><span class="pre">rst2html.py</span></code>.  There are several examples in the <code class="docutils literal"><span class="pre">tools/</span></code>
+directory.  A detailed analysis of one such tool is in <a class="reference external" href="./cmdline-tool.html">Inside A
+Docutils Command-Line Front-End Tool</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><span class="target" id="publish-file">publish_file</span>:</th><td class="field-body"><p class="first">for programmatic use with file-like I/O.  In
+addition to writing the encoded output to a file, also returns the
+encoded output as a string.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><span class="target" id="publish-string">publish_string</span>:</th><td class="field-body"><p class="first">for programmatic use with string I/O.  Returns
+the encoded output as a string.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><span class="target" id="publish-parts">publish_parts</span>:</th><td class="field-body"><p class="first">for programmatic use with string input; returns a
+dictionary of document parts.  Dictionary keys are the names of
+parts, and values are Unicode strings; encoding is up to the client.
+Useful when only portions of the processed document are desired.
+See <a class="reference internal" href="#publish-parts-details">publish_parts Details</a> below.</p>
+<p>There are usage examples in the <a class="reference external" href="../../docutils/examples.py">docutils/examples.py</a> module.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2"><span class="target" id="publish-doctree">publish_doctree</span>:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">for programmatic use with string input; returns a
+Docutils document tree data structure (doctree).  The doctree can be
+modified, pickled &amp; unpickled, etc., and then reprocessed with
+<a class="reference internal" href="#publish-from-doctree">publish_from_doctree</a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2"><span class="target" id="publish-from-doctree">publish_from_doctree</span>:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><p class="first">for programmatic use to render from an
+existing document tree data structure (doctree); returns the encoded
+output as a string.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2"><span class="target" id="publish-programmatically">publish_programmatically</span>:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first last">for custom programmatic use.  This
+function implements common code and is used by <code class="docutils literal"><span class="pre">publish_file</span></code>,
+<code class="docutils literal"><span class="pre">publish_string</span></code>, and <code class="docutils literal"><span class="pre">publish_parts</span></code>.  It returns a 2-tuple:
+the encoded string output and the Publisher object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="configuration">
+<h3><a class="toc-backref" href="#id4">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>To pass application-specific setting defaults to the Publisher
+convenience functions, use the <code class="docutils literal"><span class="pre">settings_overrides</span></code> parameter.  Pass
+a dictionary of setting names &amp; values, like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">overrides</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;input_encoding&#39;</span><span class="p">:</span> <span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;output_encoding&#39;</span><span class="p">:</span> <span class="s1">&#39;latin-1&#39;</span><span class="p">}</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">publish_string</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">settings_overrides</span><span class="o">=</span><span class="n">overrides</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Settings from command-line options override configuration file
+settings, and they override application defaults.  For details, see
+<a class="reference external" href="./runtime-settings.html">Docutils Runtime Settings</a>.  See <a class="reference external" href="../user/tools.html">Docutils Configuration Files</a> for
+details about individual settings.</p>
+</div>
+<div class="section" id="encodings">
+<h3><a class="toc-backref" href="#id5">Encodings</a><a class="headerlink" href="#encodings" title="Permalink to this headline">¶</a></h3>
+<p>The default output encoding of Docutils is UTF-8.  If you have any
+non-ASCII in your input text, you may have to do a bit more setup.
+Docutils may introduce some non-ASCII text if you use
+<a class="reference external" href="../ref/rst/restructuredtext.html#auto-symbol-footnotes">auto-symbol footnotes</a> or the <a class="reference external" href="../ref/rst/directives.html#table-of-contents">&#8220;contents&#8221; directive</a>.</p>
+</div>
+</div>
+<div class="section" id="publish-parts-details">
+<h2><a class="toc-backref" href="#id6"><code class="docutils literal"><span class="pre">publish_parts</span></code> Details</a><a class="headerlink" href="#publish-parts-details" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">docutils.core.publish_parts</span></code> convenience function returns a
+dictionary of document parts.  Dictionary keys are the names of parts,
+and values are Unicode strings.</p>
+<p>Each Writer component may publish a different set of document parts,
+described below.  Not all writers implement all parts.</p>
+<div class="section" id="parts-provided-by-all-writers">
+<h3><a class="toc-backref" href="#id7">Parts Provided By All Writers</a><a class="headerlink" href="#parts-provided-by-all-writers" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><span class="target" id="encoding">encoding</span></dt>
+<dd>The output encoding setting.</dd>
+<dt><span class="target" id="version">version</span></dt>
+<dd>The version of Docutils used.</dd>
+<dt><span class="target" id="whole">whole</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['whole']</span></code> contains the entire formatted document.</dd>
+</dl>
+</div>
+<div class="section" id="parts-provided-by-the-html-writer">
+<span id="html-writer"></span><h3><a class="toc-backref" href="#id8">Parts Provided By the HTML Writer</a><a class="headerlink" href="#parts-provided-by-the-html-writer" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><span class="target" id="body">body</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['body']</span></code> is equivalent to parts[&#8216;<a class="reference internal" href="#fragment">fragment</a>&#8216;].  It is
+<em>not</em> equivalent to parts[&#8216;<a class="reference internal" href="#html-body">html_body</a>&#8216;].</dd>
+<dt><span class="target" id="body-prefix">body_prefix</span></dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['body_prefix']</span></code> contains:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;document&quot;</span> <span class="o">...&gt;</span>
+</pre></div>
+</div>
+<p>and, if applicable:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;header&quot;</span><span class="o">&gt;</span>
+<span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</dd>
+<dt><span class="target" id="body-pre-docinfo">body_pre_docinfo</span></dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['body_pre_docinfo]</span></code> contains (as applicable):</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">h1</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;title&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">h2</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;subtitle&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</dd>
+<dt><span class="target" id="body-suffix">body_suffix</span></dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['body_suffix']</span></code> contains:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>(the end-tag for <code class="docutils literal"><span class="pre">&lt;div</span> <span class="pre">class=&quot;document&quot;&gt;</span></code>), the footer division
+if applicable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;footer&quot;</span><span class="o">&gt;</span>
+<span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>and:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</dd>
+<dt><span class="target" id="docinfo">docinfo</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['docinfo']</span></code> contains the document bibliographic data, the
+docinfo field list rendered as a table.</dd>
+<dt><span class="target" id="footer">footer</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['footer']</span></code> contains the document footer content, meant to
+appear at the bottom of a web page, or repeated at the bottom of
+every printed page.</dd>
+<dt><span class="target" id="fragment">fragment</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['fragment']</span></code> contains the document body (<em>not</em> the HTML
+<code class="docutils literal"><span class="pre">&lt;body&gt;</span></code>).  In other words, it contains the entire document,
+less the document title, subtitle, docinfo, header, and footer.</dd>
+<dt><span class="target" id="head">head</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['head']</span></code> contains <code class="docutils literal"><span class="pre">&lt;meta</span> <span class="pre">...</span> <span class="pre">/&gt;</span></code> tags and the document
+<code class="docutils literal"><span class="pre">&lt;title&gt;...&lt;/title&gt;</span></code>.</dd>
+<dt><span class="target" id="head-prefix">head_prefix</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['head_prefix']</span></code> contains the XML declaration, the DOCTYPE
+declaration, the <code class="docutils literal"><span class="pre">&lt;html</span> <span class="pre">...&gt;</span></code> start tag and the <code class="docutils literal"><span class="pre">&lt;head&gt;</span></code> start
+tag.</dd>
+<dt><span class="target" id="header">header</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['header']</span></code> contains the document header content, meant to
+appear at the top of a web page, or repeated at the top of every
+printed page.</dd>
+<dt><span class="target" id="html-body">html_body</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['html_body']</span></code> contains the HTML <code class="docutils literal"><span class="pre">&lt;body&gt;</span></code> content, less
+the <code class="docutils literal"><span class="pre">&lt;body&gt;</span></code> and <code class="docutils literal"><span class="pre">&lt;/body&gt;</span></code> tags themselves.</dd>
+<dt><span class="target" id="html-head">html_head</span></dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['html_head']</span></code> contains the HTML <code class="docutils literal"><span class="pre">&lt;head&gt;</span></code> content, less
+the stylesheet link and the <code class="docutils literal"><span class="pre">&lt;head&gt;</span></code> and <code class="docutils literal"><span class="pre">&lt;/head&gt;</span></code> tags
+themselves.  Since <code class="docutils literal"><span class="pre">publish_parts</span></code> returns Unicode strings and
+does not know about the output encoding, the &#8220;Content-Type&#8221; meta
+tag&#8217;s &#8220;charset&#8221; value is left unresolved, as &#8220;%s&#8221;:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">meta</span> <span class="n">http</span><span class="o">-</span><span class="n">equiv</span><span class="o">=</span><span class="s2">&quot;Content-Type&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;text/html; charset=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">/&gt;</span>
+</pre></div>
+</div>
+<p class="last">The interpolation should be done by client code.</p>
+</dd>
+<dt><span class="target" id="html-prolog">html_prolog</span></dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['html_prolog]</span></code> contains the XML declaration and the
+doctype declaration.  The XML declaration&#8217;s &#8220;encoding&#8221; attribute&#8217;s
+value is left unresolved, as &#8220;%s&#8221;:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;%s&quot; ?&gt;
+</pre></div>
+</div>
+<p class="last">The interpolation should be done by client code.</p>
+</dd>
+<dt><span class="target" id="html-subtitle">html_subtitle</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['html_subtitle']</span></code> contains the document subtitle,
+including the enclosing <code class="docutils literal"><span class="pre">&lt;h2</span> <span class="pre">class=&quot;subtitle&quot;&gt;</span></code> &amp; <code class="docutils literal"><span class="pre">&lt;/h2&gt;</span></code>
+tags.</dd>
+<dt><span class="target" id="html-title">html_title</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['html_title']</span></code> contains the document title, including the
+enclosing <code class="docutils literal"><span class="pre">&lt;h1</span> <span class="pre">class=&quot;title&quot;&gt;</span></code> &amp; <code class="docutils literal"><span class="pre">&lt;/h1&gt;</span></code> tags.</dd>
+<dt><span class="target" id="meta">meta</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['meta']</span></code> contains all <code class="docutils literal"><span class="pre">&lt;meta</span> <span class="pre">...</span> <span class="pre">/&gt;</span></code> tags.</dd>
+<dt><span class="target" id="stylesheet">stylesheet</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['stylesheet']</span></code> contains the embedded stylesheet or
+stylesheet link.</dd>
+<dt><span class="target" id="subtitle">subtitle</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['subtitle']</span></code> contains the document subtitle text and any
+inline markup.  It does not include the enclosing <code class="docutils literal"><span class="pre">&lt;h2&gt;</span></code> &amp;
+<code class="docutils literal"><span class="pre">&lt;/h2&gt;</span></code> tags.</dd>
+<dt><span class="target" id="title">title</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['title']</span></code> contains the document title text and any inline
+markup.  It does not include the enclosing <code class="docutils literal"><span class="pre">&lt;h1&gt;</span></code> &amp; <code class="docutils literal"><span class="pre">&lt;/h1&gt;</span></code>
+tags.</dd>
+</dl>
+<div class="section" id="parts-provided-by-the-pep-html-writer">
+<h4><a class="toc-backref" href="#id9">Parts Provided by the PEP/HTML Writer</a><a class="headerlink" href="#parts-provided-by-the-pep-html-writer" title="Permalink to this headline">¶</a></h4>
+<p>The PEP/HTML writer provides the same parts as the <a class="reference internal" href="#html-writer">HTML writer</a>,
+plus the following:</p>
+<dl class="docutils">
+<dt><span class="target" id="pepnum">pepnum</span></dt>
+<dd><code class="docutils literal"><span class="pre">parts['pepnum']</span></code> contains</dd>
+</dl>
+</div>
+<div class="section" id="parts-provided-by-the-s5-html-writer">
+<h4><a class="toc-backref" href="#id10">Parts Provided by the S5/HTML Writer</a><a class="headerlink" href="#parts-provided-by-the-s5-html-writer" title="Permalink to this headline">¶</a></h4>
+<p>The S5/HTML writer provides the same parts as the <a class="reference internal" href="#html-writer">HTML writer</a>.</p>
+</div>
+</div>
+<div class="section" id="parts-provided-by-the-latex2e-writer">
+<h3><a class="toc-backref" href="#id11">Parts Provided by the LaTeX2e Writer</a><a class="headerlink" href="#parts-provided-by-the-latex2e-writer" title="Permalink to this headline">¶</a></h3>
+<p>See the template files for examples how these parts can be combined
+into a valid LaTeX document.</p>
+<dl class="docutils">
+<dt>abstract</dt>
+<dd><code class="docutils literal"><span class="pre">parts['abstract']</span></code> contains the formatted content of the
+&#8216;abstract&#8217; docinfo field.</dd>
+<dt>body</dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['body']</span></code> contains the document&#8217;s content. In other words, it
+contains the entire document, except the document title, subtitle, and
+docinfo.</p>
+<p class="last">This part can be included into another LaTeX document body using the
+<code class="docutils literal"><span class="pre">\input{}</span></code> command.</p>
+</dd>
+<dt>body_pre_docinfo</dt>
+<dd><code class="docutils literal"><span class="pre">parts['body_pre_docinfo]</span></code> contains the <code class="docutils literal"><span class="pre">\maketitle</span></code> command.</dd>
+<dt>dedication</dt>
+<dd><code class="docutils literal"><span class="pre">parts['dedication']</span></code> contains the formatted content of the
+&#8216;dedication&#8217; docinfo field.</dd>
+<dt>docinfo</dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['docinfo']</span></code> contains the document bibliographic data, the
+docinfo field list rendered as a table.</p>
+<p>With <code class="docutils literal"><span class="pre">--use-latex-docinfo</span></code> &#8216;author&#8217;, &#8216;organization&#8217;, &#8216;contact&#8217;,
+&#8216;address&#8217; and &#8216;date&#8217; info is moved to titledata.</p>
+<p class="last">&#8216;dedication&#8217; and &#8216;abstract&#8217; are always moved to separate parts.</p>
+</dd>
+<dt>fallbacks</dt>
+<dd><code class="docutils literal"><span class="pre">parts['fallbacks']</span></code> contains fallback definitions for
+Docutils-specific commands and environments.</dd>
+<dt>head_prefix</dt>
+<dd><code class="docutils literal"><span class="pre">parts['head_prefix']</span></code> contains the declaration of
+documentclass and document options.</dd>
+<dt>latex_preamble</dt>
+<dd><code class="docutils literal"><span class="pre">parts['latex_preamble']</span></code> contains the argument of the
+<code class="docutils literal"><span class="pre">--latex-preamble</span></code> option.</dd>
+<dt>pdfsetup</dt>
+<dd><code class="docutils literal"><span class="pre">parts['pdfsetup']</span></code> contains the PDF properties
+(&#8220;hyperref&#8221; package setup).</dd>
+<dt>requirements</dt>
+<dd><code class="docutils literal"><span class="pre">parts['requirements']</span></code> contains required packages and setup
+before the stylesheet inclusion.</dd>
+<dt>stylesheet</dt>
+<dd><code class="docutils literal"><span class="pre">parts['stylesheet']</span></code> contains the embedded stylesheet(s) or
+stylesheet loading command(s).</dd>
+<dt>subtitle</dt>
+<dd><code class="docutils literal"><span class="pre">parts['subtitle']</span></code> contains the document subtitle text and any
+inline markup.</dd>
+<dt>title</dt>
+<dd><code class="docutils literal"><span class="pre">parts['title']</span></code> contains the document title text and any inline
+markup.</dd>
+<dt>titledata</dt>
+<dd><p class="first"><code class="docutils literal"><span class="pre">parts['titledata]</span></code> contains the combined title data in
+<code class="docutils literal"><span class="pre">\title</span></code>, <code class="docutils literal"><span class="pre">\author</span></code>, and <code class="docutils literal"><span class="pre">\data</span></code> macros.</p>
+<p class="last">With <code class="docutils literal"><span class="pre">--use-latex-docinfo</span></code>, this includes the &#8216;author&#8217;,
+&#8216;organization&#8217;, &#8216;contact&#8217;, &#8216;address&#8217; and &#8216;date&#8217; docinfo items.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

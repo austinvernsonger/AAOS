@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docutils Runtime Settings &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Docutils Runtime Settings</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docutils-runtime-settings">
+<h1><a class="toc-backref" href="#id1">Docutils Runtime Settings</a><a class="headerlink" href="#docutils-runtime-settings" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">David Goodger</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#docutils-runtime-settings" id="id1">Docutils Runtime Settings</a><ul>
+<li><a class="reference internal" href="#introduction" id="id2">Introduction</a></li>
+<li><a class="reference internal" href="#runtime-settings-processing-for-command-line-tools" id="id3">Runtime Settings Processing for Command-Line Tools</a></li>
+<li><a class="reference internal" href="#runtime-settings-processing-from-applications" id="id4">Runtime Settings Processing From Applications</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Docutils runtime settings are assembled from several sources:
+component settings specifications, application settings
+specifications, configuration files, and command-line options.
+Docutils overlays default and explicitly specified values from these
+sources such that settings behave the way we want and expect them to
+behave.</p>
+<p>To understand how Docutils deals with runtime settings, the attributes
+and parameters involved must first be understood.  Begin with the the
+docstrings of the attributes of the <code class="docutils literal"><span class="pre">docutils.SettingsSpec</span></code> base
+class (in the <code class="docutils literal"><span class="pre">docutils/__init__.py</span></code> module):</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">settings_spec</span></code></li>
+<li><code class="docutils literal"><span class="pre">settings_defaults</span></code></li>
+<li><code class="docutils literal"><span class="pre">settings_default_overrides</span></code></li>
+<li><code class="docutils literal"><span class="pre">relative_path_settings</span></code></li>
+<li><code class="docutils literal"><span class="pre">config_section</span></code></li>
+<li><code class="docutils literal"><span class="pre">config_section_dependencies</span></code></li>
+</ul>
+<p>Next, several <span class="target" id="convenience-function-parameters">convenience function parameters</span> are also significant
+(described in the <code class="docutils literal"><span class="pre">docutils.core.publish_programmatically</span></code> function
+docstring):</p>
+<ul class="simple">
+<li>The <code class="docutils literal"><span class="pre">settings</span></code> parameter is a runtime settings
+(<code class="docutils literal"><span class="pre">docutils.frontend.Values</span></code>) object which, if present, is assumed
+to be complete (it must include all runtime settings).  Also, if the
+<code class="docutils literal"><span class="pre">settings</span></code> parameter is present, no further runtime settings
+processing is done.  In other words, the other parameters, described
+below, will have no effect.</li>
+<li><code class="docutils literal"><span class="pre">settings_spec</span></code>, a <cite>docutils.SettingsSpec</cite> subclass or object, is
+treated like a fourth component (after the Parser, Reader, and
+Writer).  In other words, it&#8217;s the settings specification for the
+&#8220;Application&#8221; itself.</li>
+<li><code class="docutils literal"><span class="pre">settings_overrides</span></code> is a dictionary which will override the
+defaults of the components (from their settings specs).</li>
+<li><code class="docutils literal"><span class="pre">config_section</span></code> specifies the name of an application-specific
+configuration file section.</li>
+</ul>
+</div>
+<div class="section" id="runtime-settings-processing-for-command-line-tools">
+<span id="command-line-tools"></span><h2><a class="toc-backref" href="#id3">Runtime Settings Processing for Command-Line Tools</a><a class="headerlink" href="#runtime-settings-processing-for-command-line-tools" title="Permalink to this headline">¶</a></h2>
+<p>Following along with the actual code is recommended.  The
+<code class="docutils literal"><span class="pre">docutils/__init__.py</span></code>, <code class="docutils literal"><span class="pre">docutils/core.py</span></code>, and
+<code class="docutils literal"><span class="pre">docutils.frontend.py</span></code> modules are described.</p>
+<ol class="arabic">
+<li><p class="first">A command-line front-end tool imports and calls
+<code class="docutils literal"><span class="pre">docutils.core.publish_cmdline</span></code>.  The relevant <a class="reference internal" href="#convenience-function-parameters">convenience
+function parameters</a> are described above.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">docutils.core.publish_cmdline</span></code> initializes a
+<code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object, then calls its <code class="docutils literal"><span class="pre">publish</span></code>
+method.</p>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object&#8217;s <code class="docutils literal"><span class="pre">publish</span></code> method checks
+its <code class="docutils literal"><span class="pre">settings</span></code> attribute to see if it&#8217;s defined.  If it is, no
+further runtime settings processing is done.</p>
+<p>If <code class="docutils literal"><span class="pre">settings</span></code> is not defined, <code class="docutils literal"><span class="pre">self.process_command_line</span></code> is
+called with the following relevant arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">settings_spec</span></code></li>
+<li><code class="docutils literal"><span class="pre">config_section</span></code></li>
+<li><code class="docutils literal"><span class="pre">settings_overrides</span></code> (in the form of excess keyword
+arguments, collected in the <code class="docutils literal"><span class="pre">defaults</span></code> parameter)</li>
+</ul>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">self.process_command_line</span></code> calls <code class="docutils literal"><span class="pre">self.setup_option_parser</span></code>,
+passing <code class="docutils literal"><span class="pre">settings_spec</span></code>, <code class="docutils literal"><span class="pre">config_section</span></code>, and <code class="docutils literal"><span class="pre">defaults</span></code>.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">self.setup_option_parser</span></code> checks its <code class="docutils literal"><span class="pre">config_section</span></code>
+parameter; if defined, it adds that config file section to
+<code class="docutils literal"><span class="pre">settings_spec</span></code> (or to a new, empty <code class="docutils literal"><span class="pre">docutils.SettingsSpec</span></code>
+object), replacing anything defined earlier.  (See <a class="reference external" href="../user/config.html">Docutils
+Configuration Files</a> for details.)  Then it instantiates a new
+<code class="docutils literal"><span class="pre">docutils.frontend.OptionParser</span></code> object, passing the following
+relevant arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">components</span></code>: A tuple of <code class="docutils literal"><span class="pre">docutils.SettingsSpec</span></code> objects,
+<code class="docutils literal"><span class="pre">(self.parser,</span> <span class="pre">self.reader,</span> <span class="pre">self.writer,</span> <span class="pre">settings_spec)</span></code></li>
+<li><code class="docutils literal"><span class="pre">defaults</span></code> (originally from <code class="docutils literal"><span class="pre">settings_overrides</span></code>)</li>
+</ul>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">docutils.frontend.OptionParser</span></code> object&#8217;s <code class="docutils literal"><span class="pre">__init__</span></code> method
+calls <code class="docutils literal"><span class="pre">self.populate_from_components</span></code> with <code class="docutils literal"><span class="pre">self.components</span></code>,
+which consists of <code class="docutils literal"><span class="pre">self</span></code> prepended to the <code class="docutils literal"><span class="pre">components</span></code> tuple it
+received.  <code class="docutils literal"><span class="pre">self</span></code> (<code class="docutils literal"><span class="pre">docutils.frontend.OptionParser</span></code>) defines
+general Docutils settings.</p>
+</li>
+<li><p class="first">In <code class="docutils literal"><span class="pre">self.populate_from_components</span></code>, for each component passed,
+<code class="docutils literal"><span class="pre">component.settings_spec</span></code> is processed and
+<code class="docutils literal"><span class="pre">component.settings_defaults</span></code> is applied.  Then, for each
+component, <code class="docutils literal"><span class="pre">component.settings_default_overrides</span></code> is applied.
+This two-loop process ensures that
+<code class="docutils literal"><span class="pre">component.settings_default_overrides</span></code> can override the default
+settings of any other component.</p>
+</li>
+<li><p class="first">Back in <code class="docutils literal"><span class="pre">docutils.frontend.OptionParser.__init__</span></code>, the
+<code class="docutils literal"><span class="pre">defaults</span></code> parameter (derived from the <code class="docutils literal"><span class="pre">settings_overrides</span></code>
+parameter of <code class="docutils literal"><span class="pre">docutils.core.Publisher.publish</span></code>) is overlaid over
+<code class="docutils literal"><span class="pre">self.defaults</span></code>.  So <code class="docutils literal"><span class="pre">settings_overrides</span></code> has priority over all
+<code class="docutils literal"><span class="pre">SettingsSpec</span></code> data.</p>
+</li>
+<li><p class="first">Next, <code class="docutils literal"><span class="pre">docutils.frontend.OptionParser.__init__</span></code> checks if
+configuration files are enabled (its <code class="docutils literal"><span class="pre">read_config_files</span></code>
+parameter is true, and <code class="docutils literal"><span class="pre">self.defaults['_disable_config']</span></code> is
+false).  If they are enabled (and normally, they are),
+<code class="docutils literal"><span class="pre">self.get_standard_config_settings</span></code> is called.  This reads the
+<a class="reference external" href="../user/config.html">docutils configuration files</a>, and returns a dictionary of
+settings.  This is then overlaid on <code class="docutils literal"><span class="pre">self.defaults</span></code>.  So
+configuration file settings have priority over all software-defined
+defaults.</p>
+</li>
+<li><p class="first">Back in the <code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object,
+<code class="docutils literal"><span class="pre">self.setup_option_parser</span></code> returns the <code class="docutils literal"><span class="pre">option_parser</span></code> object
+to its caller, <code class="docutils literal"><span class="pre">self.process_command_line</span></code>.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">self.process_command_line</span></code> calls <code class="docutils literal"><span class="pre">option_parser.parse_args</span></code>,
+which parses all command line options and returns a
+<code class="docutils literal"><span class="pre">docutils.frontend.Values</span></code> object.  This is assigned to the
+<code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object&#8217;s <code class="docutils literal"><span class="pre">self.settings</span></code>.  So
+command-line options have priority over configuration file
+settings.</p>
+<p>When <code class="docutils literal"><span class="pre">option_parser.parse_args</span></code> is called, the source and
+destination command-line arguments are also parsed, and assigned
+to the <code class="docutils literal"><span class="pre">_source</span></code> and <code class="docutils literal"><span class="pre">_destination</span></code> attributes of what becomes
+the <code class="docutils literal"><span class="pre">docutils.core.Publisher</span></code> object&#8217;s <code class="docutils literal"><span class="pre">self.settings</span></code>.</p>
+</li>
+<li><p class="first">From <code class="docutils literal"><span class="pre">docutils.core.Publisher.publish</span></code>, <code class="docutils literal"><span class="pre">self.set_io</span></code> is
+called with no arguments.  If either <code class="docutils literal"><span class="pre">self.source</span></code> or
+<code class="docutils literal"><span class="pre">self.destination</span></code> are not set, the corresponding
+<code class="docutils literal"><span class="pre">self.set_source</span></code> and <code class="docutils literal"><span class="pre">self.set_destination</span></code> are called,
+effectively with no arguments.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">self.set_source</span></code> checks for a <code class="docutils literal"><span class="pre">source_path</span></code> parameter, and if
+there is none (which is the case for command-line use), it is
+taken from <code class="docutils literal"><span class="pre">self.settings._source</span></code>.  <code class="docutils literal"><span class="pre">self.source</span></code> is set by
+instantiating a <code class="docutils literal"><span class="pre">self.source_class</span></code> object.  For command-line
+front-end tools, the default <code class="docutils literal"><span class="pre">self.source_class</span></code> is used,
+<code class="docutils literal"><span class="pre">docutils.io.FileInput</span></code>.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">self.set_destination</span></code> does the same job for the destination
+that <code class="docutils literal"><span class="pre">self.set_source</span></code> does for the source (the default
+<code class="docutils literal"><span class="pre">self.destination_class</span></code> is <code class="docutils literal"><span class="pre">docutils.io.FileOutput</span></code>).</p>
+</li>
+</ol>
+</div>
+<div class="section" id="runtime-settings-processing-from-applications">
+<h2><a class="toc-backref" href="#id4">Runtime Settings Processing From Applications</a><a class="headerlink" href="#runtime-settings-processing-from-applications" title="Permalink to this headline">¶</a></h2>
+<p>Applications process runtime settings in a different way than
+<a class="reference internal" href="#command-line-tools">command-line tools</a> do.  Instead of calling <code class="docutils literal"><span class="pre">publish_cmdline</span></code>, the
+application calls one of <code class="docutils literal"><span class="pre">publish_file</span></code>, <code class="docutils literal"><span class="pre">publish_string</span></code>, or
+<code class="docutils literal"><span class="pre">publish_parts</span></code>.  These in turn call <code class="docutils literal"><span class="pre">publish_programmatically</span></code>,
+which implements a generic programmatic interface.  Although an
+application may also call <code class="docutils literal"><span class="pre">publish_programmatically</span></code> directly, it is
+not recommended (if it does seem to be necessary, please write to the
+<a class="reference external" href="../user/mailing-lists.html#docutils-develop">Docutils-develop</a> mailing list).</p>
+<p><code class="docutils literal"><span class="pre">publish_programmatically</span></code> accepts the same <a class="reference internal" href="#convenience-function-parameters">convenience function
+parameters</a> as <code class="docutils literal"><span class="pre">publish_cmdline</span></code>.  Where things differ is that
+programmatic use does no command-line processing.  Instead of calling
+<code class="docutils literal"><span class="pre">docutils.Publisher.process_command_line</span></code> (as <code class="docutils literal"><span class="pre">publish_cmdline</span></code>
+does, via <code class="docutils literal"><span class="pre">docutils.Publisher.publish</span></code>),
+<code class="docutils literal"><span class="pre">docutils.Publisher.process_programmatic_settings</span></code> is called to set
+up the runtime settings.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,1878 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docutils Configuration &mdash; American Academy of Orthopaedic Surgeons</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="American Academy of Orthopaedic Surgeons" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/tsorter.min.js"></script>
+  <script src="../../_static/js/list.js"></script>
+  <script src="../../_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> AAOS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../AAOS-Templates/index.html">AAOS Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Applications-Software-Guides/index.html">Applications / Software Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Departments/index.html">Departments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Design-and-Style/index.html">Design and Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Committees/index.html">Committees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/index.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Governance/index.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Project-Management-Office/index.html">Project Management Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Service-Desk/index.html">Service Desk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Docutils Project Documentation Overview</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">AAOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Docutils Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docutils-configuration">
+<h1><a class="toc-backref" href="#id56">Docutils Configuration</a><a class="headerlink" href="#docutils-configuration" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">David Goodger</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:docutils-develop&#37;&#52;&#48;lists&#46;sourceforge&#46;net">docutils-develop<span>&#64;</span>lists<span>&#46;</span>sourceforge<span>&#46;</span>net</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Revision:</th><td class="field-body">$Revision$</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">$Date$</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Copyright:</th><td class="field-body">This document has been placed in the public domain.</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar">
+<p class="first sidebar-title">Docutils Security for Web Applications</p>
+<p class="last">For details about securing web applications, please see <a class="reference external" href="../howto/security.html">Deploying
+Docutils Securely</a>.</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#docutils-configuration" id="id56">Docutils Configuration</a><ul>
+<li><a class="reference internal" href="#configuration-files" id="id57">Configuration Files</a></li>
+<li><a class="reference internal" href="#configuration-file-syntax" id="id58">Configuration File Syntax</a><ul>
+<li><a class="reference internal" href="#example" id="id59">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuration-file-sections-entries" id="id60">Configuration File Sections &amp; Entries</a><ul>
+<li><a class="reference internal" href="#general" id="id61">[general]</a><ul>
+<li><a class="reference internal" href="#auto-id-prefix" id="id62">auto_id_prefix</a></li>
+<li><a class="reference internal" href="#datestamp" id="id63">datestamp</a></li>
+<li><a class="reference internal" href="#debug" id="id64">debug</a></li>
+<li><a class="reference internal" href="#dump-internals" id="id65">dump_internals</a></li>
+<li><a class="reference internal" href="#dump-pseudo-xml" id="id66">dump_pseudo_xml</a></li>
+<li><a class="reference internal" href="#dump-settings" id="id67">dump_settings</a></li>
+<li><a class="reference internal" href="#dump-transforms" id="id68">dump_transforms</a></li>
+<li><a class="reference internal" href="#error-encoding" id="id69">error_encoding</a></li>
+<li><a class="reference internal" href="#error-encoding-error-handler" id="id70">error_encoding_error_handler</a></li>
+<li><a class="reference internal" href="#exit-status-level" id="id71">exit_status_level</a></li>
+<li><a class="reference internal" href="#expose-internals" id="id72">expose_internals</a></li>
+<li><a class="reference internal" href="#footnote-backlinks" id="id73">footnote_backlinks</a></li>
+<li><a class="reference internal" href="#generator" id="id74">generator</a></li>
+<li><a class="reference internal" href="#halt-level" id="id75">halt_level</a></li>
+<li><a class="reference internal" href="#id-prefix" id="id76">id_prefix</a></li>
+<li><a class="reference internal" href="#input-encoding" id="id77">input_encoding</a></li>
+<li><a class="reference internal" href="#input-encoding-error-handler" id="id78">input_encoding_error_handler</a></li>
+<li><a class="reference internal" href="#language-code" id="id79">language_code</a></li>
+<li><a class="reference internal" href="#output-encoding" id="id80">output_encoding</a></li>
+<li><a class="reference internal" href="#output-encoding-error-handler" id="id81">output_encoding_error_handler</a></li>
+<li><a class="reference internal" href="#record-dependencies" id="id82">record_dependencies</a></li>
+<li><a class="reference internal" href="#report-level" id="id83">report_level</a></li>
+<li><a class="reference internal" href="#sectnum-xform" id="id84">sectnum_xform</a></li>
+<li><a class="reference internal" href="#source-link" id="id85">source_link</a></li>
+<li><a class="reference internal" href="#source-url" id="id86">source_url</a></li>
+<li><a class="reference internal" href="#strict-visitor" id="id87">strict_visitor</a></li>
+<li><a class="reference internal" href="#strip-classes" id="id88">strip_classes</a></li>
+<li><a class="reference internal" href="#strip-comments" id="id89">strip_comments</a></li>
+<li><a class="reference internal" href="#strip-elements-with-classes" id="id90">strip_elements_with_classes</a></li>
+<li><a class="reference internal" href="#title" id="id91">title</a></li>
+<li><a class="reference internal" href="#toc-backlinks" id="id92">toc_backlinks</a></li>
+<li><a class="reference internal" href="#traceback" id="id93">traceback</a></li>
+<li><a class="reference internal" href="#warning-stream" id="id94">warning_stream</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parsers" id="id95">[parsers]</a><ul>
+<li><a class="reference internal" href="#restructuredtext-parser" id="id96">[restructuredtext parser]</a><ul>
+<li><a class="reference internal" href="#file-insertion-enabled" id="id97">file_insertion_enabled</a></li>
+<li><a class="reference internal" href="#pep-references" id="id98">pep_references</a></li>
+<li><a class="reference internal" href="#pep-base-url" id="id99">pep_base_url</a></li>
+<li><a class="reference internal" href="#pep-file-url-template" id="id100">pep_file_url_template</a></li>
+<li><a class="reference internal" href="#raw-enabled" id="id101">raw_enabled</a></li>
+<li><a class="reference internal" href="#rfc-references" id="id102">rfc_references</a></li>
+<li><a class="reference internal" href="#rfc-base-url" id="id103">rfc_base_url</a></li>
+<li><a class="reference internal" href="#smart-quotes" id="id104">smart_quotes</a></li>
+<li><a class="reference internal" href="#syntax-highlight" id="id105">syntax_highlight</a></li>
+<li><a class="reference internal" href="#tab-width" id="id106">tab_width</a></li>
+<li><a class="reference internal" href="#trim-footnote-reference-space" id="id107">trim_footnote_reference_space</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#readers" id="id108">[readers]</a><ul>
+<li><a class="reference internal" href="#standalone-reader" id="id109">[standalone reader]</a><ul>
+<li><a class="reference internal" href="#docinfo-xform" id="id110">docinfo_xform</a></li>
+<li><a class="reference internal" href="#doctitle-xform" id="id111">doctitle_xform</a></li>
+<li><a class="reference internal" href="#sectsubtitle-xform" id="id112">sectsubtitle_xform</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pep-reader" id="id113">[pep reader]</a></li>
+<li><a class="reference internal" href="#python-reader" id="id114">[python reader]</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#writers" id="id115">[writers]</a><ul>
+<li><a class="reference internal" href="#docutils-xml-writer" id="id116">[docutils_xml writer]</a><ul>
+<li><a class="reference internal" href="#doctype-declaration" id="id117">doctype_declaration</a></li>
+<li><a class="reference internal" href="#indents" id="id118">indents</a></li>
+<li><a class="reference internal" href="#newlines" id="id119">newlines</a></li>
+<li><a class="reference internal" href="#xml-declaration" id="id120">xml_declaration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#html4css1-writer" id="id121">[html4css1 writer]</a><ul>
+<li><a class="reference internal" href="#attribution" id="id122">attribution</a></li>
+<li><a class="reference internal" href="#cloak-email-addresses" id="id123">cloak_email_addresses</a></li>
+<li><a class="reference internal" href="#compact-lists" id="id124">compact_lists</a></li>
+<li><a class="reference internal" href="#compact-field-lists" id="id125">compact_field_lists</a></li>
+<li><a class="reference internal" href="#embed-stylesheet" id="id126">embed_stylesheet</a></li>
+<li><a class="reference internal" href="#field-name-limit" id="id127">field_name_limit</a></li>
+<li><a class="reference internal" href="#footnote-references" id="id128">footnote_references</a></li>
+<li><a class="reference internal" href="#initial-header-level" id="id129">initial_header_level</a></li>
+<li><a class="reference internal" href="#math-output" id="id130">math_output</a></li>
+<li><a class="reference internal" href="#option-limit" id="id131">option_limit</a></li>
+<li><a class="reference internal" href="#stylesheet" id="id132">stylesheet</a></li>
+<li><a class="reference internal" href="#stylesheet-dirs" id="id133">stylesheet_dirs</a></li>
+<li><a class="reference internal" href="#stylesheet-path" id="id134">stylesheet_path</a></li>
+<li><a class="reference internal" href="#table-style" id="id135">table_style</a></li>
+<li><a class="reference internal" href="#template" id="id136">template</a></li>
+<li><a class="reference internal" href="#xml-declaration-html4css1-writer" id="id137">xml_declaration</a></li>
+<li><a class="reference internal" href="#pep-html-writer" id="id138">[pep_html writer]</a><ul>
+<li><a class="reference internal" href="#no-random" id="id139">no_random</a></li>
+<li><a class="reference internal" href="#pep-home" id="id140">pep_home</a></li>
+<li><a class="reference internal" href="#python-home" id="id141">python_home</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#s5-html-writer" id="id142">[s5_html writer]</a><ul>
+<li><a class="reference internal" href="#hidden-controls" id="id143">hidden_controls</a></li>
+<li><a class="reference internal" href="#current-slide" id="id144">current_slide</a></li>
+<li><a class="reference internal" href="#overwrite-theme-files" id="id145">overwrite_theme_files</a></li>
+<li><a class="reference internal" href="#theme" id="id146">theme</a></li>
+<li><a class="reference internal" href="#theme-url" id="id147">theme_url</a></li>
+<li><a class="reference internal" href="#view-mode" id="id148">view_mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#latex2e-writer" id="id149">[latex2e writer]</a><ul>
+<li><a class="reference internal" href="#use-latex-toc" id="id150">use_latex_toc</a></li>
+<li><a class="reference internal" href="#use-latex-docinfo" id="id151">use_latex_docinfo</a></li>
+<li><a class="reference internal" href="#docutils-footnotes" id="id152">docutils_footnotes</a></li>
+<li><a class="reference internal" href="#figure-footnotes" id="id153">figure_footnotes</a></li>
+<li><a class="reference internal" href="#use-latex-citations" id="id154">use_latex_citations</a></li>
+<li><a class="reference internal" href="#use-latex-abstract" id="id155">use_latex_abstract</a></li>
+<li><a class="reference internal" href="#hyperlink-color" id="id156">hyperlink_color</a></li>
+<li><a class="reference internal" href="#hyperref-options" id="id157">hyperref_options</a></li>
+<li><a class="reference internal" href="#documentclass" id="id158">documentclass</a></li>
+<li><a class="reference internal" href="#documentoptions" id="id159">documentoptions</a></li>
+<li><a class="reference internal" href="#font-encoding" id="id160">font_encoding</a></li>
+<li><a class="reference internal" href="#embed-stylesheet-latex2e-writer" id="id161">embed_stylesheet</a></li>
+<li><a class="reference internal" href="#stylesheet-latex2e-writer" id="id162">stylesheet</a></li>
+<li><a class="reference internal" href="#stylesheet-dirs-latex2e-writer" id="id163">stylesheet_dirs</a></li>
+<li><a class="reference internal" href="#stylesheet-path-latex2e-writer" id="id164">stylesheet_path</a></li>
+<li><a class="reference internal" href="#latex-preamble" id="id165">latex_preamble</a></li>
+<li><a class="reference internal" href="#template-latex2e-writer" id="id166">template</a></li>
+<li><a class="reference internal" href="#footnote-references-latex2e-writer" id="id167">footnote_references</a></li>
+<li><a class="reference internal" href="#attribution-latex2e-writer" id="id168">attribution</a></li>
+<li><a class="reference internal" href="#compound-enumerators" id="id169">compound_enumerators</a></li>
+<li><a class="reference internal" href="#literal-block-env" id="id170">literal_block_env</a></li>
+<li><a class="reference internal" href="#section-prefix-for-enumerators" id="id171">section_prefix_for_enumerators</a></li>
+<li><a class="reference internal" href="#section-enumerator-separator" id="id172">section_enumerator_separator</a></li>
+<li><a class="reference internal" href="#table-style-latex2e-writer" id="id173">table_style</a></li>
+<li><a class="reference internal" href="#xetex-writer" id="id174">[xetex writer]</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#odf-odt-writer" id="id175">[odf_odt writer]</a><ul>
+<li><a class="reference internal" href="#id53" id="id176">stylesheet</a></li>
+<li><a class="reference internal" href="#odf-config-file" id="id177">odf-config-file</a></li>
+<li><a class="reference internal" href="#id54" id="id178">cloak-email-addresses</a></li>
+<li><a class="reference internal" href="#no-cloak-email-addresses" id="id179">no-cloak-email-addresses</a></li>
+<li><a class="reference internal" href="#table-border-thickness" id="id180">table-border-thickness</a></li>
+<li><a class="reference internal" href="#add-syntax-highlighting" id="id181">add-syntax-highlighting</a></li>
+<li><a class="reference internal" href="#no-syntax-highlighting" id="id182">no-syntax-highlighting</a></li>
+<li><a class="reference internal" href="#create-sections" id="id183">create-sections</a></li>
+<li><a class="reference internal" href="#no-sections" id="id184">no-sections</a></li>
+<li><a class="reference internal" href="#create-links" id="id185">create-links</a></li>
+<li><a class="reference internal" href="#no-links" id="id186">no-links</a></li>
+<li><a class="reference internal" href="#endnotes-end-doc" id="id187">endnotes-end-doc</a></li>
+<li><a class="reference internal" href="#no-endnotes-end-doc" id="id188">no-endnotes-end-doc</a></li>
+<li><a class="reference internal" href="#generate-list-toc" id="id189">generate-list-toc</a></li>
+<li><a class="reference internal" href="#generate-oowriter-toc" id="id190">generate-oowriter-toc</a></li>
+<li><a class="reference internal" href="#custom-odt-header" id="id191">custom-odt-header</a></li>
+<li><a class="reference internal" href="#custom-odt-footer" id="id192">custom-odt-footer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pseudoxml-writer" id="id193">[pseudoxml writer]</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#applications" id="id194">[applications]</a><ul>
+<li><a class="reference internal" href="#buildhtml-application" id="id195">[buildhtml application]</a><ul>
+<li><a class="reference internal" href="#ignore" id="id196">ignore</a></li>
+<li><a class="reference internal" href="#prune" id="id197">prune</a></li>
+<li><a class="reference internal" href="#recurse" id="id198">recurse</a></li>
+<li><a class="reference internal" href="#silent" id="id199">silent</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#docfactory-application" id="id200">[docfactory application]</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-settings" id="id201">Other Settings</a><ul>
+<li><a class="reference internal" href="#command-line-only" id="id202">Command-Line Only</a><ul>
+<li><a class="reference internal" href="#config" id="id203">config</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#internal-settings" id="id204">Internal Settings</a><ul>
+<li><a class="reference internal" href="#config-files" id="id205">_config_files</a></li>
+<li><a class="reference internal" href="#directories" id="id206">_directories</a></li>
+<li><a class="reference internal" href="#disable-config" id="id207">_disable_config</a></li>
+<li><a class="reference internal" href="#destination" id="id208">_destination</a></li>
+<li><a class="reference internal" href="#source" id="id209">_source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#old-format-configuration-files" id="id210">Old-Format Configuration Files</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="configuration-files">
+<h2><a class="toc-backref" href="#id57">Configuration Files</a><a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h2>
+<p>Configuration files are used for persistent customization; they can be
+set once and take effect every time you use a front-end tool.
+Configuration file settings override the built-in defaults, and
+command-line options override all.</p>
+<p>By default, Docutils checks the following places for configuration
+files, in the following order:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">/etc/docutils.conf</span></code>: This is a system-wide configuration file,
+applicable to all Docutils processing on the system.</li>
+<li><code class="docutils literal"><span class="pre">./docutils.conf</span></code>: This is a project-specific configuration file,
+located in the current directory.  The Docutils front end has to be
+executed from the directory containing this configuration file for
+it to take effect (note that this may have nothing to do with the
+location of the source files).  Settings in the project-specific
+configuration file will override corresponding settings in the
+system-wide file.</li>
+<li><code class="docutils literal"><span class="pre">~/.docutils</span></code>: This is a user-specific configuration file,
+located in the user&#8217;s home directory.  Settings in this file will
+override corresponding settings in both the system-wide and
+project-specific configuration files.</li>
+</ol>
+<p>If more than one configuration file is found, all will be read but
+later entries will override earlier ones.  For example, a &#8220;stylesheet&#8221;
+entry in a user-specific configuration file will override a
+&#8220;stylesheet&#8221; entry in the system-wide file.</p>
+<p>The default implicit config file paths can be overridden by the
+<code class="docutils literal"><span class="pre">DOCUTILSCONFIG</span></code> environment variable.  <code class="docutils literal"><span class="pre">DOCUTILSCONFIG</span></code> should
+contain a colon-separated (semicolon-separated on Windows) sequence of
+config file paths to search for; leave it empty to disable implicit
+config files altogether.  Tilde-expansion is performed on paths.
+Paths are interpreted relative to the current working directory.
+Empty path items are ignored.</p>
+<p>In addition, a configuration file may be explicitly specified with the
+&#8220;&#8211;config&#8221; command-line option.  This configuration file is read after
+the three implicit ones listed above (or the ones defined by the
+<code class="docutils literal"><span class="pre">DOCUTILSCONFIG</span></code> environment variable), and its entries will have
+priority.</p>
+</div>
+<div class="section" id="configuration-file-syntax">
+<h2><a class="toc-backref" href="#id58">Configuration File Syntax</a><a class="headerlink" href="#configuration-file-syntax" title="Permalink to this headline">¶</a></h2>
+<p>Configuration files are UTF-8-encoded text files.  The
+<a class="reference external" href="http://www.python.org/doc/current/lib/module-ConfigParser.html">ConfigParser.py</a> module from <a class="reference external" href="http://www.python.org/">Python</a>&#8216;s standard library is used to
+read them.  From its documentation:</p>
+<blockquote>
+<div>The configuration file consists of sections, lead by a &#8220;[section]&#8221;
+header and followed by &#8220;name: value&#8221; entries, with continuations
+in the style of <a class="reference external" href="http://www.rfc-editor.org/rfc/rfc822.txt">RFC 822</a>; &#8220;name=value&#8221; is also accepted.  Note
+that leading whitespace is removed from values.  ...  Lines
+beginning with &#8220;#&#8221; or &#8221;;&#8221; are ignored and may be used to provide
+comments.</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No format string interpolation is done.</p>
+</div>
+<p>Configuration file entry names correspond to internal runtime
+settings.  Underscores (&#8220;_&#8221;) and hyphens (&#8220;-&#8221;) can be used
+interchangably in entry names; hyphens are automatically converted to
+underscores.</p>
+<p>For on/off switch settings (<span class="target" id="booleans">booleans</span>), the following values are
+recognized:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">On:</th><td class="field-body">&#8220;true&#8221;, &#8220;yes&#8221;, &#8220;on&#8221;, &#8220;1&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Off:</th><td class="field-body">&#8220;false&#8221;, &#8220;no&#8221;, &#8220;off&#8221;, &#8220;0&#8221;, &#8220;&#8221; (no value)</td>
+</tr>
+</tbody>
+</table>
+<p id="list">List values can be comma- or colon-delimited.</p>
+<p><a class="reference internal" href="#strip-classes">strip_classes</a>, <a class="reference internal" href="#strip-elements-with-classes">strip_elements_with_classes</a>, stylesheet, and
+stylesheet_path use the comma as delimiter,
+whitespace around list values is stripped.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">strip</span><span class="o">-</span><span class="n">classes</span><span class="p">:</span> <span class="n">ham</span><span class="p">,</span><span class="n">eggs</span><span class="p">,</span>
+<span class="n">strip</span><span class="o">-</span><span class="n">elements</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">classes</span><span class="p">:</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">salt</span><span class="p">,</span> <span class="n">flour</span>
+<span class="n">stylesheet</span><span class="p">:</span> <span class="n">html4css1</span><span class="o">.</span><span class="n">css</span><span class="p">,</span>
+            <span class="n">math</span><span class="o">.</span><span class="n">css</span><span class="p">,</span>
+            <span class="n">style</span> <span class="k">with</span> <span class="n">spaces</span><span class="o">.</span><span class="n">css</span>
+<span class="n">stylesheet</span><span class="o">-</span><span class="n">path</span><span class="p">:</span> <span class="o">../</span><span class="n">styles</span><span class="o">/</span><span class="n">my</span><span class="o">.</span><span class="n">css</span><span class="p">,</span> <span class="o">../</span><span class="n">styles</span><span class="o">/</span><span class="n">funny</span><span class="o">.</span><span class="n">css</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#expose-internals">expose_internals</a>, <a class="reference internal" href="#ignore">ignore</a> and <a class="reference internal" href="#prune">prune</a> use the colon as delimiter and do not
+strip whitespace:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">expose_internals</span><span class="p">:</span> <span class="n">b</span><span class="p">:</span><span class="n">c</span><span class="p">:</span><span class="n">d</span>
+</pre></div>
+</div>
+<div class="section" id="example">
+<h3><a class="toc-backref" href="#id59">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>This is the contents of the <code class="docutils literal"><span class="pre">tools/docutils.conf</span></code> configuration file
+supplied with Docutils:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># These entries affect all processing:</span>
+<span class="p">[</span><span class="n">general</span><span class="p">]</span>
+<span class="n">source</span><span class="o">-</span><span class="n">link</span><span class="p">:</span> <span class="n">yes</span>
+<span class="n">datestamp</span><span class="p">:</span> <span class="o">%</span><span class="n">Y</span><span class="o">-%</span><span class="n">m</span><span class="o">-%</span><span class="n">d</span> <span class="o">%</span><span class="n">H</span><span class="p">:</span><span class="o">%</span><span class="n">M</span> <span class="n">UTC</span>
+<span class="n">generator</span><span class="p">:</span> <span class="n">on</span>
+
+<span class="c1"># These entries affect HTML output:</span>
+<span class="p">[</span><span class="n">html4css1</span> <span class="n">writer</span><span class="p">]</span>
+<span class="c1"># Required for docutils-update, the website build system:</span>
+<span class="n">stylesheet</span><span class="o">-</span><span class="n">path</span><span class="p">:</span> <span class="o">../</span><span class="n">docutils</span><span class="o">/</span><span class="n">writers</span><span class="o">/</span><span class="n">html4css1</span><span class="o">/</span><span class="n">html4css1</span><span class="o">.</span><span class="n">css</span>
+<span class="n">embed</span><span class="o">-</span><span class="n">stylesheet</span><span class="p">:</span> <span class="n">no</span>
+<span class="n">field</span><span class="o">-</span><span class="n">name</span><span class="o">-</span><span class="n">limit</span><span class="p">:</span> <span class="mi">20</span>
+</pre></div>
+</div>
+<p>Individual configuration sections and settings are described in the
+following section.</p>
+</div>
+</div>
+<div class="section" id="configuration-file-sections-entries">
+<h2><a class="toc-backref" href="#id60">Configuration File Sections &amp; Entries</a><a class="headerlink" href="#configuration-file-sections-entries" title="Permalink to this headline">¶</a></h2>
+<p>Below are the Docutils runtime settings, listed by config file
+section.  Any setting may be specified in any section, but only
+settings from active sections will be used.  Sections correspond to
+Docutils components (module name or alias; section names are always in
+lowercase letters).  Each <a class="reference external" href="tools.html">Docutils application</a> uses a specific set
+of components; corresponding configuration file sections are applied
+when the application is used.  Configuration sections are applied in
+general-to-specific order, as follows:</p>
+<ol class="arabic">
+<li><p class="first"><a class="reference internal" href="#general">[general]</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#parsers">[parsers]</a>, parser dependencies, and the section specific to the
+Parser used (&#8220;[... parser]&#8221;).  Currently, only <a class="reference internal" href="#restructuredtext-parser">[restructuredtext
+parser]</a> is applicable.</p>
+</li>
+<li><p class="first"><a class="reference internal" href="#readers">[readers]</a>, reader dependencies, and the section specific to the
+Reader used (&#8220;[... reader]&#8221;).  For example, <a class="reference internal" href="#pep-reader">[pep reader]</a> depends
+on <a class="reference internal" href="#standalone-reader">[standalone reader]</a>.</p>
+</li>
+<li><p class="first"><a class="reference internal" href="#writers">[writers]</a>, writer dependencies, and the section specific to the
+Writer used (&#8220;[... writer]&#8221;).  For example, <a class="reference internal" href="#pep-html-writer">[pep_html writer]</a>
+depends on <a class="reference internal" href="#html4css1-writer">[html4css1 writer]</a>.</p>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="#applications">[applications]</a>, application dependencies, and the section</dt>
+<dd><p class="first last">specific to the Application (front-end tool) in use
+(&#8220;[... application]&#8221;).</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>Since any setting may be specified in any section, this ordering
+allows component- or application-specific overrides of earlier
+settings.  For example, there may be Reader-specific overrides of
+general settings; Writer-specific overrides of Parser settings;
+Application-specific overrides of Writer settings; and so on.</p>
+<p>If multiple configuration files are applicable, the process is
+completed (all sections are applied in the order given) for each one
+before going on to the next.  For example, a &#8220;[pep_html writer]
+stylesheet&#8221; setting in an earlier configuration file would be
+overridden by an &#8220;[html4css1 writer] stylesheet&#8221; setting in a later
+file.</p>
+<p>Some knowledge of <a class="reference external" href="http://www.python.org/">Python</a> is assumed for some attributes.</p>
+<div class="section" id="general">
+<h3><a class="toc-backref" href="#id61">[general]</a><a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<p>Settings in the &#8220;[general]&#8221; section are always applied.</p>
+<div class="section" id="auto-id-prefix">
+<h4><a class="toc-backref" href="#id62">auto_id_prefix</a><a class="headerlink" href="#auto-id-prefix" title="Permalink to this headline">¶</a></h4>
+<p>Prefix prepended to all auto-generated IDs generated within the
+document, after <a class="reference internal" href="#id-prefix">id_prefix</a>.</p>
+<p>Default: &#8220;id&#8221;.
+Options: <code class="docutils literal"><span class="pre">--auto-id-prefix</span></code> (hidden, intended mainly for programmatic use).</p>
+</div>
+<div class="section" id="datestamp">
+<h4><a class="toc-backref" href="#id63">datestamp</a><a class="headerlink" href="#datestamp" title="Permalink to this headline">¶</a></h4>
+<p>Include a time/datestamp in the document footer.  Contains a
+format string for Python&#8217;s <code class="docutils literal"><span class="pre">time.strftime</span></code>.  See the <a class="reference external" href="http://www.python.org/doc/current/lib/module-time.html">time
+module documentation</a>.</p>
+<p>Default: None.
+Options: <code class="docutils literal"><span class="pre">--date,</span> <span class="pre">-d,</span> <span class="pre">--time,</span> <span class="pre">-t,</span> <span class="pre">--no-datestamp</span></code>.</p>
+<p>Configuration file entry examples:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Equivalent to --date command-line option, results in</span>
+<span class="c1"># ISO 8601 extended format datestamp, e.g. &quot;2001-12-21&quot;:</span>
+<span class="n">datestamp</span><span class="p">:</span> <span class="o">%</span><span class="n">Y</span><span class="o">-%</span><span class="n">m</span><span class="o">-%</span><span class="n">d</span>
+
+<span class="c1"># Equivalent to --time command-line option, results in</span>
+<span class="c1"># date/timestamp like &quot;2001-12-21 18:43 UTC&quot;:</span>
+<span class="n">datestamp</span><span class="p">:</span> <span class="o">%</span><span class="n">Y</span><span class="o">-%</span><span class="n">m</span><span class="o">-%</span><span class="n">d</span> <span class="o">%</span><span class="n">H</span><span class="p">:</span><span class="o">%</span><span class="n">M</span> <span class="n">UTC</span>
+
+<span class="c1"># Disables datestamp; equivalent to --no-datestamp:</span>
+<span class="n">datestamp</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug">
+<h4><a class="toc-backref" href="#id64">debug</a><a class="headerlink" href="#debug" title="Permalink to this headline">¶</a></h4>
+<p>Report debug-level system messages.</p>
+<p>Default: don&#8217;t (None).  Options: <code class="docutils literal"><span class="pre">--debug,</span> <span class="pre">--no-debug</span></code>.</p>
+</div>
+<div class="section" id="dump-internals">
+<h4><a class="toc-backref" href="#id65">dump_internals</a><a class="headerlink" href="#dump-internals" title="Permalink to this headline">¶</a></h4>
+<p>At the end of processing, write all internal attributes of the
+document (<code class="docutils literal"><span class="pre">document.__dict__</span></code>) to stderr.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--dump-internals</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="dump-pseudo-xml">
+<h4><a class="toc-backref" href="#id66">dump_pseudo_xml</a><a class="headerlink" href="#dump-pseudo-xml" title="Permalink to this headline">¶</a></h4>
+<p>At the end of processing, write the pseudo-XML representation of
+the document to stderr.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--dump-pseudo-xml</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="dump-settings">
+<h4><a class="toc-backref" href="#id67">dump_settings</a><a class="headerlink" href="#dump-settings" title="Permalink to this headline">¶</a></h4>
+<p>At the end of processing, write all Docutils settings to stderr.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--dump-settings</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="dump-transforms">
+<h4><a class="toc-backref" href="#id68">dump_transforms</a><a class="headerlink" href="#dump-transforms" title="Permalink to this headline">¶</a></h4>
+<p>At the end of processing, write a list of all transforms applied
+to the document to stderr.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--dump-transforms</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="error-encoding">
+<h4><a class="toc-backref" href="#id69">error_encoding</a><a class="headerlink" href="#error-encoding" title="Permalink to this headline">¶</a></h4>
+<p>The text encoding for error output.</p>
+<p>Default: &#8220;ascii&#8221;.  Options: <code class="docutils literal"><span class="pre">--error-encoding,</span> <span class="pre">-e</span></code>.</p>
+</div>
+<div class="section" id="error-encoding-error-handler">
+<h4><a class="toc-backref" href="#id70">error_encoding_error_handler</a><a class="headerlink" href="#error-encoding-error-handler" title="Permalink to this headline">¶</a></h4>
+<p>The error handler for unencodable characters in error output.  See
+<a class="reference internal" href="#output-encoding-error-handler">output_encoding_error_handler</a> for acceptable values.</p>
+<p>Default: &#8220;backslashreplace&#8221;
+Options: <code class="docutils literal"><span class="pre">--error-encoding-error-handler,</span> <span class="pre">--error-encoding,</span> <span class="pre">-e</span></code>.</p>
+</div>
+<div class="section" id="exit-status-level">
+<h4><a class="toc-backref" href="#id71">exit_status_level</a><a class="headerlink" href="#exit-status-level" title="Permalink to this headline">¶</a></h4>
+<p>A system message level threshold; non-halting system messages at
+or above this level will produce a non-zero exit status at normal
+exit.  Exit status is the maximum system message level plus 10 (11
+for INFO, etc.).</p>
+<p>Default: disabled (5).  Options: <code class="docutils literal"><span class="pre">--exit-status</span></code>.</p>
+</div>
+<div class="section" id="expose-internals">
+<h4><a class="toc-backref" href="#id72">expose_internals</a><a class="headerlink" href="#expose-internals" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference internal" href="#list">List</a> of internal attribues to expose as external attributes (with
+&#8220;internal:&#8221; namespace prefix).  To specify multiple attributes in
+configuration files, use colons to separate names; on the command
+line, the option may be used more than once.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--expose-internal-attribute</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="footnote-backlinks">
+<h4><a class="toc-backref" href="#id73">footnote_backlinks</a><a class="headerlink" href="#footnote-backlinks" title="Permalink to this headline">¶</a></h4>
+<p>Enable or disable backlinks from footnotes and citations to their
+references.</p>
+<p>Default: enabled (1).
+Options: <code class="docutils literal"><span class="pre">--footnote-backlinks,</span> <span class="pre">--no-footnote-backlinks</span></code>.</p>
+</div>
+<div class="section" id="generator">
+<h4><a class="toc-backref" href="#id74">generator</a><a class="headerlink" href="#generator" title="Permalink to this headline">¶</a></h4>
+<p>Include a &#8220;Generated by Docutils&#8221; credit and link in the document footer.</p>
+<p>Default: off (None).  Options: <code class="docutils literal"><span class="pre">--generator,</span> <span class="pre">-g,</span> <span class="pre">--no-generator</span></code>.</p>
+</div>
+<div class="section" id="halt-level">
+<h4><a class="toc-backref" href="#id75">halt_level</a><a class="headerlink" href="#halt-level" title="Permalink to this headline">¶</a></h4>
+<p>The threshold at or above which system messages are converted to
+exceptions, halting execution immediately.  If <a class="reference internal" href="#traceback">traceback</a> is set, the
+exception will propagate; otherwise, Docutils will exit.</p>
+<p>Default: severe (4).  Options: <code class="docutils literal"><span class="pre">--halt,</span> <span class="pre">--strict</span></code>.</p>
+</div>
+<div class="section" id="id-prefix">
+<h4><a class="toc-backref" href="#id76">id_prefix</a><a class="headerlink" href="#id-prefix" title="Permalink to this headline">¶</a></h4>
+<p>Prefix prepended to all IDs generated within the document.  See also
+<a class="reference internal" href="#auto-id-prefix">auto_id_prefix</a>.</p>
+<p>Default: &#8220;&#8221; (empty).
+Options: <code class="docutils literal"><span class="pre">--id-prefix</span></code> (hidden, intended mainly for programmatic use).</p>
+</div>
+<div class="section" id="input-encoding">
+<h4><a class="toc-backref" href="#id77">input_encoding</a><a class="headerlink" href="#input-encoding" title="Permalink to this headline">¶</a></h4>
+<p>The text encoding for input.</p>
+<p>Default: auto-detect (None).  Options: <code class="docutils literal"><span class="pre">--input-encoding,</span> <span class="pre">-i</span></code>.</p>
+</div>
+<div class="section" id="input-encoding-error-handler">
+<h4><a class="toc-backref" href="#id78">input_encoding_error_handler</a><a class="headerlink" href="#input-encoding-error-handler" title="Permalink to this headline">¶</a></h4>
+<p>The error handler for undecodable characters in the input. Acceptable
+values include:</p>
+<dl class="docutils">
+<dt>strict</dt>
+<dd>Raise an exception in case of an encoding error.</dd>
+<dt>replace</dt>
+<dd>Replace malformed data with the official Unicode replacement
+character, U+FFFD.</dd>
+<dt>ignore</dt>
+<dd>Ignore malformed data and continue without further notice.</dd>
+</dl>
+<p>Acceptable values are the same as for the &#8220;error&#8221; parameter of
+Python&#8217;s <code class="docutils literal"><span class="pre">unicode</span></code> function; other values may be defined in
+applications or in future versions of Python.</p>
+<p>Default: &#8220;strict&#8221;.
+Options: <code class="docutils literal"><span class="pre">--input-encoding-error-handler,</span> <span class="pre">--input-encoding,</span> <span class="pre">-i</span></code>.</p>
+</div>
+<div class="section" id="language-code">
+<h4><a class="toc-backref" href="#id79">language_code</a><a class="headerlink" href="#language-code" title="Permalink to this headline">¶</a></h4>
+<p>Case-insensitive <a class="reference external" href="http://www.w3.org/International/articles/language-tags/">language tag</a> as defined in <a class="reference external" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</a>.</p>
+<p>Sets the document language, also used for localized directive and
+role names as well as Docutils-generated text.</p>
+<p>A typical language identifier consists of a 2-letter language code
+from <a class="reference external" href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO 639</a> (3-letter codes can be used if no 2-letter code
+exists). The language identifier can have an optional subtag,
+typically for variations based on country (from <a class="reference external" href="http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/index.html">ISO 3166</a>
+2-letter country codes).  Avoid subtags except where they add
+useful distinguishing information. Examples of language tags
+include &#8220;fr&#8221;, &#8220;en-GB&#8221;, &#8220;pt-br&#8221; (the same as &#8220;pt-BR&#8221;), and
+&#8220;de-1901&#8221; (German with pre-1996 spelling).</p>
+<p>The language of document parts can be specified with a
+&#8220;language-&lt;language tag&gt;&#8221; <a class="reference external" href="../ref/doctree.html#classes">class attribute</a>, e.g.
+<code class="docutils literal"><span class="pre">..</span> <span class="pre">class::</span> <span class="pre">language-el-polyton</span></code> for a quote in polytonic Greek.</p>
+<p>Default: English (&#8220;en&#8221;).  Options: <code class="docutils literal"><span class="pre">--language,</span> <span class="pre">-l</span></code>.</p>
+</div>
+<div class="section" id="output-encoding">
+<h4><a class="toc-backref" href="#id80">output_encoding</a><a class="headerlink" href="#output-encoding" title="Permalink to this headline">¶</a></h4>
+<p>The text encoding for output.</p>
+<p>Default: &#8220;UTF-8&#8221;.  Options: <code class="docutils literal"><span class="pre">--output-encoding,</span> <span class="pre">-o</span></code>.</p>
+</div>
+<div class="section" id="output-encoding-error-handler">
+<h4><a class="toc-backref" href="#id81">output_encoding_error_handler</a><a class="headerlink" href="#output-encoding-error-handler" title="Permalink to this headline">¶</a></h4>
+<p>The error handler for unencodable characters in the output. Acceptable
+values include:</p>
+<dl class="docutils">
+<dt>strict</dt>
+<dd>Raise an exception in case of an encoding error.</dd>
+<dt>replace</dt>
+<dd>Replace malformed data with a suitable replacement marker,
+such as &#8221;?&#8221;.</dd>
+<dt>ignore</dt>
+<dd>Ignore malformed data and continue without further notice.</dd>
+<dt>xmlcharrefreplace</dt>
+<dd>Replace with the appropriate XML character reference, such as
+&#8220;<code class="docutils literal"><span class="pre">&amp;#8224;</span></code>&#8221;.</dd>
+<dt>backslashreplace</dt>
+<dd>Replace with backslashed escape sequences, such as &#8220;<code class="docutils literal"><span class="pre">\u2020</span></code>&#8221;.</dd>
+</dl>
+<p>Acceptable values are the same as for the &#8220;error&#8221; parameter of
+Python&#8217;s <code class="docutils literal"><span class="pre">encode</span></code> string method; other values may be defined in
+applications or in future versions of Python.</p>
+<p>Default: &#8220;strict&#8221;.
+Options: <code class="docutils literal"><span class="pre">--output-encoding-error-handler,</span> <span class="pre">--output-encoding,</span> <span class="pre">-o</span></code>.</p>
+</div>
+<div class="section" id="record-dependencies">
+<h4><a class="toc-backref" href="#id82">record_dependencies</a><a class="headerlink" href="#record-dependencies" title="Permalink to this headline">¶</a></h4>
+<p>Path to a file where Docutils will write a list of files that were
+required to generate the output, e.g. included files or embedded
+stylesheets <a class="footnote-reference" href="#dependencies" id="id2">[4]</a>. <a class="footnote-reference" href="#pwd" id="id3">[2]</a> The format is one path per
+line with forward slashes as separator, the encoding is <code class="docutils literal"><span class="pre">utf8</span></code>.</p>
+<p>Set to <code class="docutils literal"><span class="pre">-</span></code> in order to write dependencies to stdout.</p>
+<p>This option is particularly useful in conjunction with programs like
+<code class="docutils literal"><span class="pre">make</span></code> using <code class="docutils literal"><span class="pre">Makefile</span></code> rules like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>ham.html: ham.txt $(shell cat hamdeps.txt)
+  rst2html.py --record-dependencies=hamdeps.txt ham.txt ham.html
+</pre></div>
+</div>
+<p>If the filesystem encoding differs from utf8, replace the <code class="docutils literal"><span class="pre">cat</span></code>
+command with a call to a converter, e.g.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$(shell iconv -f utf8 -t latin1 hamdeps.txt)
+</pre></div>
+</div>
+<p>Default: None.  Option: <code class="docutils literal"><span class="pre">--record-dependencies</span></code>.</p>
+</div>
+<div class="section" id="report-level">
+<h4><a class="toc-backref" href="#id83">report_level</a><a class="headerlink" href="#report-level" title="Permalink to this headline">¶</a></h4>
+<p>Report system messages at or higher than &lt;level&gt;:</p>
+<p>1  info
+2  warning
+3  error
+4  severe
+5  none</p>
+<p>Default: warning (2).
+Options: <code class="docutils literal"><span class="pre">--report,</span> <span class="pre">-r,</span> <span class="pre">--verbose,</span> <span class="pre">-v,</span> <span class="pre">--quiet,</span> <span class="pre">-q</span></code>.</p>
+</div>
+<div class="section" id="sectnum-xform">
+<h4><a class="toc-backref" href="#id84">sectnum_xform</a><a class="headerlink" href="#sectnum-xform" title="Permalink to this headline">¶</a></h4>
+<p>Enable or disable automatic section numbering by Docutils
+(docutils.transforms.parts.SectNum) associated with the <a class="reference external" href="../ref/rst/directives.html#sectnum">sectnum
+directive</a>.</p>
+<p>If disabled, section numbers might be added to the output by the
+renderer (e.g. LaTeX or via a CSS style definition).</p>
+<p>Default: enabled (1).
+Options: <code class="docutils literal"><span class="pre">--section-numbering</span></code>, <code class="docutils literal"><span class="pre">--no-section-numbering</span></code>.</p>
+</div>
+<div class="section" id="source-link">
+<h4><a class="toc-backref" href="#id85">source_link</a><a class="headerlink" href="#source-link" title="Permalink to this headline">¶</a></h4>
+<p>Include a &#8220;View document source&#8221; link in the document footer.  URL will
+be relative to the destination.</p>
+<p>Default: don&#8217;t (None).
+Options: <code class="docutils literal"><span class="pre">--source-link,</span> <span class="pre">-s,</span> <span class="pre">--no-source-link</span></code>.</p>
+</div>
+<div class="section" id="source-url">
+<h4><a class="toc-backref" href="#id86">source_url</a><a class="headerlink" href="#source-url" title="Permalink to this headline">¶</a></h4>
+<p>An explicit URL for a &#8220;View document source&#8221; link, used verbatim.</p>
+<p>Default: compute if source_link (None).
+Options: <code class="docutils literal"><span class="pre">--source-url,</span> <span class="pre">--no-source-link</span></code>.</p>
+</div>
+<div class="section" id="strict-visitor">
+<h4><a class="toc-backref" href="#id87">strict_visitor</a><a class="headerlink" href="#strict-visitor" title="Permalink to this headline">¶</a></h4>
+<p>When processing a document tree with the Visitor pattern, raise an
+error if a writer does not support a node type listed as optional. For
+transitional development use.</p>
+<p>Default: disabled (None).
+Option: <code class="docutils literal"><span class="pre">--strict-visitor</span></code> (hidden, for development use only).</p>
+</div>
+<div class="section" id="strip-classes">
+<h4><a class="toc-backref" href="#id88">strip_classes</a><a class="headerlink" href="#strip-classes" title="Permalink to this headline">¶</a></h4>
+<p>Comma-separated <a class="reference internal" href="#list">list</a> of &#8220;classes&#8221; attribute values to remove from all
+elements in the document tree. The command line option may be used more
+than once.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Potentially dangerous; use with caution.</p>
+</div>
+<p>Default: disabled (None).  Option: <code class="docutils literal"><span class="pre">--strip-class</span></code>.</p>
+</div>
+<div class="section" id="strip-comments">
+<h4><a class="toc-backref" href="#id89">strip_comments</a><a class="headerlink" href="#strip-comments" title="Permalink to this headline">¶</a></h4>
+<p>Enable the removal of comment elements from the document tree.</p>
+<p>Default: disabled (None).
+Options: <code class="docutils literal"><span class="pre">--strip-comments</span></code>, <code class="docutils literal"><span class="pre">--leave-comments</span></code>.</p>
+</div>
+<div class="section" id="strip-elements-with-classes">
+<h4><a class="toc-backref" href="#id90">strip_elements_with_classes</a><a class="headerlink" href="#strip-elements-with-classes" title="Permalink to this headline">¶</a></h4>
+<p>Comma-separated <a class="reference internal" href="#list">list</a> of &#8220;classes&#8221; attribute values;
+matching elements are removed from the document tree.
+The command line option may be used more than once.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Potentially dangerous; use with caution.</p>
+</div>
+<p>Default: disabled (None).  Option: <code class="docutils literal"><span class="pre">--strip-element-with-class</span></code>.</p>
+</div>
+<div class="section" id="title">
+<h4><a class="toc-backref" href="#id91">title</a><a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h4>
+<p>The document title as metadata, which does not become part of the
+document body.  It overrides a document-supplied title.  For
+example, in HTML output the metadata document title appears in the
+title bar of the browser window.</p>
+<p>Default: none.  Option: <code class="docutils literal"><span class="pre">--title</span></code>.</p>
+</div>
+<div class="section" id="toc-backlinks">
+<h4><a class="toc-backref" href="#id92">toc_backlinks</a><a class="headerlink" href="#toc-backlinks" title="Permalink to this headline">¶</a></h4>
+<p>Enable backlinks from section titles to table of contents entries
+(&#8220;entry&#8221;), to the top of the TOC (&#8220;top&#8221;), or disable (&#8220;none&#8221;).</p>
+<p>Default: &#8220;entry&#8221;.
+Options: <code class="docutils literal"><span class="pre">--toc-entry-backlinks,</span> <span class="pre">--toc-top-backlinks,</span> <span class="pre">--no-toc-backlinks</span></code>.</p>
+</div>
+<div class="section" id="traceback">
+<h4><a class="toc-backref" href="#id93">traceback</a><a class="headerlink" href="#traceback" title="Permalink to this headline">¶</a></h4>
+<p>Enable Python tracebacks when halt-level system messages and other
+exceptions occur.  Useful for debugging, and essential for issue
+reports.  Exceptions are allowed to propagate, instead of being
+caught and reported (in a user-friendly way) by Docutils.</p>
+<p>Default: disabled (None) unless Docutils is run programmatically
+using the <a class="reference external" href="../api/publisher.html">Publisher Interface</a>.
+Options: <code class="docutils literal"><span class="pre">--traceback,</span> <span class="pre">--no-traceback</span></code>.</p>
+</div>
+<div class="section" id="warning-stream">
+<h4><a class="toc-backref" href="#id94">warning_stream</a><a class="headerlink" href="#warning-stream" title="Permalink to this headline">¶</a></h4>
+<p>Path to a file for the output of system messages (warnings) <a class="footnote-reference" href="#pwd" id="id4">[2]</a>.</p>
+<p>Default: stderr (None).  Options: <code class="docutils literal"><span class="pre">--warnings</span></code>.</p>
+</div>
+</div>
+<div class="section" id="parsers">
+<h3><a class="toc-backref" href="#id95">[parsers]</a><a class="headerlink" href="#parsers" title="Permalink to this headline">¶</a></h3>
+<p>Docutils currently supports only one parser, for reStructuredText.</p>
+<div class="section" id="restructuredtext-parser">
+<h4><a class="toc-backref" href="#id96">[restructuredtext parser]</a><a class="headerlink" href="#restructuredtext-parser" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="file-insertion-enabled">
+<h5><a class="toc-backref" href="#id97">file_insertion_enabled</a><a class="headerlink" href="#file-insertion-enabled" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable directives that insert the contents of external
+files, such as the &#8220;<a class="reference external" href="../ref/rst/directives.html#include">include</a>&#8221; &amp; &#8220;<a class="reference external" href="../ref/rst/directives.html#raw">raw</a>&#8221;.  A &#8220;warning&#8221; system
+message (including the directive text) is inserted instead.  (See
+also <a class="reference internal" href="#raw-enabled">raw_enabled</a> for another security-relevant setting.)</p>
+<p>Default: enabled (1).
+Options: <code class="docutils literal"><span class="pre">--file-insertion-enabled,</span> <span class="pre">--no-file-insertion</span></code>.</p>
+</div>
+<div class="section" id="pep-references">
+<h5><a class="toc-backref" href="#id98">pep_references</a><a class="headerlink" href="#pep-references" title="Permalink to this headline">¶</a></h5>
+<p>Recognize and link to standalone PEP references (like &#8220;PEP 258&#8221;).</p>
+<p>Default: disabled (None); enabled (1) in PEP Reader.
+Options: <code class="docutils literal"><span class="pre">--pep-references</span></code>.</p>
+</div>
+<div class="section" id="pep-base-url">
+<h5><a class="toc-backref" href="#id99">pep_base_url</a><a class="headerlink" href="#pep-base-url" title="Permalink to this headline">¶</a></h5>
+<p>Base URL for PEP references.</p>
+<p>Default: &#8220;<a class="reference external" href="http://www.python.org/peps/">http://www.python.org/peps/</a>&#8221;.
+Option: <code class="docutils literal"><span class="pre">--pep-base-url</span></code>.</p>
+</div>
+<div class="section" id="pep-file-url-template">
+<h5><a class="toc-backref" href="#id100">pep_file_url_template</a><a class="headerlink" href="#pep-file-url-template" title="Permalink to this headline">¶</a></h5>
+<p>Template for PEP file part of URL, interpolated with the PEP
+number and appended to <a class="reference internal" href="#pep-base-url">pep_base_url</a>.</p>
+<p>Default: &#8220;pep-%04d&#8221;.  Option: <code class="docutils literal"><span class="pre">--pep-file-url</span></code>.</p>
+</div>
+<div class="section" id="raw-enabled">
+<h5><a class="toc-backref" href="#id101">raw_enabled</a><a class="headerlink" href="#raw-enabled" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable the &#8220;<a class="reference external" href="../ref/rst/directives.html#raw">raw</a>&#8221; directive.  A &#8220;warning&#8221; system message
+(including the directive text) is inserted instead.  (See also
+<a class="reference internal" href="#file-insertion-enabled">file_insertion_enabled</a> for another security-relevant setting.)</p>
+<p>Default: enabled (1).  Options: <code class="docutils literal"><span class="pre">--raw-enabled,</span> <span class="pre">--no-raw</span></code>.</p>
+</div>
+<div class="section" id="rfc-references">
+<h5><a class="toc-backref" href="#id102">rfc_references</a><a class="headerlink" href="#rfc-references" title="Permalink to this headline">¶</a></h5>
+<p>Recognize and link to standalone RFC references (like &#8220;RFC 822&#8221;).</p>
+<p>Default: disabled (None); enabled (1) in PEP Reader.
+Options: <code class="docutils literal"><span class="pre">--rfc-references</span></code>.</p>
+</div>
+<div class="section" id="rfc-base-url">
+<h5><a class="toc-backref" href="#id103">rfc_base_url</a><a class="headerlink" href="#rfc-base-url" title="Permalink to this headline">¶</a></h5>
+<p>Base URL for RFC references.</p>
+<p>Default: &#8220;<a class="reference external" href="http://www.faqs.org/rfcs/">http://www.faqs.org/rfcs/</a>&#8221;.  Option: <code class="docutils literal"><span class="pre">--rfc-base-url</span></code>.</p>
+</div>
+<div class="section" id="smart-quotes">
+<h5><a class="toc-backref" href="#id104">smart_quotes</a><a class="headerlink" href="#smart-quotes" title="Permalink to this headline">¶</a></h5>
+<p>Change straight quotation marks to typographic form. <a class="reference external" href="http://en.wikipedia.org/wiki/Non-English_usage_of_quotation_marks">Quote characters</a>
+are selected according to the language of the current block element (see
+<a class="reference internal" href="#language-code">language_code</a>). Also changes consequtive runs of hyphen-minus and full
+stops (<code class="docutils literal"><span class="pre">---</span></code>, <code class="docutils literal"><span class="pre">--</span></code>, <code class="docutils literal"><span class="pre">...</span></code>) to em-dash, en-dash and ellipsis Unicode
+characters respectively.</p>
+<p>Supported values:</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#booleans">booleans</a> (yes/no)</dt>
+<dd>Use smart quotes?</dd>
+<dt>alt (or &#8220;alternative&#8221;)</dt>
+<dd>Use alternative quote set (if defined for the language).</dd>
+</dl>
+<p>Default: &#8220;no&#8221;. Option: <code class="docutils literal"><span class="pre">--smart-quotes</span></code>.</p>
+<p>New in Docutils 0.10.</p>
+</div>
+<div class="section" id="syntax-highlight">
+<h5><a class="toc-backref" href="#id105">syntax_highlight</a><a class="headerlink" href="#syntax-highlight" title="Permalink to this headline">¶</a></h5>
+<p>Token type names used by <a class="reference external" href="http://pygments.org/">Pygments</a> when parsing contents of the <a class="reference external" href="../ref/rst/directives.html#code">code</a>
+directive and role.</p>
+<p>Supported values:</p>
+<dl class="docutils">
+<dt>long</dt>
+<dd>Use hierarchy of long token type names.</dd>
+<dt>short</dt>
+<dd>Use short token type names. (For use with
+<a class="reference external" href="http://pygments.org/docs/cmdline/#generating-styles">Pygments-generated stylesheets</a>.)</dd>
+<dt>none</dt>
+<dd>No code parsing. Use this to avoid the &#8220;Pygments not
+found&#8221; warning when Pygments is not installed.</dd>
+</dl>
+<p>Default: &#8220;long&#8221;.  Option: <code class="docutils literal"><span class="pre">--syntax-highlight</span></code>.</p>
+<p>New in Docutils 0.9.</p>
+</div>
+<div class="section" id="tab-width">
+<h5><a class="toc-backref" href="#id106">tab_width</a><a class="headerlink" href="#tab-width" title="Permalink to this headline">¶</a></h5>
+<p>Number of spaces for hard tab expansion.</p>
+<p>Default: 8.  Options: <code class="docutils literal"><span class="pre">--tab-width</span></code>.</p>
+</div>
+<div class="section" id="trim-footnote-reference-space">
+<h5><a class="toc-backref" href="#id107">trim_footnote_reference_space</a><a class="headerlink" href="#trim-footnote-reference-space" title="Permalink to this headline">¶</a></h5>
+<p>Remove spaces before footnote references.</p>
+<p>Default: don&#8217;t (None); may be overriden by a writer-specific
+<a class="reference internal" href="#footnote-references-latex2e-writer">footnote_references</a> default though.</p>
+<p>Options: <code class="docutils literal"><span class="pre">--trim-footnote-reference-space,</span> <span class="pre">--leave-footnote-reference-space</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="readers">
+<h3><a class="toc-backref" href="#id108">[readers]</a><a class="headerlink" href="#readers" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="standalone-reader">
+<h4><a class="toc-backref" href="#id109">[standalone reader]</a><a class="headerlink" href="#standalone-reader" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="docinfo-xform">
+<h5><a class="toc-backref" href="#id110">docinfo_xform</a><a class="headerlink" href="#docinfo-xform" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable the bibliographic field list transform
+(docutils.transforms.frontmatter.DocInfo).</p>
+<p>Default: enabled (1).  Options: <code class="docutils literal"><span class="pre">--no-doc-info</span></code>.</p>
+</div>
+<div class="section" id="doctitle-xform">
+<h5><a class="toc-backref" href="#id111">doctitle_xform</a><a class="headerlink" href="#doctitle-xform" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable the promotion of a lone top-level section title
+to document title (and subsequent section title to document
+subtitle promotion; docutils.transforms.frontmatter.DocTitle).</p>
+<p>Default: enabled (1).  Options: <code class="docutils literal"><span class="pre">--no-doc-title</span></code>.</p>
+</div>
+<div class="section" id="sectsubtitle-xform">
+<h5><a class="toc-backref" href="#id112">sectsubtitle_xform</a><a class="headerlink" href="#sectsubtitle-xform" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable the promotion of the title of a lone subsection
+to a subtitle (docutils.transforms.frontmatter.SectSubTitle).</p>
+<p>Default: disabled (0).  Options: <code class="docutils literal"><span class="pre">--section-subtitles,</span>
+<span class="pre">--no-section-subtitles</span></code>.</p>
+</div>
+</div>
+<div class="section" id="pep-reader">
+<h4><a class="toc-backref" href="#id113">[pep reader]</a><a class="headerlink" href="#pep-reader" title="Permalink to this headline">¶</a></h4>
+<p>The <a class="reference internal" href="#pep-references">pep_references</a> and <a class="reference internal" href="#rfc-references">rfc_references</a> settings
+(<a class="reference internal" href="#restructuredtext-parser">[restructuredtext parser]</a>) are set on by default.</p>
+</div>
+<div class="section" id="python-reader">
+<h4><a class="toc-backref" href="#id114">[python reader]</a><a class="headerlink" href="#python-reader" title="Permalink to this headline">¶</a></h4>
+<p>Not implemented.</p>
+</div>
+</div>
+<div class="section" id="writers">
+<h3><a class="toc-backref" href="#id115">[writers]</a><a class="headerlink" href="#writers" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="docutils-xml-writer">
+<h4><a class="toc-backref" href="#id116">[docutils_xml writer]</a><a class="headerlink" href="#docutils-xml-writer" title="Permalink to this headline">¶</a></h4>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<ul class="last simple">
+<li>In Python versions older than 2.7.3 and 3.2.3, the <a class="reference internal" href="#newlines">newlines</a> and
+<a class="reference internal" href="#indents">indents</a> options may adversely affect whitespace; use them only for
+reading convenience (see <a class="reference external" href="http://bugs.python.org/issue4147">http://bugs.python.org/issue4147</a>).</li>
+<li>The XML declaration carries text encoding information, without which
+standard tools may be unable to read the generated XML.</li>
+</ul>
+</div>
+<div class="section" id="doctype-declaration">
+<h5><a class="toc-backref" href="#id117">doctype_declaration</a><a class="headerlink" href="#doctype-declaration" title="Permalink to this headline">¶</a></h5>
+<p>Generate XML with a DOCTYPE declaration.</p>
+<p>Default: do (1).  Options: <code class="docutils literal"><span class="pre">--no-doctype</span></code>.</p>
+</div>
+<div class="section" id="indents">
+<h5><a class="toc-backref" href="#id118">indents</a><a class="headerlink" href="#indents" title="Permalink to this headline">¶</a></h5>
+<p>Generate XML with indents and newlines.</p>
+<p>Default: don&#8217;t (None).  Options: <code class="docutils literal"><span class="pre">--indents</span></code>.</p>
+</div>
+<div class="section" id="newlines">
+<h5><a class="toc-backref" href="#id119">newlines</a><a class="headerlink" href="#newlines" title="Permalink to this headline">¶</a></h5>
+<p>Generate XML with newlines before and after tags.</p>
+<p>Default: don&#8217;t (None).  Options: <code class="docutils literal"><span class="pre">--newlines</span></code>.</p>
+</div>
+<div class="section" id="xml-declaration">
+<span id="xml-declaration-docutils-xml-writer"></span><h5><a class="toc-backref" href="#id120">xml_declaration</a><a class="headerlink" href="#xml-declaration" title="Permalink to this headline">¶</a></h5>
+<p>Generate XML with an XML declaration.  Also defined for the
+<a class="reference internal" href="#xml-declaration-html4css1-writer">HTML Writer</a>.</p>
+<p>Default: do (1).  Options: <code class="docutils literal"><span class="pre">--no-xml-declaration</span></code>.</p>
+</div>
+</div>
+<div class="section" id="html4css1-writer">
+<h4><a class="toc-backref" href="#id121">[html4css1 writer]</a><a class="headerlink" href="#html4css1-writer" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="attribution">
+<span id="attribution-html4css1-writer"></span><h5><a class="toc-backref" href="#id122">attribution</a><a class="headerlink" href="#attribution" title="Permalink to this headline">¶</a></h5>
+<p>Format for block quote attributions: one of &#8220;dash&#8221; (em-dash
+prefix), &#8220;parentheses&#8221;/&#8221;parens&#8221;, or &#8220;none&#8221;.  Also defined for the
+<a class="reference internal" href="#attribution-latex2e-writer">LaTeX Writer</a>.</p>
+<p>Default: &#8220;dash&#8221;.  Options: <code class="docutils literal"><span class="pre">--attribution</span></code>.</p>
+</div>
+<div class="section" id="cloak-email-addresses">
+<h5><a class="toc-backref" href="#id123">cloak_email_addresses</a><a class="headerlink" href="#cloak-email-addresses" title="Permalink to this headline">¶</a></h5>
+<p>Scramble email addresses to confuse harvesters.  In the reference
+URI, the &#8220;&#64;&#8221; will be replaced by %-escapes (as of RFC 1738).  In
+the visible text (link text) of an email reference, the &#8220;&#64;&#8221; and
+all periods (&#8221;.&#8221;) will be surrounded by <code class="docutils literal"><span class="pre">&lt;span&gt;</span></code> tags.
+Furthermore, HTML entities are used to encode these characters in
+order to further complicate decoding the email address.  For
+example, &#8220;<a class="reference external" href="mailto:abc&#37;&#52;&#48;example&#46;org">abc<span>&#64;</span>example<span>&#46;</span>org</a>&#8221; will be output as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">a</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;reference&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;mailto:abc&amp;#37;&amp;#52;&amp;#48;example&amp;#46;org&quot;</span><span class="o">&gt;</span>
+<span class="n">abc</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;&amp;</span><span class="c1">#64;&lt;/span&gt;example&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">While cloaking email addresses will have little to no
+impact on the rendering and usability of email links in most
+browsers, some browsers (e.g. the <code class="docutils literal"><span class="pre">links</span></code> browser) may decode
+cloaked email addresses incorrectly.</p>
+</div>
+<p>Default: don&#8217;t cloak (None).  Option: <code class="docutils literal"><span class="pre">--cloak-email-addresses</span></code>.</p>
+</div>
+<div class="section" id="compact-lists">
+<h5><a class="toc-backref" href="#id124">compact_lists</a><a class="headerlink" href="#compact-lists" title="Permalink to this headline">¶</a></h5>
+<p>Remove extra vertical whitespace between items of bullet lists and
+enumerated lists, when list items are all &#8220;simple&#8221; (i.e., items
+each contain one paragraph and/or one &#8220;simple&#8221; sublist only).  The
+behaviour can be specified directly via &#8220;class&#8221; attributes (values
+&#8220;compact&#8221; and &#8220;open&#8221;) in the document.</p>
+<p>Default: enabled (1).
+Options: <code class="docutils literal"><span class="pre">--compact-lists,</span> <span class="pre">--no-compact-lists</span></code>.</p>
+</div>
+<div class="section" id="compact-field-lists">
+<h5><a class="toc-backref" href="#id125">compact_field_lists</a><a class="headerlink" href="#compact-field-lists" title="Permalink to this headline">¶</a></h5>
+<p>Remove extra vertical whitespace between items of field lists that
+are &#8220;simple&#8221; (i.e., all field bodies each contain at most one
+paragraph).  The behaviour can be specified directly via &#8220;class&#8221;
+attributes (values &#8220;compact&#8221; and &#8220;open&#8221;) in the document.</p>
+<p>Default: enabled (1).
+Options: <code class="docutils literal"><span class="pre">--compact-field-lists,</span> <span class="pre">--no-compact-field-lists</span></code>.</p>
+</div>
+<div class="section" id="embed-stylesheet">
+<span id="embed-stylesheet-html4css1-writer"></span><h5><a class="toc-backref" href="#id126">embed_stylesheet</a><a class="headerlink" href="#embed-stylesheet" title="Permalink to this headline">¶</a></h5>
+<p>Embed the stylesheet in the output HTML file.  The stylesheet file
+must specified by the <a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet_path</a> setting and must be
+accessible during processing.
+Also defined for the <a class="reference internal" href="#embed-stylesheet-latex2e-writer">LaTeX Writer</a>.</p>
+<p>Default: enabled.  Options: <code class="docutils literal"><span class="pre">--embed-stylesheet,</span>
+<span class="pre">--link-stylesheet</span></code>.</p>
+</div>
+<div class="section" id="field-name-limit">
+<h5><a class="toc-backref" href="#id127">field_name_limit</a><a class="headerlink" href="#field-name-limit" title="Permalink to this headline">¶</a></h5>
+<p>The maximum width (in characters) for one-column field names. Longer
+field names will span an entire row of the table used to render the field
+list.  0 indicates &#8220;no limit&#8221;.  See also <a class="reference internal" href="#option-limit">option_limit</a>.</p>
+<p>Default: 14 (i.e. 14 characters).  Option: <code class="docutils literal"><span class="pre">--field-name-limit</span></code>.</p>
+</div>
+<div class="section" id="footnote-references">
+<span id="footnote-references-html4css1-writer"></span><h5><a class="toc-backref" href="#id128">footnote_references</a><a class="headerlink" href="#footnote-references" title="Permalink to this headline">¶</a></h5>
+<p>Format for footnote references, one of &#8220;superscript&#8221; or &#8220;brackets&#8221;.
+Also defined for the <a class="reference internal" href="#footnote-references-latex2e-writer">LaTeX Writer</a>.</p>
+<p>Overrides <a class="footnote-reference" href="#override" id="id8">[3]</a> <a class="reference internal" href="#trim-footnote-reference-space">trim_footnote_reference_space</a>, if
+applicable. <a class="footnote-reference" href="#footnote-space" id="id9">[5]</a></p>
+<p>Default: &#8220;brackets&#8221;.  Option: <code class="docutils literal"><span class="pre">--footnote-references</span></code>.</p>
+</div>
+<div class="section" id="initial-header-level">
+<h5><a class="toc-backref" href="#id129">initial_header_level</a><a class="headerlink" href="#initial-header-level" title="Permalink to this headline">¶</a></h5>
+<p>The initial level for header elements.  This does not affect the
+document title &amp; subtitle; see <a class="reference internal" href="#doctitle-xform">doctitle_xform</a>.</p>
+<p>Default: 1 (for &#8220;&lt;h1&gt;&#8221;).  Option: <code class="docutils literal"><span class="pre">--initial-header-level</span></code>.</p>
+</div>
+<div class="section" id="math-output">
+<h5><a class="toc-backref" href="#id130">math_output</a><a class="headerlink" href="#math-output" title="Permalink to this headline">¶</a></h5>
+<p>The format of mathematical content (<a class="reference external" href="../ref/rst/directives.html#math">math directive</a> and role) in
+the output document. Supported values are (case insensitive):</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">HTML:</th><td class="field-body"><p class="first">Format math in standard HTML enhanced by CSS rules.
+Requires the <code class="docutils literal"><span class="pre">math.css</span></code> stylesheet (in the system
+<a class="reference internal" href="#stylesheet-dirs-html4css1-writer">stylesheet directory</a></p>
+<p>A <a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet_path</a>
+can be appended after whitespace, the specified
+stylesheet(s) will only be referenced or embedded, if required
+(i.e. if there is mathematical content in the document).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">MathJax:</th><td class="field-body"><p class="first">Format math for display with <a class="reference external" href="http://www.mathjax.org/">MathJax</a>, a JavaScript-based math
+rendering engine that uses HTML/CSS, JavaScript, and unicode
+fonts for high-quality typesetting that is scalable and prints
+at full resolution.</p>
+<dl class="docutils">
+<dt>Pro:</dt>
+<dd><p class="first">Works &#8216;out of the box&#8217; across multiple browsers and platforms.</p>
+<p class="last">Supports a large subset of LaTeX math commands and constructs
+(see <a class="reference external" href="http://www.mathjax.org/docs/1.1/tex.html">http://www.mathjax.org/docs/1.1/tex.html</a>).</p>
+</dd>
+<dt>Con:</dt>
+<dd><p class="first">Requires an Internet connection (or a local MathJax
+installation and configuration).</p>
+<p class="last">Downloads JavaScript code from a third-party site.</p>
+</dd>
+</dl>
+<p>A custom URI can be appended after whitespace,
+for example a local installation</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">-</span><span class="n">output</span><span class="p">:</span> <span class="n">MathJax</span> <span class="n">file</span><span class="p">:</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">javascript</span><span class="o">/</span><span class="n">mathjax</span><span class="o">/</span><span class="n">MathJax</span><span class="o">.</span><span class="n">js</span>
+</pre></div>
+</div>
+<p>or a URI to <a class="reference external" href="http://www.mathjax.org/resources/faqs/#problem-https">access the MathJax CDN using a https secure
+connection</a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">MathML:</th><td class="field-body"><p class="first">Embed math content as presentational <a class="reference external" href="http://www.w3.org/TR/MathML/">MathML</a>.</p>
+<dl class="docutils">
+<dt>Pro:</dt>
+<dd><p class="first">The W3C recommendation for math on the web.</p>
+<p class="last">Self-contained documents (no JavaScript, no external downloads).</p>
+</dd>
+<dt>Con:</dt>
+<dd><p class="first">Docutil&#8217;s latex2mathml converter supports only a small
+subset of LaTeX syntax.</p>
+<p class="last">With the &#8220;html4css1&#8221; writer, the resulting HTML document does
+not validate, as there is no DTD for MathML + XHTML
+Transitional. However, MathML-enabled browsers will render it
+fine.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">LaTeX:</th><td class="field-body"><p class="first">Include literal LaTeX code.</p>
+<p class="last">The failsave fallback.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Default: &#8220;HTML math.css&#8221;.  Option: <code class="docutils literal"><span class="pre">--math-output</span></code>.</p>
+<p>New in Docutils 0.8.</p>
+</div>
+<div class="section" id="option-limit">
+<h5><a class="toc-backref" href="#id131">option_limit</a><a class="headerlink" href="#option-limit" title="Permalink to this headline">¶</a></h5>
+<p>The maximum width (in characters) for options in option lists.
+Longer options will span an entire row of the table used to render
+the option list.  0 indicates &#8220;no limit&#8221;.  See also
+<a class="reference internal" href="#field-name-limit">field_name_limit</a>.</p>
+<p>Default: 14 (i.e. 14 characters).  Option: <code class="docutils literal"><span class="pre">--option-limit</span></code>.</p>
+</div>
+<div class="section" id="stylesheet">
+<span id="stylesheet-html4css1-writer"></span><h5><a class="toc-backref" href="#id132">stylesheet</a><a class="headerlink" href="#stylesheet" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated list of CSS stylesheet URLs, used verbatim.
+Also defined for the <a class="reference internal" href="#stylesheet-latex2e-writer">LaTeX Writer</a>.</p>
+<p>Overrides also <a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet-path</a>. <a class="footnote-reference" href="#override" id="id11">[3]</a></p>
+<p>Default: None.  Options: <code class="docutils literal"><span class="pre">--stylesheet</span></code>.</p>
+</div>
+<div class="section" id="stylesheet-dirs">
+<span id="stylesheet-dirs-html4css1-writer"></span><h5><a class="toc-backref" href="#id133">stylesheet_dirs</a><a class="headerlink" href="#stylesheet-dirs" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated list of directories where stylesheets can be found.
+Used by the <a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet_path</a> setting when expanding relative path arguments.</p>
+<p>Note: This setting defines a &#8220;search path&#8221; (similar to the PATH variable for
+executables). However, the term &#8220;path&#8221; is already used in the
+<a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet_path</a> setting with the meaning of a file location.</p>
+<p>Default: the working directory of the process at launch and the directory
+with default stylesheet files (writer and installation specific).
+Use the <code class="docutils literal"><span class="pre">--help</span></code> option to get the exact value.
+Option: <code class="docutils literal"><span class="pre">--stylesheet-directories</span></code>.</p>
+</div>
+<div class="section" id="stylesheet-path">
+<span id="stylesheet-path-html4css1-writer"></span><h5><a class="toc-backref" href="#id134">stylesheet_path</a><a class="headerlink" href="#stylesheet-path" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated list of paths to CSS stylesheets. Relative paths are
+expanded if a matching file is found in the <a class="reference internal" href="#embed-stylesheet-html4css1-writer">stylesheet_dirs</a>.
+If <a class="reference internal" href="#stylesheet-path-latex2e-writer">embed_stylesheet</a> is False, paths are rewritten relative to the
+output HTML file. Also defined for the <a class="reference internal" href="#stylesheet-dirs-html4css1-writer">LaTeX Writer</a>.</p>
+<p>Also overrides &#8220;stylesheet&#8221;. <a class="footnote-reference" href="#override" id="id15">[3]</a>
+Pass an empty string (to either &#8220;stylesheet&#8221; or &#8220;stylesheet_path&#8221;) to
+deactivate stylesheet inclusion.</p>
+<p>Default: &#8220;html4css1.css&#8221;.
+Options: <code class="docutils literal"><span class="pre">--stylesheet-path</span></code>.</p>
+</div>
+<div class="section" id="table-style">
+<span id="table-style-html4css1-writer"></span><h5><a class="toc-backref" href="#id135">table_style</a><a class="headerlink" href="#table-style" title="Permalink to this headline">¶</a></h5>
+<p>Class value(s) added to tables to allow styling with CSS.
+The default sylesheet defines:</p>
+<dl class="docutils">
+<dt>borderless</dt>
+<dd>No borders around the table.</dd>
+<dt>booktabs</dt>
+<dd>Lines above and below the table and a thin line after the head.</dd>
+</dl>
+<p>Default: &#8220;&#8221;.  Option: <code class="docutils literal"><span class="pre">--table-style</span></code>.</p>
+</div>
+<div class="section" id="template">
+<span id="template-html4css1-writer"></span><h5><a class="toc-backref" href="#id136">template</a><a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h5>
+<p>Path to template file, which must be encoded in UTF-8 <a class="footnote-reference" href="#pwd" id="id19">[2]</a>.
+Also defined for the <a class="reference internal" href="#template-latex2e-writer">LaTeX Writer</a>.</p>
+<p>Default: &#8220;template.txt&#8221; in the docutils/writers/html4css1/
+directory (installed automatically; for the exact machine-specific
+path, use the <code class="docutils literal"><span class="pre">--help</span></code> option).  Options: <code class="docutils literal"><span class="pre">--template</span></code>.</p>
+</div>
+<div class="section" id="xml-declaration-html4css1-writer">
+<span id="id21"></span><h5><a class="toc-backref" href="#id137">xml_declaration</a><a class="headerlink" href="#xml-declaration-html4css1-writer" title="Permalink to this headline">¶</a></h5>
+<p>Generate XML with an XML declaration.  Also defined for the
+<a class="reference internal" href="#xml-declaration-docutils-xml-writer">Docutils XML Writer</a>.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">The XML declaration carries text encoding
+information, without which standard tools may be unable to read
+the generated XML.</p>
+</div>
+<p>Default: do (1).  Options: <code class="docutils literal"><span class="pre">--no-xml-declaration</span></code>.</p>
+</div>
+<div class="section" id="pep-html-writer">
+<h5><a class="toc-backref" href="#id138">[pep_html writer]</a><a class="headerlink" href="#pep-html-writer" title="Permalink to this headline">¶</a></h5>
+<p>The PEP/HTML Writer derives from the standard HTML Writer, and shares
+all settings defined in the <a class="reference internal" href="#html4css1-writer">[html4css1 writer]</a> section.  The
+&#8220;[html4css1 writer]&#8221; section of configuration files is processed
+before the &#8220;[pep_html writer]&#8221; section.</p>
+<p>The PEP/HTML Writer&#8217;s default for the following settings differ from
+those of the standard HTML Writer:</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#stylesheet-path-html4css1-writer">stylesheet_path</a>:</dt>
+<dd>Default: &#8220;pep.css&#8221;</dd>
+<dt><a class="reference internal" href="#template-html4css1-writer">template</a>:</dt>
+<dd>Default: <code class="docutils literal"><span class="pre">docutils/writers/pep_html/template.txt</span></code> in the installation
+directory.  For the exact machine-specific path, use the <code class="docutils literal"><span class="pre">--help</span></code>
+option.</dd>
+</dl>
+<div class="section" id="no-random">
+<h6><a class="toc-backref" href="#id139">no_random</a><a class="headerlink" href="#no-random" title="Permalink to this headline">¶</a></h6>
+<p>Do not use a random banner image.  Mainly used to get predictable
+results when testing.</p>
+<p>Default: random enabled (None).  Options: <code class="docutils literal"><span class="pre">--no-random</span></code> (hidden).</p>
+</div>
+<div class="section" id="pep-home">
+<h6><a class="toc-backref" href="#id140">pep_home</a><a class="headerlink" href="#pep-home" title="Permalink to this headline">¶</a></h6>
+<p>Home URL prefix for PEPs.</p>
+<p>Default: current directory (&#8221;.&#8221;).  Options: <code class="docutils literal"><span class="pre">--pep-home</span></code>.</p>
+</div>
+<div class="section" id="python-home">
+<h6><a class="toc-backref" href="#id141">python_home</a><a class="headerlink" href="#python-home" title="Permalink to this headline">¶</a></h6>
+<p>Python&#8217;s home URL.</p>
+<p>Default: parent directory (&#8221;..&#8221;).  Options: <code class="docutils literal"><span class="pre">--python-home</span></code>.</p>
+</div>
+</div>
+<div class="section" id="s5-html-writer">
+<h5><a class="toc-backref" href="#id142">[s5_html writer]</a><a class="headerlink" href="#s5-html-writer" title="Permalink to this headline">¶</a></h5>
+<p>The S5/HTML Writer derives from the standard HTML Writer, and shares
+all settings defined in the <a class="reference internal" href="#html4css1-writer">[html4css1 writer]</a> section.  The
+&#8220;[html4css1 writer]&#8221; section of configuration files is processed
+before the &#8220;[s5_html writer]&#8221; section.</p>
+<p>The S5/HTML Writer&#8217;s default for the following settings differ
+from those of the standard HTML Writer:</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#compact-lists">compact_lists</a>:</dt>
+<dd>Default: disable compact lists.</dd>
+<dt><a class="reference internal" href="#template-html4css1-writer">template</a>:</dt>
+<dd>Default: <code class="docutils literal"><span class="pre">docutils/writers/s5_html/template.txt</span></code> in the installation
+directory.  For the exact machine-specific path, use the <code class="docutils literal"><span class="pre">--help</span></code>
+option.</dd>
+</dl>
+<div class="section" id="hidden-controls">
+<h6><a class="toc-backref" href="#id143">hidden_controls</a><a class="headerlink" href="#hidden-controls" title="Permalink to this headline">¶</a></h6>
+<p>Auto-hide the presentation controls in slideshow mode, or or keep
+them visible at all times.</p>
+<p>Default: auto-hide (1).  Options: <code class="docutils literal"><span class="pre">--hidden-controls</span></code>,
+<code class="docutils literal"><span class="pre">--visible-controls</span></code>.</p>
+</div>
+<div class="section" id="current-slide">
+<h6><a class="toc-backref" href="#id144">current_slide</a><a class="headerlink" href="#current-slide" title="Permalink to this headline">¶</a></h6>
+<p>Enable or disable the current slide indicator (&#8220;1/15&#8221;).</p>
+<p>Default: disabled (None).  Options: <code class="docutils literal"><span class="pre">--current-slide</span></code>,
+<code class="docutils literal"><span class="pre">--no-current-slide</span></code>.</p>
+</div>
+<div class="section" id="overwrite-theme-files">
+<h6><a class="toc-backref" href="#id145">overwrite_theme_files</a><a class="headerlink" href="#overwrite-theme-files" title="Permalink to this headline">¶</a></h6>
+<p>Allow or prevent the overwriting of existing theme files in the
+<code class="docutils literal"><span class="pre">ui/&lt;theme&gt;</span></code> directory.  This has no effect if &#8220;<a class="reference internal" href="#theme-url">theme_url</a>&#8221; is
+used.</p>
+<p>Default: keep existing theme files (None).  Options:
+<code class="docutils literal"><span class="pre">--keep-theme-files</span></code>, <code class="docutils literal"><span class="pre">--overwrite-theme-files</span></code>.</p>
+</div>
+<div class="section" id="theme">
+<h6><a class="toc-backref" href="#id146">theme</a><a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h6>
+<p>Name of an installed S5 theme, to be copied into a <code class="docutils literal"><span class="pre">ui/&lt;theme&gt;</span></code>
+subdirectory, beside the destination file (output HTML).  Note
+that existing theme files will not be overwritten; the existing
+theme directory must be deleted manually.
+Also overrides the &#8220;<a class="reference internal" href="#theme-url">theme_url</a>&#8221; setting. <a class="footnote-reference" href="#override" id="id23">[3]</a></p>
+<p>Default: &#8220;default&#8221;.  Option: <code class="docutils literal"><span class="pre">--theme</span></code>.</p>
+</div>
+<div class="section" id="theme-url">
+<h6><a class="toc-backref" href="#id147">theme_url</a><a class="headerlink" href="#theme-url" title="Permalink to this headline">¶</a></h6>
+<p>The URL of an S5 theme directory.  The destination file (output
+HTML) will link to this theme; nothing will be copied.  Also overrides
+the &#8220;<a class="reference internal" href="#theme">theme</a>&#8221; setting. <a class="footnote-reference" href="#override" id="id24">[3]</a></p>
+<p>Default: None.  Option: <code class="docutils literal"><span class="pre">--theme-url</span></code>.</p>
+</div>
+<div class="section" id="view-mode">
+<h6><a class="toc-backref" href="#id148">view_mode</a><a class="headerlink" href="#view-mode" title="Permalink to this headline">¶</a></h6>
+<p>The initial view mode, either &#8220;slideshow&#8221; or &#8220;outline&#8221;.</p>
+<p>Default: &#8220;slidewhow&#8221;.  Option: <code class="docutils literal"><span class="pre">--view-mode</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="latex2e-writer">
+<h4><a class="toc-backref" href="#id149">[latex2e writer]</a><a class="headerlink" href="#latex2e-writer" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="use-latex-toc">
+<h5><a class="toc-backref" href="#id150">use_latex_toc</a><a class="headerlink" href="#use-latex-toc" title="Permalink to this headline">¶</a></h5>
+<p>To get pagenumbers in the table of contents the table of contents
+must be generated by LaTeX. Usually latex must be run twice to get
+numbers correct.</p>
+<p>Default: on.  Options: <code class="docutils literal"><span class="pre">--use-latex-toc,</span> <span class="pre">--use-docutils-toc</span></code>.</p>
+</div>
+<div class="section" id="use-latex-docinfo">
+<h5><a class="toc-backref" href="#id151">use_latex_docinfo</a><a class="headerlink" href="#use-latex-docinfo" title="Permalink to this headline">¶</a></h5>
+<p>Attach author and date to the document title
+instead of the document info table.</p>
+<p>Default: off.  Options: <code class="docutils literal"><span class="pre">--use-latex-docinfo,</span> <span class="pre">--use-docutils-docinfo</span></code>.</p>
+</div>
+<div class="section" id="docutils-footnotes">
+<h5><a class="toc-backref" href="#id152">docutils_footnotes</a><a class="headerlink" href="#docutils-footnotes" title="Permalink to this headline">¶</a></h5>
+<p>Use the Docutils-specific macros <code class="docutils literal"><span class="pre">\DUfootnote</span></code> and
+<code class="docutils literal"><span class="pre">\DUfootnotetext</span></code> for footnotes.</p>
+<p>Default: on.  Option: <code class="docutils literal"><span class="pre">--docutils-footnotes</span></code>.</p>
+</div>
+<div class="section" id="figure-footnotes">
+<h5><a class="toc-backref" href="#id153">figure_footnotes</a><a class="headerlink" href="#figure-footnotes" title="Permalink to this headline">¶</a></h5>
+<p>Typeset footnote text in a figure float. This may lead to footnotes,
+citations, and figures being mixed at page foot.</p>
+<p><em>Deprecated:</em> This setting will be removed in a future Docutils
+version.</p>
+<p>Default: off.  Option: <code class="docutils literal"><span class="pre">--figure-footnotes</span></code>.</p>
+</div>
+<div class="section" id="use-latex-citations">
+<h5><a class="toc-backref" href="#id154">use_latex_citations</a><a class="headerlink" href="#use-latex-citations" title="Permalink to this headline">¶</a></h5>
+<p>Use cite for citations instead of a simulation with figure-floats.</p>
+<p>Default: off.  Options: <code class="docutils literal"><span class="pre">--use-latex-citations,</span> <span class="pre">--figure-citations</span></code>.</p>
+</div>
+<div class="section" id="use-latex-abstract">
+<h5><a class="toc-backref" href="#id155">use_latex_abstract</a><a class="headerlink" href="#use-latex-abstract" title="Permalink to this headline">¶</a></h5>
+<p>Use LaTeX abstract environment for the document&#8217;s abstract.</p>
+<p>Default: off.  Options: <code class="docutils literal"><span class="pre">--use-latex-abstract,</span> <span class="pre">--topic-abstract</span></code>.</p>
+</div>
+<div class="section" id="hyperlink-color">
+<h5><a class="toc-backref" href="#id156">hyperlink_color</a><a class="headerlink" href="#hyperlink-color" title="Permalink to this headline">¶</a></h5>
+<p>Color of any hyperlinks embedded in text.</p>
+<ul class="simple">
+<li>&#8220;0&#8221; or &#8220;false&#8221; disable coloring of links. (Links will be marked
+by red boxes that are not printed),</li>
+<li>&#8220;black&#8221; results in “invisible“ links,</li>
+</ul>
+<p>Set <a class="reference internal" href="#hyperref-options">hyperref_options</a> to &#8220;draft&#8221; to completely disable hyperlinking.</p>
+<p>Default: &#8220;blue&#8221;.  Option: <code class="docutils literal"><span class="pre">--hyperlink-color</span></code>.</p>
+</div>
+<div class="section" id="hyperref-options">
+<h5><a class="toc-backref" href="#id157">hyperref_options</a><a class="headerlink" href="#hyperref-options" title="Permalink to this headline">¶</a></h5>
+<p>Options for the <a class="reference external" href="http://tug.org/applications/hyperref/">hyperref TeX package</a>. If <a class="reference internal" href="#hyperlink-color">hyperlink_color</a> is
+not &#8220;false&#8221;, the expansion of</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;colorlinks=true,linkcolor=</span><span class="si">%s</span><span class="s1">,urlcolor=</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+   <span class="n">hyperlink_color</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hyperlink_color</span>
+</pre></div>
+</div>
+<p>is prepended.</p>
+<p>Default: &#8220;&#8221;.   Option: <code class="docutils literal"><span class="pre">--hyperref-options</span></code>.</p>
+</div>
+<div class="section" id="documentclass">
+<h5><a class="toc-backref" href="#id158">documentclass</a><a class="headerlink" href="#documentclass" title="Permalink to this headline">¶</a></h5>
+<p>Specify latex documentclass.</p>
+<p>Default: &#8220;article&#8221;.  Option: <code class="docutils literal"><span class="pre">--documentclass</span></code>.</p>
+</div>
+<div class="section" id="documentoptions">
+<h5><a class="toc-backref" href="#id159">documentoptions</a><a class="headerlink" href="#documentoptions" title="Permalink to this headline">¶</a></h5>
+<p>Specify document options.  Multiple options can be given, separated by
+commas.</p>
+<p>Default: &#8220;a4paper&#8221;.  Option: <code class="docutils literal"><span class="pre">--documentoptions</span></code>.</p>
+</div>
+<div class="section" id="font-encoding">
+<h5><a class="toc-backref" href="#id160">font_encoding</a><a class="headerlink" href="#font-encoding" title="Permalink to this headline">¶</a></h5>
+<p>Specify LaTeX font encoding. Multiple options can be given, separated by
+commas. The last value becomes the document default.
+Possible values are &#8220;&#8221;, &#8220;T1&#8221;, &#8220;OT1&#8221;, &#8220;LGR,T1&#8221; or any other combination of
+<a class="reference external" href="http://mirror.ctan.org/macros/latex/doc/encguide.pdf">LaTeX font encodings</a>.</p>
+<p>Default: &#8220;T1&#8221;.  Option: <code class="docutils literal"><span class="pre">--font-encoding</span></code>.</p>
+</div>
+<div class="section" id="embed-stylesheet-latex2e-writer">
+<span id="id25"></span><h5><a class="toc-backref" href="#id161">embed_stylesheet</a><a class="headerlink" href="#embed-stylesheet-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>Embed the stylesheet(s) in the header of the output file.  The
+stylesheets must be accessible during processing.  Currently, this
+fails if the file is not available via the given path (i.e. the
+file is <em>not</em> searched in the <a class="reference external" href="http://www.tex.ac.uk/cgi-bin/texfaq2html?label=what-TDS">TeX input path</a>).
+Also defined for the <a class="reference internal" href="#embed-stylesheet-html4css1-writer">HTML Writer</a> (with default <em>on</em>).</p>
+<p>Default: off.  Options: <code class="docutils literal"><span class="pre">--embed-stylesheet,</span> <span class="pre">--link-stylesheet</span></code>.</p>
+</div>
+<div class="section" id="stylesheet-latex2e-writer">
+<span id="id27"></span><h5><a class="toc-backref" href="#id162">stylesheet</a><a class="headerlink" href="#stylesheet-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated <a class="reference internal" href="#list">list</a> of style files.
+Also defined for the <a class="reference internal" href="#stylesheet-path-latex2e-writer">HTML Writer</a>.</p>
+<p>Overrides also <a class="reference internal" href="#embed-stylesheet-latex2e-writer">stylesheet_path</a>. <a class="footnote-reference" href="#override" id="id28">[3]</a></p>
+<p>If <a class="reference internal" href="#stylesheet-html4css1-writer">embed_stylesheet</a> is False (default), the stylesheet files are
+referenced with <code class="docutils literal"><span class="pre">\usepackage</span></code> (extension <code class="docutils literal"><span class="pre">.sty</span></code> or no extension) or
+<code class="docutils literal"><span class="pre">\input</span></code> (any other extension).</p>
+<p>LaTeX will search the specified files in the <a class="reference external" href="http://www.tex.ac.uk/cgi-bin/texfaq2html?label=what-TDS">TeX input path</a>.</p>
+<p>Default: no stylesheet (&#8220;&#8221;).  Option: <code class="docutils literal"><span class="pre">--stylesheet</span></code>.</p>
+</div>
+<div class="section" id="stylesheet-dirs-latex2e-writer">
+<span id="id32"></span><h5><a class="toc-backref" href="#id163">stylesheet_dirs</a><a class="headerlink" href="#stylesheet-dirs-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated list of directories where stylesheets can be found.
+Used by the <a class="reference internal" href="#stylesheet-path-latex2e-writer">stylesheet_path</a> setting.</p>
+<p>Note: This setting defines a &#8220;search path&#8221; (similar to the PATH variable for
+executables). However, the term &#8220;path&#8221; is already used in the
+<a class="reference internal" href="#stylesheet-path-latex2e-writer">stylesheet_path</a> setting with the meaning of a file location.</p>
+<p>Default: the working directory of the process at launch and the directory
+with default stylesheet files (writer and installation specific).
+Use the <code class="docutils literal"><span class="pre">--help</span></code> option to get the exact value.
+Option: <code class="docutils literal"><span class="pre">--stylesheet-directories</span></code>.</p>
+</div>
+<div class="section" id="stylesheet-path-latex2e-writer">
+<span id="id35"></span><h5><a class="toc-backref" href="#id164">stylesheet_path</a><a class="headerlink" href="#stylesheet-path-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>A comma-separated list of style files. Relative paths are expanded if a
+matching file is found in the <a class="reference internal" href="#stylesheet-dirs-latex2e-writer">stylesheet_dirs</a>.
+If <a class="reference internal" href="#embed-stylesheet-latex2e-writer">embed_stylesheet</a> is False, paths are rewritten relative to the
+output file path. Run <code class="docutils literal"><span class="pre">latex</span></code> from the directory containing
+the output file.</p>
+<p>The <a class="reference internal" href="#stylesheet-latex2e-writer">stylesheet</a>  option is preferred for files in the <a class="reference external" href="http://www.tex.ac.uk/cgi-bin/texfaq2html?label=what-TDS">TeX input path</a>.</p>
+<p>Also defined for the
+<a class="reference internal" href="#stylesheet-path-html4css1-writer">HTML Writer</a>.</p>
+<p>Also overrides <a class="reference internal" href="#stylesheet-latex2e-writer">stylesheet</a>. <a class="footnote-reference" href="#override" id="id36">[3]</a></p>
+<p>Default: no stylesheet (&#8220;&#8221;).  Option: <code class="docutils literal"><span class="pre">--stylesheet-path</span></code>.</p>
+</div>
+<div class="section" id="latex-preamble">
+<h5><a class="toc-backref" href="#id165">latex_preamble</a><a class="headerlink" href="#latex-preamble" title="Permalink to this headline">¶</a></h5>
+<p>LaTeX code that will be inserted in the document preamble.
+Can be used to load packages with options or (re-) define LaTeX
+macros without writing a custom style file (new in Docutils 0.7).</p>
+<p>Default: Load the &#8220;PDF standard fonts&#8221; (Times, Helvetica,
+Courier):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>\<span class="n">usepackage</span><span class="p">{</span><span class="n">mathptmx</span><span class="p">}</span> <span class="o">%</span> <span class="n">Times</span>
+\<span class="n">usepackage</span><span class="p">[</span><span class="n">scaled</span><span class="o">=.</span><span class="mi">90</span><span class="p">]{</span><span class="n">helvet</span><span class="p">}</span>
+\<span class="n">usepackage</span><span class="p">{</span><span class="n">courier</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Option: <code class="docutils literal"><span class="pre">--latex-preamble</span></code>.</p>
+</div>
+<div class="section" id="template-latex2e-writer">
+<span id="id41"></span><h5><a class="toc-backref" href="#id166">template</a><a class="headerlink" href="#template-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>Path to template file, which must be encoded in UTF-8 <a class="footnote-reference" href="#pwd" id="id42">[2]</a>.
+Also defined for the <a class="reference internal" href="#template-html4css1-writer">HTML Writer</a>.</p>
+<p>Default: &#8220;default.tex&#8221; in the docutils/writers/latex2e/
+directory (installed automatically; for the exact machine-specific
+path, use the <code class="docutils literal"><span class="pre">--help</span></code> option).  Options: <code class="docutils literal"><span class="pre">--template</span></code>.</p>
+</div>
+<div class="section" id="footnote-references-latex2e-writer">
+<span id="id44"></span><h5><a class="toc-backref" href="#id167">footnote_references</a><a class="headerlink" href="#footnote-references-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>Format for footnote references: one of &#8220;superscript&#8221; or
+&#8220;brackets&#8221;.  Also defined for the <a class="reference internal" href="#footnote-references-html4css1-writer">HTML Writer</a>.</p>
+<p>Overrides <a class="footnote-reference" href="#override" id="id45">[3]</a> <a class="reference internal" href="#trim-footnote-reference-space">trim_footnote_reference_space</a>, if
+applicable <a class="footnote-reference" href="#footnote-space" id="id46">[5]</a>.</p>
+<p>Default: &#8220;superscript&#8221;.  Option: <code class="docutils literal"><span class="pre">--footnote-references</span></code>.</p>
+</div>
+<div class="section" id="attribution-latex2e-writer">
+<span id="id48"></span><h5><a class="toc-backref" href="#id168">attribution</a><a class="headerlink" href="#attribution-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>See <a class="reference internal" href="#attribution-html4css1-writer">attribution [html4css1 writer]</a>.</p>
+</div>
+<div class="section" id="compound-enumerators">
+<h5><a class="toc-backref" href="#id169">compound_enumerators</a><a class="headerlink" href="#compound-enumerators" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable compound enumerators for nested enumerated lists
+(e.g. &#8220;1.2.a.ii&#8221;).</p>
+<p>Default: disabled (None).
+Options: <code class="docutils literal"><span class="pre">--compound-enumerators</span></code>, <code class="docutils literal"><span class="pre">--no-compound-enumerators</span></code>.</p>
+</div>
+<div class="section" id="literal-block-env">
+<h5><a class="toc-backref" href="#id170">literal_block_env</a><a class="headerlink" href="#literal-block-env" title="Permalink to this headline">¶</a></h5>
+<p>When possibile<a class="footnote-reference" href="#id50" id="id49">[1]</a>, use the specified environment for literal-blocks.</p>
+<p>Default: &#8220;&#8221; (quoting of whitespace and special chars).
+Option: <code class="docutils literal"><span class="pre">--literal-block-env</span></code>.</p>
+<table class="docutils footnote" frame="void" id="id50" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id49">[1]</a></td><td><p class="first">A literal-block element, when processed by a Docutils writer might
+have it&#8217;s origin in literal block following &#8221;::&#8221; or a
+<code class="docutils literal"><span class="pre">..</span> <span class="pre">parsed-literal::</span></code> directive.</p>
+<p class="last">A LaTeX verbatim environment is only usable if there is no other
+markup contained in the literal-block.</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="section-prefix-for-enumerators">
+<h5><a class="toc-backref" href="#id171">section_prefix_for_enumerators</a><a class="headerlink" href="#section-prefix-for-enumerators" title="Permalink to this headline">¶</a></h5>
+<p>Enable or disable section (&#8221;.&#8221; subsection ...) prefixes for
+compound enumerators.  This has no effect unless
+<a class="reference internal" href="#compound-enumerators">compound_enumerators</a> are enabled.</p>
+<p>Default: disabled (None).
+Options: <code class="docutils literal"><span class="pre">--section-prefix-for-enumerators</span></code>,
+<code class="docutils literal"><span class="pre">--no-section-prefix-for-enumerators</span></code>.</p>
+</div>
+<div class="section" id="section-enumerator-separator">
+<h5><a class="toc-backref" href="#id172">section_enumerator_separator</a><a class="headerlink" href="#section-enumerator-separator" title="Permalink to this headline">¶</a></h5>
+<p>The separator between section number prefix and enumerator for
+compound enumerated lists (see <a class="reference internal" href="#compound-enumerators">compound_enumerators</a>).</p>
+<p>Generally it isn&#8217;t recommended to use both sub-sections and nested
+enumerated lists with compound enumerators.  This setting avoids
+ambiguity in the situation where a section &#8220;1&#8221; has a list item
+enumerated &#8220;1.1&#8221;, and subsection &#8220;1.1&#8221; has list item &#8220;1&#8221;.  With a
+separator of &#8221;.&#8221;, these both would translate into a final compound
+enumerator of &#8220;1.1.1&#8221;.  With a separator of &#8220;-&#8221;, we get the
+unambiguous &#8220;1-1.1&#8221; and &#8220;1.1-1&#8221;.</p>
+<p>Default: &#8220;-&#8221;.  Option: <code class="docutils literal"><span class="pre">--section-enumerator-separator</span></code>.</p>
+</div>
+<div class="section" id="table-style-latex2e-writer">
+<span id="id51"></span><h5><a class="toc-backref" href="#id173">table_style</a><a class="headerlink" href="#table-style-latex2e-writer" title="Permalink to this headline">¶</a></h5>
+<p>Specify the drawing of separation lines.
+Supported values:</p>
+<dl class="docutils">
+<dt>standard</dt>
+<dd>lines around and between cells.</dd>
+<dt>booktabs</dt>
+<dd>a line above and below the table and one after the head.</dd>
+<dt>borderless</dt>
+<dd>no lines.</dd>
+</dl>
+<p>Default: &#8220;standard&#8221;.  Option: <code class="docutils literal"><span class="pre">--table-style</span></code>.</p>
+</div>
+<div class="section" id="xetex-writer">
+<h5><a class="toc-backref" href="#id174">[xetex writer]</a><a class="headerlink" href="#xetex-writer" title="Permalink to this headline">¶</a></h5>
+<p>The xetex writer derives from the latex2e writer, and shares
+all settings defined in the <a class="reference internal" href="#latex2e-writer">[latex2e writer]</a> section.  The
+&#8220;[latex2e writer]&#8221; section of configuration files is processed
+before the &#8220;[xetex writer]&#8221; section.</p>
+<p>The following settings differ from those of the latex2e writer:</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#font-encoding">font_encoding</a></dt>
+<dd>Disabled  (XeTeX uses Unicode-encoded fonts).</dd>
+<dt><a class="reference internal" href="#latex-preamble">latex_preamble</a></dt>
+<dd><blockquote class="first">
+<div><p>Default: Font setup for <a class="reference external" href="http://www.linuxlibertine.org/">Linux Libertine</a>,:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">Linux</span> <span class="n">Libertine</span> <span class="p">(</span><span class="n">free</span><span class="p">,</span> <span class="n">wide</span> <span class="n">coverage</span><span class="p">,</span> <span class="ow">not</span> <span class="n">only</span> <span class="k">for</span> <span class="n">Linux</span><span class="p">)</span>
+\<span class="n">setmainfont</span><span class="p">{</span><span class="n">Linux</span> <span class="n">Libertine</span> <span class="n">O</span><span class="p">}</span>
+\<span class="n">setsansfont</span><span class="p">{</span><span class="n">Linux</span> <span class="n">Biolinum</span> <span class="n">O</span><span class="p">}</span>
+\<span class="n">setmonofont</span><span class="p">[</span><span class="n">HyphenChar</span><span class="o">=</span><span class="kc">None</span><span class="p">]{</span><span class="n">DejaVu</span> <span class="n">Sans</span> <span class="n">Mono</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p class="last">The optional argument <code class="docutils literal"><span class="pre">HyphenChar=None</span></code> to the monospace font
+prevents word hyphenation in literal text.</p>
+</dd>
+<dt><a class="reference internal" href="#template-latex2e-writer">template</a></dt>
+<dd>Default: &#8220;xelatex.tex&#8221;</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="odf-odt-writer">
+<h4><a class="toc-backref" href="#id175">[odf_odt writer]</a><a class="headerlink" href="#odf-odt-writer" title="Permalink to this headline">¶</a></h4>
+<p>The following command line options are specific to <code class="docutils literal"><span class="pre">odtwriter</span></code>:</p>
+<div class="section" id="id53">
+<h5><a class="toc-backref" href="#id176">stylesheet</a><a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h5>
+<p>Specify a stylesheet URL, used verbatim.</p>
+<p>Default: writers/odf_odt/styles.odt in the installation directory.</p>
+</div>
+<div class="section" id="odf-config-file">
+<h5><a class="toc-backref" href="#id177">odf-config-file</a><a class="headerlink" href="#odf-config-file" title="Permalink to this headline">¶</a></h5>
+<p>Specify a configuration/mapping file relative to the current working
+directory for additional ODF options. In particular, this file may
+contain a section named &#8220;Formats&#8221; that maps default style names to names
+to be used in the resulting output file allowing for adhering to external
+standards. For more info and the format of the configuration/mapping
+file, see the <a class="reference external" href="odt.html">Odt Writer for Docutils</a> document.</p>
+</div>
+<div class="section" id="id54">
+<h5><a class="toc-backref" href="#id178">cloak-email-addresses</a><a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h5>
+<p>Obfuscate email addresses to confuse harvesters while still
+keeping email links usable with standards-compliant browsers.</p>
+</div>
+<div class="section" id="no-cloak-email-addresses">
+<h5><a class="toc-backref" href="#id179">no-cloak-email-addresses</a><a class="headerlink" href="#no-cloak-email-addresses" title="Permalink to this headline">¶</a></h5>
+<p>Do not obfuscate email addresses.</p>
+</div>
+<div class="section" id="table-border-thickness">
+<h5><a class="toc-backref" href="#id180">table-border-thickness</a><a class="headerlink" href="#table-border-thickness" title="Permalink to this headline">¶</a></h5>
+<p>Specify the thickness of table borders in thousands of a cm.
+Default is 35.</p>
+</div>
+<div class="section" id="add-syntax-highlighting">
+<h5><a class="toc-backref" href="#id181">add-syntax-highlighting</a><a class="headerlink" href="#add-syntax-highlighting" title="Permalink to this headline">¶</a></h5>
+<p>Add syntax highlighting in literal code blocks.</p>
+</div>
+<div class="section" id="no-syntax-highlighting">
+<h5><a class="toc-backref" href="#id182">no-syntax-highlighting</a><a class="headerlink" href="#no-syntax-highlighting" title="Permalink to this headline">¶</a></h5>
+<p>Do not add syntax highlighting in literal code blocks.
+(default)</p>
+</div>
+<div class="section" id="create-sections">
+<h5><a class="toc-backref" href="#id183">create-sections</a><a class="headerlink" href="#create-sections" title="Permalink to this headline">¶</a></h5>
+<p>Create sections for headers.  (default)</p>
+</div>
+<div class="section" id="no-sections">
+<h5><a class="toc-backref" href="#id184">no-sections</a><a class="headerlink" href="#no-sections" title="Permalink to this headline">¶</a></h5>
+<p>Do not create sections for headers.</p>
+</div>
+<div class="section" id="create-links">
+<h5><a class="toc-backref" href="#id185">create-links</a><a class="headerlink" href="#create-links" title="Permalink to this headline">¶</a></h5>
+<p>Create links.</p>
+</div>
+<div class="section" id="no-links">
+<h5><a class="toc-backref" href="#id186">no-links</a><a class="headerlink" href="#no-links" title="Permalink to this headline">¶</a></h5>
+<p>Do not create links.  (default)</p>
+</div>
+<div class="section" id="endnotes-end-doc">
+<h5><a class="toc-backref" href="#id187">endnotes-end-doc</a><a class="headerlink" href="#endnotes-end-doc" title="Permalink to this headline">¶</a></h5>
+<p>Generate endnotes at end of document, not footnotes at bottom of page.</p>
+</div>
+<div class="section" id="no-endnotes-end-doc">
+<h5><a class="toc-backref" href="#id188">no-endnotes-end-doc</a><a class="headerlink" href="#no-endnotes-end-doc" title="Permalink to this headline">¶</a></h5>
+<p>Generate footnotes at bottom of page, not endnotes at end of
+document. (default)</p>
+</div>
+<div class="section" id="generate-list-toc">
+<h5><a class="toc-backref" href="#id189">generate-list-toc</a><a class="headerlink" href="#generate-list-toc" title="Permalink to this headline">¶</a></h5>
+<p>Generate a bullet list table of contents, not an
+ODF/<code class="docutils literal"><span class="pre">oowriter</span></code> table of contents.</p>
+</div>
+<div class="section" id="generate-oowriter-toc">
+<h5><a class="toc-backref" href="#id190">generate-oowriter-toc</a><a class="headerlink" href="#generate-oowriter-toc" title="Permalink to this headline">¶</a></h5>
+<p>Generate an ODF/<code class="docutils literal"><span class="pre">oowriter</span></code> table of contents, not a bullet
+list.  (default) <strong>Note:</strong> <code class="docutils literal"><span class="pre">odtwriter</span></code> is not able to
+determine page numbers, so you will need to open the generated
+document in <code class="docutils literal"><span class="pre">oowriter</span></code>, then right-click on the table of
+contents and select &#8220;Update&#8221; to insert page numbers.</p>
+</div>
+<div class="section" id="custom-odt-header">
+<h5><a class="toc-backref" href="#id191">custom-odt-header</a><a class="headerlink" href="#custom-odt-header" title="Permalink to this headline">¶</a></h5>
+<p>Specify the contents of a custom header line.  For details about
+custom headers and about special field character sequences, see
+section &#8220;Custom header/footers: inserting page numbers, date,
+time, etc&#8221; in the <a class="reference external" href="odt.html">Odt Writer for Docutils</a> document for
+details.</p>
+</div>
+<div class="section" id="custom-odt-footer">
+<h5><a class="toc-backref" href="#id192">custom-odt-footer</a><a class="headerlink" href="#custom-odt-footer" title="Permalink to this headline">¶</a></h5>
+<p>Specify the contents of a custom footer line.  For details about
+custom footers and about special field character sequences, see
+section &#8220;Custom header/footers: inserting page numbers, date,
+time, etc&#8221; in the <a class="reference external" href="odt.html">Odt Writer for Docutils</a> document for
+details.</p>
+</div>
+</div>
+<div class="section" id="pseudoxml-writer">
+<h4><a class="toc-backref" href="#id193">[pseudoxml writer]</a><a class="headerlink" href="#pseudoxml-writer" title="Permalink to this headline">¶</a></h4>
+<p>This writer does not define specific settings.</p>
+</div>
+</div>
+<div class="section" id="applications">
+<h3><a class="toc-backref" href="#id194">[applications]</a><a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="buildhtml-application">
+<h4><a class="toc-backref" href="#id195">[buildhtml application]</a><a class="headerlink" href="#buildhtml-application" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="ignore">
+<h5><a class="toc-backref" href="#id196">ignore</a><a class="headerlink" href="#ignore" title="Permalink to this headline">¶</a></h5>
+<p><a class="reference internal" href="#list">List</a> of wildcard (shell globing) patterns, specifying files to silently
+ignore.  To specify multiple patterns, use colon-separated patterns (in
+configuration files or on the command line); on the command line, the
+option may also be used more than once.</p>
+<p>Default: none.  Options: <code class="docutils literal"><span class="pre">--ignore</span></code>.</p>
+</div>
+<div class="section" id="prune">
+<h5><a class="toc-backref" href="#id197">prune</a><a class="headerlink" href="#prune" title="Permalink to this headline">¶</a></h5>
+<p><a class="reference internal" href="#list">List</a> of directories not to process.  To specify multiple
+directories, use colon-separated paths (in configuration files or
+on the command line); on the command line, the option may also be
+used more than once.</p>
+<p>Default: [&#8216;.hg&#8217;, &#8216;.bzr&#8217;, &#8216;.git&#8217;, &#8216;.svn&#8217;, &#8216;CVS&#8217;].  Options:
+<code class="docutils literal"><span class="pre">--prune</span></code>.</p>
+</div>
+<div class="section" id="recurse">
+<h5><a class="toc-backref" href="#id198">recurse</a><a class="headerlink" href="#recurse" title="Permalink to this headline">¶</a></h5>
+<p>Recursively scan subdirectories, or ignore subdirectories.</p>
+<p>Default: recurse (1).  Options: <code class="docutils literal"><span class="pre">--recurse,</span> <span class="pre">--local</span></code>.</p>
+</div>
+<div class="section" id="silent">
+<h5><a class="toc-backref" href="#id199">silent</a><a class="headerlink" href="#silent" title="Permalink to this headline">¶</a></h5>
+<p>Work silently (no progress messages).  Independent of
+&#8220;report_level&#8221;.</p>
+<p>Default: show progress (None).  Options: <code class="docutils literal"><span class="pre">--silent</span></code>.</p>
+</div>
+</div>
+<div class="section" id="docfactory-application">
+<h4><a class="toc-backref" href="#id200">[docfactory application]</a><a class="headerlink" href="#docfactory-application" title="Permalink to this headline">¶</a></h4>
+<p>(To be completed.)</p>
+</div>
+</div>
+<div class="section" id="other-settings">
+<h3><a class="toc-backref" href="#id201">Other Settings</a><a class="headerlink" href="#other-settings" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="command-line-only">
+<h4><a class="toc-backref" href="#id202">Command-Line Only</a><a class="headerlink" href="#command-line-only" title="Permalink to this headline">¶</a></h4>
+<p>These settings are only effective as command-line options; setting
+them in configuration files has no effect.</p>
+<div class="section" id="config">
+<h5><a class="toc-backref" href="#id203">config</a><a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h5>
+<p>Path to a configuration file to read (if it exists) <a class="footnote-reference" href="#pwd" id="id55">[2]</a>.
+Settings may override defaults and earlier settings.  The config
+file is processed immediately.  Multiple <code class="docutils literal"><span class="pre">--config</span></code> options may
+be specified; each will be processed in turn.</p>
+<p>Filesystem path settings contained within the config file will be
+interpreted relative to the config file&#8217;s location (<em>not</em> relative
+to the current working directory).</p>
+<p>Default: None.  Options: <code class="docutils literal"><span class="pre">--config</span></code>.</p>
+</div>
+</div>
+<div class="section" id="internal-settings">
+<h4><a class="toc-backref" href="#id204">Internal Settings</a><a class="headerlink" href="#internal-settings" title="Permalink to this headline">¶</a></h4>
+<p>These settings are for internal use only; setting them in
+configuration files has no effect, and there are no corresponding
+command-line options.</p>
+<div class="section" id="config-files">
+<h5><a class="toc-backref" href="#id205">_config_files</a><a class="headerlink" href="#config-files" title="Permalink to this headline">¶</a></h5>
+<p>List of paths of applied configuration files.</p>
+<p>Default: None.  No command-line options.</p>
+</div>
+<div class="section" id="directories">
+<h5><a class="toc-backref" href="#id206">_directories</a><a class="headerlink" href="#directories" title="Permalink to this headline">¶</a></h5>
+<p>(<code class="docutils literal"><span class="pre">buildhtml.py</span></code> front end.)  List of paths to source
+directories, set from positional arguments.</p>
+<p>Default: current working directory (None).  No command-line
+options.</p>
+</div>
+<div class="section" id="disable-config">
+<h5><a class="toc-backref" href="#id207">_disable_config</a><a class="headerlink" href="#disable-config" title="Permalink to this headline">¶</a></h5>
+<p>Prevent standard configuration files from being read.  For
+programmatic use only.</p>
+<p>Default: config files enabled (None).  No command-line options.</p>
+</div>
+<div class="section" id="destination">
+<h5><a class="toc-backref" href="#id208">_destination</a><a class="headerlink" href="#destination" title="Permalink to this headline">¶</a></h5>
+<p>Path to output destination, set from positional arguments.</p>
+<p>Default: stdout (None).  No command-line options.</p>
+</div>
+<div class="section" id="source">
+<h5><a class="toc-backref" href="#id209">_source</a><a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h5>
+<p>Path to input source, set from positional arguments.</p>
+<p>Default: stdin (None).  No command-line options.</p>
+<table class="docutils footnote" frame="void" id="pwd" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td><em>(<a class="fn-backref" href="#id3">1</a>, <a class="fn-backref" href="#id4">2</a>, <a class="fn-backref" href="#id19">3</a>, <a class="fn-backref" href="#id42">4</a>, <a class="fn-backref" href="#id55">5</a>)</em> Path relative to the working directory of the process at
+launch.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="override" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[3]</td><td><em>(<a class="fn-backref" href="#id8">1</a>, <a class="fn-backref" href="#id11">2</a>, <a class="fn-backref" href="#id15">3</a>, <a class="fn-backref" href="#id23">4</a>, <a class="fn-backref" href="#id24">5</a>, <a class="fn-backref" href="#id28">6</a>, <a class="fn-backref" href="#id36">7</a>, <a class="fn-backref" href="#id45">8</a>)</em> The overridden setting will automatically be set to
+<code class="docutils literal"><span class="pre">None</span></code> for command-line options and config file settings.  Client
+programs which specify defaults that override other settings must
+do the overriding explicitly, by assigning <code class="docutils literal"><span class="pre">None</span></code> to the other
+settings.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="dependencies" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[4]</a></td><td>Images are only added to the dependency list if the
+reStructuredText parser extracted image dimensions from the file.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="footnote-space" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[5]</td><td><em>(<a class="fn-backref" href="#id9">1</a>, <a class="fn-backref" href="#id46">2</a>)</em> <p>The footnote space is trimmed if the reference
+style is &#8220;superscript&#8221;, and it is left if the reference style is
+&#8220;brackets&#8221;.</p>
+<p class="last">The overriding only happens if the parser supports the
+trim_footnote_reference_space option.</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="old-format-configuration-files">
+<h2><a class="toc-backref" href="#id210">Old-Format Configuration Files</a><a class="headerlink" href="#old-format-configuration-files" title="Permalink to this headline">¶</a></h2>
+<p>Formerly, Docutils configuration files contained a single &#8220;[options]&#8221;
+section only.  This was found to be inflexible, and in August 2003
+Docutils adopted the current component-based configuration file
+sections as described above.  Docutils will still recognize the old
+&#8220;[options]&#8221; section, but complains with a deprecation warning.</p>
+<p>To convert existing config files, the easiest way is to change the
+section title: change &#8220;[options]&#8221; to &#8220;[general]&#8221;.  Most settings
+haven&#8217;t changed.  The only ones to watch out for are these:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Old-Format Setting</th>
+<th class="head">New Section &amp; Setting</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>pep_stylesheet</td>
+<td>[pep_html writer] stylesheet</td>
+</tr>
+<tr class="row-odd"><td>pep_stylesheet_path</td>
+<td>[pep_html writer] stylesheet_path</td>
+</tr>
+<tr class="row-even"><td>pep_template</td>
+<td>[pep_html writer] template</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jun 02, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

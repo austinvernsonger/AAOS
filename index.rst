@@ -17,7 +17,8 @@
     Governance/index
     Project-Management-Office/index
     Service-Desk/index
-   
+    Docutils/index
+
 
 
 .. image:: ./_static/AAOS.gif
