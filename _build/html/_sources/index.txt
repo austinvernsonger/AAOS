@@ -19,8 +19,6 @@
     Service-Desk/index
     Docutils/index
 
-
-
 .. image:: ./_static/AAOS.gif
    :alt:
    :scale: 50
@@ -31,13 +29,13 @@ KNOWLEDGE CENTER
 
 |docs|
 
-.. attention::
-   This website is currently under construction so some pages you come across may be blank for the time being.
 
 .. caution::
    There are multiple attached documents throughout the website that are just a **"Placeholder"** document for the purposes of rendering the webpage correctly.
 
 .. note::
+   This website is currently under construction so some pages you come across may be blank for the time being.
+
    You may also download this entire document as a PDF
 
    `DOWNLOAD AS PDF <https://readthedocs.org/projects/american-academy-of-orthopaedic-surgeons/downloads/pdf/master/>`_
