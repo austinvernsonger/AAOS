@@ -31,7 +31,7 @@ KNOWLEDGE CENTER
 
 |docs|
 
-.. note::
+.. attention::
    This website is currently under construction so some pages you come across may be blank for the time being.
 
 .. caution::
@@ -39,7 +39,7 @@ KNOWLEDGE CENTER
 
 .. note::
    You may also download this entire document as a PDF
-   
+
    `DOWNLOAD AS PDF <https://readthedocs.org/projects/american-academy-of-orthopaedic-surgeons/downloads/pdf/master/>`_
 
 
@@ -65,9 +65,9 @@ KNOWLEDGE CENTER
 +--------------------------------------------------------------+-------------------------------------+
 |:ref:`LetterHead <LetterHead>`                                |:ref:`Website Content <WebContent>`  |
 +--------------------------------------------------------------+-------------------------------------+
-|:ref:`AAOS Logos <Logos>`                                     |                                     | 
+|:ref:`AAOS Logos <Logos>`                                     |                                     |
 +--------------------------------------------------------------+                                     +
-|:ref:`Meetings <Meetings>`                                    |                                     | 
+|:ref:`Meetings <Meetings>`                                    |                                     |
 +--------------------------------------------------------------+                                     +
 |:ref:`Other-Branded Templates <Other-Branded-Templates>`      |                                     |
 +--------------------------------------------------------------+                                     +
